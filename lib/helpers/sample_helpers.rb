@@ -1,7 +1,6 @@
 require 'sinatra/base'
 
 module Urns
-
   module Helpers
 
     def sample_helper
@@ -9,5 +8,4 @@ module Urns
     end
 
   end
-
 end

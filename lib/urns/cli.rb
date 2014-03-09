@@ -1,4 +1,3 @@
-require 'urns'
 require 'thor'
 
 module Urns
@@ -12,6 +11,7 @@ module Urns
     desc 'create [APP]', 'Creates a new app'
     def create(app)
       directory 'template', app
+      File.rename "#{app}/env.example", "#{app}/.env"
       system "cd #{app} && bundle"
     end
   end

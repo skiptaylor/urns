@@ -1,3 +1,11 @@
 #!/usr/bin/env ruby
 
-# Placeholder for CLI to Urns gem.
+begin
+  require 'urns/cli'
+  Urns::CLI.start
+rescue Interrupt
+  puts "\nQuitting..."
+  exit 1
+rescue SystemExit => e
+  exit e.status
+end

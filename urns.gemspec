@@ -17,11 +17,11 @@ Gem::Specification.new do |gem|
   gem.files         = Dir['**/{*,.gitignore,.env}']
   gem.bindir        = 'bin'
   gem.executables   = 'urns'
-  # gem.test_files    = Dir['test/**/*']
   gem.require_paths = ['lib']
 
   gem.add_runtime_dependency 'sinatra',         '~> 1.4',  '>= 1.4.4'
   gem.add_runtime_dependency 'sinatra-contrib', '~> 1.4',  '>= 1.4.2'
+  gem.add_runtime_dependency 'thor',            '~> 0.18', '>= 0.18.1'
 
   gem.add_development_dependency 'rake', '~> 10.1', '>= 10.1.1'
 end

@@ -26,7 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'puma',            '~> 2.7',  '>= 2.7.1'
   gem.add_runtime_dependency 'rake',            '~> 10.1', '>= 10.1.1'
   gem.add_runtime_dependency 'require_all',     '~> 1.3',  '>= 1.3.2'
-  gem.add_runtime_dependency 'sass',            '~> 3.2',  '>= 3.2.14'
+  gem.add_runtime_dependency 'sass',            '~> 3.3',  '>= 3.3.0'
   gem.add_runtime_dependency 'sequel',          '~> 4.7',  '>= 4.7.0'
   gem.add_runtime_dependency 'sinatra',         '~> 1.4',  '>= 1.4.4'
   gem.add_runtime_dependency 'sinatra-contrib', '~> 1.4',  '>= 1.4.2'

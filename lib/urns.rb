@@ -3,25 +3,20 @@ require 'sinatra/base'
 Dotenv.load
 
 module Urns
-  class App < Sinatra::Application
+  module App
+    def self.registered(app)
+      app.configure do
+        app.enable :sessions
 
-    configure do
-      enable :sessions
+        app.set :database,       ENV.fetch('DATABASE_URL')
+        app.set :session_secret, ENV.fetch('SESSION_SECRET')
+        app.set :views,          ['./views', "#{File.dirname(__FILE__)}/views"]
+      end
 
-      set :database,       ENV.fetch('DATABASE_URL')
-      set :session_secret, ENV.fetch('SESSION_SECRET')
-      set :views,          ['./views', "#{File.dirname(__FILE__)}/views"]
+      require_rel 'models', 'helpers', 'routes'
+
+      app.helpers  Urns::Helpers
+      app.register Urns::Routes
     end
-
-    require_rel 'models', 'helpers'
-
-    helpers Urns::Helpers
-
-    get '/sample/?' do
-      sample_helper()
-      Urn.display_name()
-      erb :sample
-    end
-
   end
 end

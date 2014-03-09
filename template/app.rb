@@ -1,6 +1,9 @@
 require 'bundler/setup'
 Bundler.require
 
+require_rel 'routes'
+
 class App < Sinatra::Application
-  use Urns::App
+  use Router
+  register Urns::App
 end

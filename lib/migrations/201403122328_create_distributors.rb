@@ -23,7 +23,7 @@ Sequel.migration do
       String :country, default: 'USA'
       String :discount_code
       String :contact
-      String :contant_title
+      String :contact_title
       String :species, default: 'Human'
       String :facility
       String :email

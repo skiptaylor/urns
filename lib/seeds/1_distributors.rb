@@ -1,5 +1,6 @@
-CSV.open("#{File.dirname(__FILE__)}/../data/distributors.csv",
-         { headers: true }) do |csv_lines|
+data = "#{File.dirname(__FILE__)}/../data/distributors.csv"
+
+CSV.open(data, { headers: true }) do |csv_lines|
   csv_lines.each do |line|
     Distributor.unrestrict_primary_key
     Distributor.create(

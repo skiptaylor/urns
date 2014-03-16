@@ -1,0 +1,29 @@
+<div class="white">
+	<div class="container">
+		<div class="row" style="padding: 60px 0 62px 0;">
+			<div class="span12">
+				<h5>Cost</h5>
+				<hr />
+			</div>
+			<form method='post'>
+			<div class="span12 form-horizontal">
+				<br />
+				<div class="control-group">
+					<label for="cost" class="span2 control-label">Cost</label>
+					<div class="span5">
+						<input type="text" class="form-control span6" name="cost" id="cost" value="<%= @cost.cost %>" />
+					</div>
+				</div>
+
+				<br />
+				<div class="control-group">
+					<label for="region" class="span2 control-label"></label>
+					<div class="span8">
+						<input class="btn btn-small btn-success" type="submit" value="Save" /> &nbsp; <a class="btn btn-default btn-small" href="/shipping/cost/costs">Cancel</a> &nbsp; <a href="/shipping/cost/<%= @cost.id %>/delete" class="btn btn-small btn-warning pull-right delete">Delete</a>
+					</div>
+				</div>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>

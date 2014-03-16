@@ -1,7 +1,5 @@
-require 'sinatra/base'
-
 module Urns
-  module Routes
+  module Router
     def self.registered(app)
 
       app.get '/sample/?' do

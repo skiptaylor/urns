@@ -16,7 +16,7 @@ module Urns
       require_rel 'models', 'helpers', 'routes'
 
       app.helpers  Urns::Helpers
-      app.register Urns::Routes
+      app.register Urns::Router
     end
   end
 end

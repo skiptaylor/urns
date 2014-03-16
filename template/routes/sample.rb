@@ -1,5 +1,3 @@
-require 'sinatra/base'
-
 class Router < Sinatra::Application
 
   get '/sample/?' do

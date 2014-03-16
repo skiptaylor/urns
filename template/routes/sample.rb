@@ -1,7 +1,8 @@
-class Router < Sinatra::Application
+class Routes < Urns::Base
 
   get '/sample/?' do
-    'This route overrides the /sample route in the gem.'
+    sample_helper()
+    'sample from app.'
   end
 
 end

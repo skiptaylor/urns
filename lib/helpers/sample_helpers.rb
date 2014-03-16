@@ -1,5 +1,3 @@
-require 'sinatra/base'
-
 module Urns
   module Helpers
 

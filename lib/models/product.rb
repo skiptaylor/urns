@@ -17,31 +17,31 @@ class Product < Sequel::Model
   end
   
   def self.mini
-    all(:capacity.gt => 2, :capacity.lte => 10)
+    all(:capacity > 2, :capacity <= 10)
   end
   def self.small
-    all(:capacity.gt => 10, :capacity.lte => 30)
+    all(:capacity > 10, :capacity <= 30)
   end
   def self.medium
-    all(:capacity.gt => 30, :capacity.lte => 60)
+    all(:capacity > 30, :capacity <= 60)
   end
   def self.large
-    all(:capacity.gt => 60, :capacity.lte => 90)
+    all(:capacity > 60, :capacity <= 90)
   end
   def self.extra
-    all(:capacity.gt => 90, :capacity.lte => 185)
+    all(:capacity > 90, :capacity <= 185)
   end
   def self.keepsake
-    all(:capacity.gt => 2, :capacity.lt => 185)
+    all(:capacity > 2, :capacity <= 185)
   end
   def self.individual
-    all(:capacity.gt => 185, :capacity.lte => 390)
+    all(:capacity > 185, :capacity <= 390)
   end
   def self.companion
-    all(:capacity.gt => 390, :capacity.lte => 799)
+    all(:capacity > 390, :capacity <= 799)
   end
   def self.equine
-    all(:capacity.gt => 800)
+    all(:capacity > 800)
   end
   def self.by_wood_type(wood_type)
     Woodtype.all(wood_type: wood_type).materials.all.products
@@ -60,15 +60,15 @@ class Product < Sequel::Model
   end
   
   def self.small
-    all(:capacity.gt => 0, :capacity.lt => 7)
+    all(:capacity > 2, :capacity <= 7)
   end
   def self.medium
-    all(:capacity.gt => 6, :capacity.lt => 13)
+    all(:capacity > 6, :capacity <= 13)
   end
   def self.large
-    all(:volume.gt => 12, :capacity.lt => 18)
+    all(:volume > 12, :capacity <= 18)
   end
   def self.xlarge
-    all(:capacity.gt => 17)
+    all(:capacity > 17)
   end
 end

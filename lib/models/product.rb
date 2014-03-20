@@ -7,7 +7,7 @@ class Product < Sequel::Model
 
   one_to_many :photos
   one_to_many :engravings
-  
+
   def default_photo_url
     if self.photos.count > 0
       self.photos.first.source
@@ -15,60 +15,65 @@ class Product < Sequel::Model
       "/img/placeholder.png"
     end
   end
-  
-  def self.mini
-    all(:capacity > 2, :capacity <= 10)
+
+  dataset_module do
+
+    def mini
+      where 'capacity > 2 and capacity <= 10'
+    end
+
+    def small
+      where 'capacity > 2 and capacity <= 7'
+    end
+
+    def medium
+      where 'capacity > 6 and capacity <= 13'
+    end
+
+    def large
+      where 'capacity > 12 and capacity <= 18'
+    end
+
+    def extra
+      where 'capacity > 17'
+    end
+
+    def keepsake
+      where 'capacity > 2 and capacity <= 185'
+    end
+
+    def individual
+      where 'capacity > 185 and capacity <= 390'
+    end
+
+    def companion
+      where 'capacity > 390 and capacity <= 799'
+    end
+
+    def equine
+      where 'capacity > 800'
+    end
+
+    def by_wood_type(wood_type)
+      where(material_id: Material.where(woodtype_id: Woodtype.where(wood_type: wood_type).select(:id)).select(:id))
+    end
+
+    def active
+      where status: 'Active'
+    end
+
+    def fineart
+      where(productstyle_id: Productstyle.where(product_style: 'Fine Art').select(:id))
+    end
+
+    def niche
+      where niche: 't'
+    end
+
+    def accessories
+      where accessories: 't'
+    end
+
   end
-  def self.small
-    all(:capacity > 10, :capacity <= 30)
-  end
-  def self.medium
-    all(:capacity > 30, :capacity <= 60)
-  end
-  def self.large
-    all(:capacity > 60, :capacity <= 90)
-  end
-  def self.extra
-    all(:capacity > 90, :capacity <= 185)
-  end
-  def self.keepsake
-    all(:capacity > 2, :capacity <= 185)
-  end
-  def self.individual
-    all(:capacity > 185, :capacity <= 390)
-  end
-  def self.companion
-    all(:capacity > 390, :capacity <= 799)
-  end
-  def self.equine
-    all(:capacity > 800)
-  end
-  def self.by_wood_type(wood_type)
-    Woodtype.all(wood_type: wood_type).materials.all.products
-  end
-  def self.active
-    all(status: 'Active')
-  end
-  def self.fineart
-    Productstyle.all(product_style: 'Fine Art').all.products
-  end
-  def self.niche
-    all(niche: 't')
-  end
-  def self.accessories
-    all(accessories: 't')
-  end
-  
-  def self.small
-    all(:capacity > 2, :capacity <= 7)
-  end
-  def self.medium
-    all(:capacity > 6, :capacity <= 13)
-  end
-  def self.large
-    all(:volume > 12, :capacity <= 18)
-  end
-  def self.xlarge
-    all(:capacity > 17)
-  end
+
 end

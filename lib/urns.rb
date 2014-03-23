@@ -10,6 +10,16 @@ module Urns
       set :session_secret, ENV.fetch('SESSION_SECRET')
       set :views,          ['./views', "#{File.dirname(__FILE__)}/views"]
     end
+
+    CarrierWave.configure do |config|
+      config.fog_credentials = {
+        aws_secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
+            aws_access_key_id: ENV.fetch('AWS_ACCESS_KEY_ID'),
+                     provider: ENV.fetch('PROVIDER')
+      }
+      config.fog_directory  = ENV.fetch('FOG_DIRECTORY')
+    end
+
     require_rel 'models', 'helpers'
     helpers Urns::Helpers
   end

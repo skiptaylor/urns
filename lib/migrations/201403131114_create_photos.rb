@@ -11,6 +11,8 @@ Sequel.migration do
       Integer :product_id
       Integer :fader_id
       Integer :logo_id
+
+      String :source
     end
   end
 end

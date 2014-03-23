@@ -1,7 +1,6 @@
 class Routes < Urns::Base
   
   helpers do
-    sample_helper()
 
     # def authenticate(role)
     # 
@@ -17,7 +16,6 @@ class Routes < Urns::Base
     # end
   
     def auth_distributor
-      sample_helper()
       unless session[:distributor] == true || session[:admin] == true
         flash[:alert] = 'You must sign in to see that page.'
         redirect '/index'
@@ -25,7 +23,6 @@ class Routes < Urns::Base
     end
 
     def auth_admin
-      sample_helper()
       unless session[:admin] == true
         flash[:alert] = 'You must be an admin to see that page.'
         redirect '/index'
@@ -33,7 +30,6 @@ class Routes < Urns::Base
     end
   
     def truncate x, options = {}
-      sample_helper()
       options[:word_count]     ||= 100
       options[:end_string]     ||= '...'
       options[:decimal]        ||= 2

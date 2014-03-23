@@ -34,16 +34,40 @@ class Routes < Urns::Base
       options[:end_string]     ||= '...'
       options[:decimal]        ||= 2
       options[:trailing_zeros] ||= false
-    
+      options[:round]          ||= true
+
       if x.kind_of? String
         return if x == nil
         words = x.split()
         return words[0..(options[:word_count]-1)].join(' ') + (words.length > options[:word_count] ? options[:end_string] : '')
       elsif numeric? x
-        number = "%.#{options[:decimal]}f" % x.to_f
+        if options[:round] == true
+          number = "%.#{options[:decimal]}f" % x.round(options[:decimal])
+        else
+          number = "%.#{options[:decimal]}f" % x.to_f
+        end
         number = number.to_f unless options[:trailing_zeros]
         return number
       end
+    end
+    
+    def active path
+      path = Array[path] unless path.kind_of? Array
+      match = false
+      path.each { |p| match = true if request.path_info.include?(p) }
+      'active' if match
+    end
+    
+    def alert
+      "<div id='alert'>#{flash[:alert]}</div>" if flash[:alert]
+    end
+    
+    def hidden
+      'display: none;'
+    end
+    
+    def numeric? x
+      true if Float(x) rescue false
     end
 
   end

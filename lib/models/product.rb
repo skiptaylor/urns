@@ -19,23 +19,23 @@ class Product < Sequel::Model
   dataset_module do
 
     def mini
-      where 'capacity > 2 and capacity <= 10'
-    end
-
-    def small
       where 'capacity > 2 and capacity <= 7'
     end
 
+    def small
+      where 'capacity > 8 and capacity <= 30'
+    end
+
     def medium
-      where 'capacity > 6 and capacity <= 13'
+      where 'capacity > 31 and capacity <= 60'
     end
 
     def large
-      where 'capacity > 12 and capacity <= 18'
+      where 'capacity > 61 and capacity <= 90'
     end
 
-    def extra
-      where 'capacity > 17'
+    def vlarge
+      where 'capacity > 90 and capacity <= 189'
     end
 
     def keepsake
@@ -51,7 +51,7 @@ class Product < Sequel::Model
     end
 
     def equine
-      where 'capacity > 800'
+      where 'capacity > 799'
     end
 
     def by_wood_type(wood_type)

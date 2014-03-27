@@ -1,13 +1,12 @@
 Sequel.migration do
   change do
-    create_table(:states) do
+    create_table(:sizes) do
       primary_key :id
 
       DateTime :created_at
       DateTime :updated_at
 
-      String :name
-      String :abbr
+      String :size
 
       Integer :zone_id
     end

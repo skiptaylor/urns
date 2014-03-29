@@ -8,6 +8,7 @@ Sequel.migration do
 
       String :zone
 
+      Integer :shipmethod_id
     end
   end
 end

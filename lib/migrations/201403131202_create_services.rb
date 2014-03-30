@@ -1,14 +1,14 @@
 Sequel.migration do
   change do
-    create_table(:sizes) do
+    create_table(:services) do
       primary_key :id
 
       DateTime :created_at
       DateTime :updated_at
 
-      String :points
-
-      Integer :service_id
+      String :name
+      
+      Integer :zone_id
     end
   end
 end

@@ -1,7 +1,7 @@
-one   = Zone.create zone: 'one'
-two   = Zone.create zone: 'two'
-three = Zone.create zone: 'three'
-four  = Zone.create zone: 'four'
+one   = Zone.create name: 'one'
+two   = Zone.create name: 'two'
+three = Zone.create name: 'three'
+four  = Zone.create name: 'four'
 
 State.create name: 'Alabama',        abbr: 'AL', zone_id: one.id
 State.create name: 'Alaska',         abbr: 'AK', zone_id: two.id

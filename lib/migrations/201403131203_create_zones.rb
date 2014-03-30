@@ -6,9 +6,8 @@ Sequel.migration do
       DateTime :created_at
       DateTime :updated_at
 
-      String :zone
+      String :name
 
-      Integer :shipmethod_id
     end
   end
 end

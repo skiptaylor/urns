@@ -7,7 +7,8 @@ Sequel.migration do
       DateTime :updated_at
 
       String :name
-
+      
+      Integer :zone_id
     end
   end
 end

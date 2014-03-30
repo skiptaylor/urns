@@ -6,7 +6,7 @@ Sequel.migration do
       DateTime :created_at
       DateTime :updated_at
 
-      String :cost
+      String :amount
 
       Integer :size_id
     end

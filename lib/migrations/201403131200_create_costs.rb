@@ -7,7 +7,7 @@ Sequel.migration do
       DateTime :updated_at
 
       Float   :amount
-      Integer :size
+      String  :size
 
       Integer :zone_id
       Integer :service_id

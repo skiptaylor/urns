@@ -8,7 +8,7 @@ Sequel.migration do
 
       String :points
 
-      Integer :service_id
+      Integer :costs_id
     end
   end
 end

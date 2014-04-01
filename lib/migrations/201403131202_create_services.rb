@@ -8,7 +8,6 @@ Sequel.migration do
 
       String :name
       
-      Integer :zone_id
     end
   end
 end

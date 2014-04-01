@@ -6,9 +6,11 @@ Sequel.migration do
       DateTime :created_at
       DateTime :updated_at
 
-      String :amount
+      Float   :amount
+      Integer :size
 
-      Integer :size_id
+      Integer :zone_id
+      Integer :service_id
     end
   end
 end

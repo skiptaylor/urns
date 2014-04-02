@@ -11,6 +11,7 @@ Sequel.migration do
 
       Integer :zone_id
       Integer :service_id
+      Inreger :size_id
     end
   end
 end

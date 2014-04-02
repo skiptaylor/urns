@@ -6,7 +6,8 @@ Sequel.migration do
       DateTime :created_at
       DateTime :updated_at
 
-      String :points
+      Integer :points
+      String  :container
 
       Integer :costs_id
     end

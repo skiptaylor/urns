@@ -33,8 +33,11 @@ Sequel.migration do
       Date :received_on
 
       Boolean :approved, default: false
+      Boolean :sold, default: false
 
       Integer :distributor_id
+      Integer :state_id
+      Integer :zone_id
     end
   end
 end

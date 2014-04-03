@@ -58,10 +58,6 @@ class Routes < Urns::Base
       'active' if match
     end
     
-    def alert
-      "<div id='alert'>#{flash[:alert]}</div>" if flash[:alert]
-    end
-    
     def hidden
       'display: none;'
     end

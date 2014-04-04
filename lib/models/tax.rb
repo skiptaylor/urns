@@ -3,9 +3,9 @@ class Tax < Sequel::Model
 
   def self.rate(zipcode)
     rate = 0
-    # if area = self.first(zip: zipcode)
-    #   rate = area.rate
-    # end
+    if area = self.first(zip: zipcode)
+      rate = area.rate
+    end
     rate
   end
 

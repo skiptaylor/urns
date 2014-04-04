@@ -7,20 +7,17 @@ Sequel.migration do
       DateTime :updated_at
 
       String :stripe_id
-      String :method
       String :name
       String :email
       String :phone
       String :address1
       String :address2
       String :city
-      String :state
       String :zip
       String :ship_name
       String :ship_address1
       String :ship_address2
       String :ship_city
-      String :ship_state
       String :ship_zip
       String :referral_code
       String :tracking_number
@@ -37,6 +34,7 @@ Sequel.migration do
 
       Integer :distributor_id
       Integer :state_id
+      Integer :shipstate_id
       Integer :zone_id
     end
   end

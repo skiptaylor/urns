@@ -33,8 +33,8 @@ Sequel.migration do
       Boolean :sold, default: false
 
       Integer :distributor_id
-      Integer :state_id
-      Integer :shipstate_id
+      Integer :billing_state_id
+      Integer :shipping_state_id
       Integer :zone_id
     end
   end

@@ -6,7 +6,8 @@ Sequel.migration do
       DateTime :created_at
       DateTime :updated_at
 
-      Integer :points
+      Integer :min_points
+      Integer :max_points
       String  :container
     end
   end

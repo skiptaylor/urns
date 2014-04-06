@@ -3,4 +3,5 @@ class Service < Sequel::Model
 
   one_to_many :zones
   one_to_many :costs
+  one_to_many :purchases
 end

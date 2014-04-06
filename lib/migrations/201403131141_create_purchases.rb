@@ -36,7 +36,7 @@ Sequel.migration do
       Integer :distributor_id
       Integer :billing_state_id
       Integer :shipping_state_id
-      Integer :zone_id
+      Integer :service_id
     end
   end
 end

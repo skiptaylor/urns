@@ -21,6 +21,7 @@ Sequel.migration do
       String :ship_zip
       String :referral_code
       String :tracking_number
+      String :shopping_session
 
       Float :tax
       Float :shipping

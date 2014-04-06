@@ -41,7 +41,7 @@ class Purchase < Sequel::Model
 
   def shipping_volume
     volume = 0
-    self.cart_items.each |item|
+    self.cart_items.each do |item|
       volume += item.product.volume
     end
     volume

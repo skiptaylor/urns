@@ -5,6 +5,14 @@ class Purchase < Sequel::Model
   many_to_one :service
   one_to_many :items
 
+  def grand_total
+    total = 0
+    total += ShoppingCartItem.total(self.shopping_session)
+    total += shipping_cost
+    total += (total * self.tax_rate)
+    total
+  end
+
   def billing_state
     if self.billing_state_id
       State[self.billing_state_id]
@@ -18,6 +26,14 @@ class Purchase < Sequel::Model
       State[self.shipping_state_id]
     else
       nil
+    end
+  end
+
+  def tax_rate
+    if self.ship_zip
+      Tax.where(zip: self.ship_zip).first.rate
+    else
+      Tax.where(zip: self.zip).first.rate
     end
   end
 

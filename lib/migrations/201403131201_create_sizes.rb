@@ -8,8 +8,6 @@ Sequel.migration do
 
       Integer :points
       String  :container
-
-      Integer :costs_id
     end
   end
 end

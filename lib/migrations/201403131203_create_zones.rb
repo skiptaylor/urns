@@ -7,8 +7,6 @@ Sequel.migration do
       DateTime :updated_at
 
       String :name
-      
-      Integer :service_id
     end
   end
 end

@@ -7,7 +7,6 @@ Sequel.migration do
       DateTime :updated_at
 
       String :name
-      
     end
   end
 end

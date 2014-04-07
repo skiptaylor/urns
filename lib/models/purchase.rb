@@ -35,9 +35,7 @@ class Purchase < Sequel::Model
     else
       zip = self.zip
     end
-    if tax = Tax.where(zip: self.zip).first
-      tax.rate
-    elsif tax = Tax.where(zip: self.ship_zip).first
+    if tax = Tax.where(zip: zip).first
       tax.rate
     else
       0.0

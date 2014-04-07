@@ -8,8 +8,8 @@ class Purchase < Sequel::Model
   def grand_total
     total = 0
     total += ShoppingCartItem.total(self.shopping_session)
-    total += shipping_cost
     total += (total * self.tax_rate)
+    total += shipping_cost
     total
   end
 
@@ -28,12 +28,17 @@ class Purchase < Sequel::Model
       nil
     end
   end
-
+  
   def tax_rate
     if self.ship_zip
-      Tax.where(zip: self.ship_zip).first.rate
+      zip = self.ship_zip
     else
-      Tax.where(zip: self.zip).first.rate
+      zip = self.zip
+    end
+    if tax = Tax.where(zip: self.zip).first
+      tax.rate
+    else
+      0.0
     end
   end
 

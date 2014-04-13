@@ -2,19 +2,16 @@ module Urns
   class Routes < Urns::Base
 
     get "/fader/faders/?" do
-      sample_helper()
       @fader = Fader.all
       erb :"/fader/faders", layout: "/layout_product".to_sym
     end
 
     get "/fader/faders/new/?" do
-      sample_helper()
       @fader = Fader.new
       erb :"/fader/fader_edit", layout: "/layout_product".to_sym
     end
 
     post "/fader/faders/new/?" do
-      sample_helper()
       fader = Fader.create(
         :header         => params[:header],
         :description    => params[:description],
@@ -35,19 +32,16 @@ module Urns
     end
 
     get "/fader/:id/fader/?" do
-      sample_helper()
       @fader = Fader.get(params[:id])
       erb :"/fader/fader", layout: "/layout_product".to_sym
     end
 
     get "/fader/:id/edit/?" do
-      sample_helper()
       @fader = Fader.get(params[:id])
       erb :"/fader/fader_edit", layout: "/layout_product".to_sym
     end
 
     post "/fader/:id/edit/?" do
-      sample_helper()
       fader = Fader.get(params[:id])
       fader.update(
         :header         => params[:header],
@@ -70,7 +64,6 @@ module Urns
     end
 
     get "/fader/:id/delete/?" do
-      sample_helper()
       fader = Fader.get(params[:id])
       fader.destroy
       redirect "/fader/faders"

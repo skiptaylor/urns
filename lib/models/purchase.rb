@@ -30,7 +30,7 @@ class Purchase < Sequel::Model
   end
   
   def tax_rate
-    if self.ship_zip
+    if self.ship_zip != ''
       zip = self.ship_zip
     else
       zip = self.zip

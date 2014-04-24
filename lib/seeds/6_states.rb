@@ -3,6 +3,7 @@ two   = Zone.create name: 'two'
 three = Zone.create name: 'three'
 four  = Zone.create name: 'four'
 
+State.create name: 'AAA',            abbr: '',   zone_id: one.id
 State.create name: 'Alabama',        abbr: 'AL', zone_id: one.id
 State.create name: 'Alaska',         abbr: 'AK', zone_id: two.id
 State.create name: 'Arizona',        abbr: 'AZ', zone_id: three.id
@@ -53,5 +54,3 @@ State.create name: 'Washington',     abbr: 'WA', zone_id: three.id
 State.create name: 'West Virginia',  abbr: 'WV', zone_id: one.id
 State.create name: 'Wisconsin',      abbr: 'WI', zone_id: two.id
 State.create name: 'Wyoming',        abbr: 'WY', zone_id: three.id
-
-

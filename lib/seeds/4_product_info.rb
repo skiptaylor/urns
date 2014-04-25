@@ -101,7 +101,7 @@ material3 = Material.create(
 
 material4 = Material.create(
   :material_type  => 'Box Elder',
-  :description    => '	This urn is made of **Box Elder** wood.  Actually a Maple species, it got its name from the wood being similar to boxwood and the leaf to that of the elder.   The oldest flutes from the Americas were made of Box Elder.  Native Americans used it to make sugar for candies, charcoal for ceremonial painting, tubes for bellows and incense for spiritual medicines.  Usually a small, fast-growing and fairly short-lived tree, it grows from 30 to 80 feet tall.  Its natural range is from the Atlantic Coast to the Rocky Mountains.  Known for its red stain, it is prized for various decorative applications, such as turned items.',
+  :description    => 'This urn is made of **Box Elder** wood.  Actually a Maple species, it got its name from the wood being similar to boxwood and the leaf to that of the elder.   The oldest flutes from the Americas were made of Box Elder.  Native Americans used it to make sugar for candies, charcoal for ceremonial painting, tubes for bellows and incense for spiritual medicines.  Usually a small, fast-growing and fairly short-lived tree, it grows from 30 to 80 feet tall.  Its natural range is from the Atlantic Coast to the Rocky Mountains.  Known for its red stain, it is prized for various decorative applications, such as turned items.',
   :woodtype_id    => 1
 )
 

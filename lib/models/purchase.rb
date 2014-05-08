@@ -48,11 +48,17 @@ class Purchase < Sequel::Model
                zone_id: self.zone).first.amount
   end
 
-  def zone
-    if self.shipping_state != 'AAA'
-      self.shipping_state.zone_id
+  def zone    
+    if self.shipping_state == 'AAA'
+      nil
     else
-      self.billing_state.zone_id
+    	if self.shipping_state
+    	  self.shipping_state.zone_id
+    	elsif self.billing_state
+    	  self.billing_state.zone_id
+    	else
+    		nil
+    	end
     end
   end
 

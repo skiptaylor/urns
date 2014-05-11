@@ -557,3 +557,26 @@ a.under-link:hover	{
 	color: black;
 	border-bottom: 1px solid black;
 }
+
+.simple-select-wrapper {
+	display: inline-block;
+	position: relative;
+	// min-width: 500px;
+}
+
+.simple-select { display: none; }
+
+.simple-select-link {}
+.simple-select-link:hover {}
+
+.simple-select-list {
+	display: none;
+	list-style-type: none;
+	padding: 0;
+	position: absolute;
+}
+
+.simple-select-list li {}
+.simple-select-list li:hover {}
+
+.simple-select-list li.selected { font-weight: bold; }

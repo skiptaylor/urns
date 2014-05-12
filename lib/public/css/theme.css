@@ -561,7 +561,7 @@ a.under-link:hover	{
 .simple-select-wrapper {
 	display: inline-block;
 	position: relative;
-	// min-width: 500px;
+	min-width: 100px;
 }
 
 .simple-select { display: none; }

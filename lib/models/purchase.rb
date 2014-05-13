@@ -49,7 +49,7 @@ class Purchase < Sequel::Model
   end
 
   def zone    
-    if self.shipping_state == 'AAA'
+    if self.shipping_state_id == '52'
       nil
     else
     	if self.shipping_state

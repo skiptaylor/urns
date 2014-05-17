@@ -865,7 +865,8 @@ Added back 6-10-13 ACS
 298,2999070,"Black Walnut","Ebonized Oak","Signature Series","",8.75,5.5,70,"t","f",390,0,"2009-09-16 21:25:41","2010-12-23 17:01:00","2999070.jpg","image/pjpeg",285363,"2009-09-16 21:25:41"
 299,3000040,"Box Elder","Ebonized Oak","","",9,4.5,40,"t","f",360,0,"2009-09-16 21:26:46","2010-03-15 20:24:04","3000040.jpg","image/pjpeg",306357,"2009-09-16 21:26:46"
 300,3001035,"Box Elder","Ebonized Oak","Signature Series","",8.5,4.25,35,"t","f",360,0,"2009-09-16 21:27:37","2011-10-19 17:16:57","3001035.jpg","image/pjpeg",313850,"2009-09-16 21:27:37"
-301,3002070,"Box Elder","Ebonized Oak","Signature Series","AI:??;Shape#1;Wood:BE;NoBrass [ac].",9.25,5.25,70,"t","f",390,1,"2009-09-16 21:28:20","2014-03-13 17:10:31","3002070.jpg","image/pjpeg",312019,"2009-09-16 21:29:20"
+301,"3002070-S1BE","Box Elder","Ebonized Oak","Signature Series","AI:??;Shape#1;Wood:BE;NoBrass [ac].
+04/22/14 Sold: Retail-Cloud Conrad (referral from PW&W); Inv#3388 [ac].",9.25,5.25,70,"t","f",390,0,"2009-09-16 21:28:20","2014-04-22 17:59:13","3002070.jpg","image/pjpeg",312019,"2009-09-16 21:29:20"
 302,3003070,"Black Walnut","Ebonized Oak","","",10.5,5,70,"t","f",390,0,"2009-09-16 21:30:20","2009-12-22 21:41:39","3003070.jpg","image/pjpeg",312622,"2009-09-16 21:30:20"
 303,3004065,"Black Walnut","Ebonized Oak","Signature Series","",6.5,4.75,65,"t","f",390,0,"2009-09-16 21:32:10","2011-10-19 17:17:21","3004065.jpg","image/pjpeg",55384,"2011-07-08 19:45:51"
 304,3005030,"Black Walnut","Ebonized Oak","","",7.75,5.5,30,"t","f",300,0,"2009-09-16 21:33:19","2009-12-17 14:16:38","3005030.jpg","image/pjpeg",267744,"2009-09-16 21:33:19"
@@ -1213,8 +1214,9 @@ SOLD 07/31/12 Memorial Gallery (for Denise Menke) [ac].",8.25,5.5,60,"t","f",360
 03/20/13 Returned from Blount & Curry; needs new photo [ac].
 05/13/13 New top & height; Added back to web [ac]",8.25,4.75,55,"t","f",360,1,"2010-09-23 18:58:35","2013-05-13 16:03:57","3339055s1.jpg","image/jpeg",34095,"2013-05-13 16:03:57"
 576,3318080,"Box Elder","Ebonized Oak","Signature Series","",7.25,5.5,80,"t","f",390,0,"2010-09-23 19:02:11","2011-05-04 15:04:58","3318080.jpg","image/pjpeg",86988,"2010-09-23 19:02:09"
-577,"3264060-R4BE-130723","Curly Box Elder","Ebonized Oak","Collector's Edition","07/23/13 AI:CM;Shape#4;Wood:BE;No Brass [ac]
-07/23/13: Removed from website; needs repairs per Amy [ac].",6.25,4.75,60,"t","f",480,-1,"2010-09-23 19:06:52","2013-11-05 14:00:31","3264060.jpg","image/pjpeg",85642,"2010-09-23 19:06:52"
+577,"3264060-R4BE-130723","Curly Box Elder","Walnut","Collector's Edition","07/23/13 AI:CM;Shape#4;Wood:BE;No Brass [ac]
+07/23/13: Removed from website; needs repairs per Amy [ac].
+03/27/14 Added back to web [ac]",6.25,4.75,60,"t","f",480,-1,"2010-09-23 19:06:52","2014-03-27 17:27:49","3264060.jpg","image/pjpeg",85642,"2010-09-23 19:06:52"
 578,3159040,"Spalted Sweet Gum","Ebonized Oak","Signature Series","",8.25,4,40,"t","f",360,0,"2010-09-23 19:43:58","2011-05-18 20:22:49","3159040.jpg","image/pjpeg",95162,"2010-09-23 19:43:58"
 579,3331045,"Box Elder","Ebonized Cherry","Signature Series","06/21/13 Returned from Cannon FH as part of display refresher; needs refinishing [ac].
 06/21/13 AI:CM;Shape#4;Wood:BE;NoBrass [ac].
@@ -1232,10 +1234,10 @@ SOLD 07/31/12 Memorial Gallery (for Denise Menke) [ac].",8.25,5.5,60,"t","f",360
 585,3389230,"Sycamore","Ebonized Oak","Signature Series","",9,7.5,230,"t","f",900,0,"2010-09-25 21:10:12","2011-04-28 01:59:56","3389230.jpg","image/pjpeg",96806,"2010-09-25 21:10:12"
 586,3390235,"Box Elder","Ebonized Oak","Collector's Edition","11/17/11: Took off web for repairs - needs re-sanding & re-finishing per Amy [ac].",12,7.5,235,"t","f",1200,0,"2010-09-25 21:12:24","2011-11-17 16:39:02","3390235.jpg","image/pjpeg",104414,"2010-09-25 21:12:24"
 587,3391250,"Pecan","Ebonized Oak","Signature Series","",10.5,6.75,250,"t","f",900,0,"2010-09-25 21:28:38","2010-10-19 18:48:15","3391250.jpg","image/pjpeg",105532,"2010-09-25 21:28:38"
-588,"3392260-S1SY","Sycamore","Ebonized Oak","Signature Series","01/23/13 AI:CM; Shape#1; Brass [ac].
+588,"3392260-S1SY-BR","Sycamore","Ebonized Oak","Signature Series","01/23/13 AI:CM; Shape#1; Brass [ac].
 01/24/13 Removed from Website, but available [ac].
 07/01/13 Added to website [ac].
-12/11/13 Sold: Bluebonnet Hills; Inv#3306 [ac].",10.75,7.5,260,"t","f",900,0,"2010-09-25 21:33:01","2013-12-11 19:21:14","3392260.jpg","image/jpeg",44083,"2013-06-17 15:26:22"
+12/11/13 Sold: Bluebonnet Hills; Inv#3306 [ac].",10.75,7.5,260,"t","f",900,0,"2010-09-25 21:33:01","2014-03-25 20:21:46","3392260.jpg","image/jpeg",44083,"2013-06-17 15:26:22"
 589,"3393250-X","Box Elder","Ebonized Oak","Signature Series","01/23/13 Identified as SHAPE #2 [ac].
 01/24/13 Removed from Website, but available [ac].
 04/30/13 Per AMS, on Repair Table [ac].
@@ -1341,7 +1343,7 @@ Returned 08/15/12 from Hodges,needs work [ac].",8.75,7.75,40,"t","t",900,0,"2010
 659,3419230,"Sycamore","Ebonized Oak","Collectors","",10.5,7.5,230,"t","f",1200,0,"2010-11-29 21:26:01","2012-08-17 17:57:44","3419230.jpg","image/pjpeg",81115,"2011-02-05 18:21:08"
 660,3421045,"Cherry","Ebonized Oak","Signature","",4,5.75,45,"t","f",360,0,"2010-11-29 21:28:23","2011-01-31 22:29:42","3421045.jpg","image/pjpeg",67647,"2010-11-29 21:28:22"
 661,3422040,"Cherry","Ebonized Oak","Signature","",5.75,5.5,40,"t","f",300,0,"2010-11-29 21:30:12","2011-01-27 13:55:12","3422040.jpg","image/pjpeg",70556,"2010-11-29 21:30:11"
-662,3408255,"Sycamore","Ebonized Oak","Signature Series","01/23/13 AI:??;Shape#4;Wood:SY;Brass [ac].",12.75,7.25,255,"t","f",900,1,"2010-11-30 14:38:56","2014-01-23 14:59:44","2408255.jpg","image/pjpeg",86068,"2010-11-30 14:38:56"
+662,3408255,"Sycamore","Ebonized Oak","Signature Series","01/23/13 AI:??;Shape#4;Wood:SY;Brass [ac].",13.25,7.25,255,"t","f",900,1,"2010-11-30 14:38:56","2014-03-27 20:50:15","3408255_Sycamore_S1.jpg","image/jpeg",81200,"2014-03-27 20:50:15"
 663,3423045,"Cherry","Ebonized Oak","Signature","",7,4,45,"t","f",300,0,"2010-11-30 14:45:09","2011-04-28 02:02:47","3423045.jpg","image/pjpeg",72040,"2010-11-30 14:45:09"
 664,3424020,"Box Elder","Ebonized Oak","Signature","",6.5,3.5,20,"t","f",300,0,"2010-11-30 14:47:46","2011-04-04 17:22:36","IMG_3359.jpg","image/pjpeg",86410,"2010-11-30 14:47:46"
 665,3425020,"Box Elder","Ebonized Oak","Signature","",4,4.5,20,"t","f",300,0,"2010-11-30 14:50:49","2010-12-23 20:49:25","3425020.jpg","image/pjpeg",75804,"2010-11-30 14:50:49"
@@ -1365,11 +1367,11 @@ Returned 08/15/12 from Hodges,needs work [ac].",8.75,7.75,40,"t","t",900,0,"2010
 682,3447035,"Box Elder","Ebonized Oak","Signature Series","",8.25,3.75,35,"t","f",360,1,"2010-11-30 16:10:01","2011-11-23 14:39:50","3447035.jpg","image/pjpeg",87290,"2010-11-30 16:10:01"
 683,3448030,"Box Elder","Ebonized Oak","Signature","",7.5,4,30,"t","f",300,0,"2010-11-30 16:11:46","2011-02-28 18:46:44","3448030.jpg","image/pjpeg",83738,"2010-11-30 16:11:46"
 684,3449035,"Box Elder","Ebonized Oak","Signature Series","",7.75,4,35,"t","f",360,1,"2010-11-30 16:13:42","2011-11-23 14:39:02","3449035.jpg","image/pjpeg",81425,"2010-11-30 16:13:42"
-685,"3450205-S1MA","Ambrosia Maple","Ebonized Oak","Collector's Edition","01/23/13 AI:??;Shape#1;Wood:MA;Brass [ac].
+685,"3450205-S1MA-BR","Ambrosia Maple","Ebonized Oak","Collector's Edition","01/23/13 AI:??;Shape#1;Wood:MA;Brass [ac].
 01/24/13 Removed from Website, but available [ac].
 03/22/13 Updated photo, brass added [ac].
 11/08/13 Added to website [ac].
-02/10/14 Sold: Turrentine-Jackson-Morrow; Inv#3335 [ac]",12,7.75,205,"t","f",1200,0,"2010-11-30 16:16:00","2014-02-10 22:18:17","3450205s1.jpg","image/jpeg",46829,"2013-03-22 19:20:36"
+02/10/14 Sold: Turrentine-Jackson-Morrow; Inv#3335 [ac]",12,7.75,205,"t","f",1200,0,"2010-11-30 16:16:00","2014-03-25 20:10:33","3450205s1.jpg","image/jpeg",46829,"2013-03-22 19:20:36"
 686,3451035,"Pecan","Ebonized Oak","Signature","",4.5,5,35,"t","f",300,0,"2010-11-30 16:17:52","2011-02-07 20:29:41","3451035.jpg","image/pjpeg",71886,"2010-11-30 16:17:52"
 687,3452035,"Camphor","Ebonized Oak","Signature","",5,5,35,"t","f",300,0,"2010-11-30 16:19:19","2011-02-10 20:08:00","3452035.jpg","image/pjpeg",78544,"2010-11-30 16:19:19"
 688,3453040,"Box Elder ","Ebonized Oak","Signature","",7.5,5,40,"t","f",300,0,"2010-11-30 16:20:58","2010-12-20 15:54:15","3453040.jpg","image/pjpeg",83530,"2010-11-30 16:20:58"
@@ -1453,8 +1455,9 @@ Sold 09/04/12 Memorial Gallery [ac].",4.25,4.25,35,"t","f",360,0,"2011-02-14 22:
 Client Maranda Pet Rocco ",6.5,4,25,"t","f",300,0,"2011-05-04 18:52:29","2012-03-23 16:41:06","3501025.jpg","image/pjpeg",36302,"2011-05-04 18:52:29"
 746,3502030,"Spalted Maple","Ebonized Oak","Collector's Edition","",6.75,4.5,30,"t","f",400,0,"2011-05-04 18:54:49","2011-07-06 18:22:15","3502030.jpg","image/pjpeg",36467,"2011-05-04 18:54:49"
 747,3503040,"Tulip Poplar","Ebonized Oak","Signature Series","Sold 04/26/12 Paws, Whiskers & Wags for customer sale [ac].",7,4.75,40,"t","f",360,0,"2011-05-04 18:56:35","2012-04-26 18:16:34","3503040.jpg","image/pjpeg",35552,"2011-05-04 18:56:35"
-748,3508195,"Spalted Maple","Walnut","Collector's Edition","01/23/13 AI:??; Shape#3; No Brass [ac].
-",11.5,6.75,195,"t","f",1200,1,"2011-05-04 19:08:55","2013-05-15 14:00:56","3508195.jpg","image/jpeg",45439,"2013-01-24 18:25:16"
+748,"3508195-S3MA-BR","Spalted Maple","Walnut","Collector's Edition","01/23/13 AI:??; Shape#3; No Brass [ac].
+04/17/14 Added brass for sale [ac].
+4/18/14 Sold: Retail-Adrienna Kalmes (w-Meadow Hills Corp) at wholesale pricing; Inv#3386 [ac].",11.5,6.75,195,"t","f",1200,0,"2011-05-04 19:08:55","2014-04-18 18:20:42","3508195.jpg","image/jpeg",45439,"2013-01-24 18:25:16"
 749,3509200,"Cherry","Ebonized Oak","Signature Series","",9.5,7.5,200,"t","f",900,0,"2011-05-04 19:15:16","2011-05-10 18:08:27","3509200.jpg","image/pjpeg",37533,"2011-05-04 19:15:16"
 750,"3510175-R3BU-130723","Butternut","Ebonized Oak","Signature Series","07/23/13 AI:??;Shape#3;Wood:BU;No Brass [ac].
 07/23/13 Removed from web; needs repair [acs].",12.25,6.25,175,"t","f",450,-1,"2011-05-04 19:17:06","2013-11-05 14:07:33","3510175.jpg","image/pjpeg",35017,"2011-05-04 19:17:06"
@@ -1472,13 +1475,13 @@ Client Maranda Pet Rocco ",6.5,4,25,"t","f",300,0,"2011-05-04 18:52:29","2012-03
 757,6054195,"Spalted Ambrosia Maple","Walnut and Ebonized Oak","Collector's Edition","",10.5,8.5,195,"t","f",1200,0,"2011-05-04 19:34:32","2011-05-09 16:11:23","6054195.jpg","image/pjpeg",51640,"2011-05-04 19:34:32"
 758,6058250,"Pecan","Ebonzied Oak","Collector's Edition","",13.25,7.25,250,"t","f",1200,0,"2011-05-04 19:36:06","2011-05-18 20:22:02","6058250.jpg","image/pjpeg",41390,"2011-05-04 19:36:06"
 759,6059210,"Maple Burl","Ebony","Fine Art","",13.25,10.5,210,"t","t",3600,0,"2011-05-04 19:41:14","2011-05-09 20:01:49","6059210.jpg","image/pjpeg",47825,"2011-05-04 19:41:14"
-760,"6068180-S5MA","Spalted Maple","Ebonized Oak","Collector's Edition","04/12/12 Sold: Montlawn [ac].
+760,"6068180-S5MA-BR","Spalted Maple","Ebonized Oak","Collector's Edition","04/12/12 Sold: Montlawn [ac].
 06/26/12 Credit Montlawn; CM#2963 (#6062180 shipped instead & Scott agreed to keep) [ac].
 01/23/13 AI:??;Shape#5;Wood:MA;Brass [ac].
 01/24/13 Removed from Website, but available [ac].
 03/22/13 Updated photo, added brass [ac].
 11/08/13 Added to website [ac].
-02/12/14 Sold: Turrentine-Jackson-Morrow; for a family; Inv#3336 [ac].",12.5,7.75,180,"t","f",1200,0,"2011-05-04 19:43:06","2014-02-14 18:06:05","6068180s1.jpg","image/jpeg",49176,"2013-03-22 19:17:23"
+02/12/14 Sold: Turrentine-Jackson-Morrow; for a family; Inv#3336 [ac].",12.5,7.75,180,"t","f",1200,0,"2011-05-04 19:43:06","2014-03-25 20:10:10","6068180s1.jpg","image/jpeg",49176,"2013-03-22 19:17:23"
 761,6074230,"Spalted Maple","Ebonized Oak","Signature Series","",13,7.5,230,"t","f",900,0,"2011-05-04 19:44:37","2011-05-11 14:48:05","6074230.jpg","image/pjpeg",37770,"2011-05-04 19:44:37"
 762,6061230,"Black Walnut","Ebonized Oak","Signature Series","",10.25,8,230,"t","f",900,0,"2011-05-04 19:46:12","2011-05-17 15:06:52","6061230.jpg","image/pjpeg",41106,"2011-05-04 19:46:12"
 763,6062180,"Ambrosia Maple","Ebonized Oak","Collector's Edition","Sold 06/26/12 Montlawn #2963 (Shipped in error on 04/16/12 instead of #6068180, and Scott agreed to keep in lieu of)[ac].",11.75,6,180,"t","f",1200,0,"2011-05-04 19:48:09","2012-06-26 16:25:02","6062180.jpg","image/pjpeg",36727,"2011-05-04 19:48:09"
@@ -1515,11 +1518,12 @@ Client Maranda Pet Rocco ",6.5,4,25,"t","f",300,0,"2011-05-04 18:52:29","2012-03
 788,6112155,"Silver Maple","Ebonized Oak","Signature Series","",10,7.25,155,"t","f",450,0,"2011-06-15 15:59:44","2011-07-05 18:04:17","6112155.jpg","image/pjpeg",64317,"2011-06-15 15:59:44"
 789,"6113250-A5BE-NB","Box Elder","Ebonized Oak","Collector's Edition","01/23/13 AI:??; Shape#5; Waiting for Brass [ac].
 01/24/13 Removed from Website, but available [ac].",13,8,250,"t","f",1200,-1,"2011-06-15 16:00:31","2013-11-05 13:50:18","6113250.jpg","image/pjpeg",71852,"2011-06-15 16:00:31"
-790,6114235,"Spalted Maple","Ebonized Oak","Signature Series","01/23/13 AI:CM;Shape#1;Wood:MA;Brass [ac].
+790,"6114235-S1MA-BR","Spalted Maple","Ebonized Oak","Signature Series","01/23/13 AI:CM;Shape#1;Wood:MA;Brass [ac].
 01/24/13 Removed from Website, but available [ac].
 05/15/13 Top missing [ac].
 07/22/13 New flange,top w-brass,height,photo [ac].
-11/08/13 Added to website [ac].",10,7.75,235,"t","f",900,1,"2011-06-15 16:03:14","2013-11-08 17:35:24","6114235.jpg","image/jpeg",48258,"2013-07-22 20:39:59"
+11/08/13 Added to website [ac]
+05/12/14 Sold: Stauffer F.H. ACS",10,7.75,235,"t","f",900,0,"2011-06-15 16:03:14","2014-05-12 17:33:40","6114235.jpg","image/jpeg",48258,"2013-07-22 20:39:59"
 791,"6115240-R1MA-??","Ambrosia Maple","Ebonized Oak","Collector's Edition","HOLD: 11/07/11 Left with Southcare - Alpharetta for Mgt. Meeting review there on 11/08/11 [AC]
 05/11/12 Added back to inventory; picked up from Southcare [ac].
 01/23/13 Identified as SHAPE #1, Brass [ac].
@@ -1586,7 +1590,10 @@ Client Maranda Pet Rocco ",6.5,4,25,"t","f",300,0,"2011-05-04 18:52:29","2012-03
 04/30/13 Sold: Paws, Whiskers & Wags INV#3177 [ac].",6.5,4.5,60,"t","f",360,0,"2011-07-27 14:09:04","2013-07-02 15:50:20","6193060.jpg","image/pjpeg",23526,"2011-07-27 14:09:04"
 832,6192025,"Sycamore","Ebonized Oak","","SOLD 12/21/11 #2845 Neptune Society of Marin County @ $150.00 net (for replacement)",5,4,25,"t","f",300,0,"2011-07-27 14:11:01","2011-12-21 18:39:38","6192025.jpg","image/pjpeg",20993,"2011-07-27 14:11:01"
 833,6194025,"Ambrosia Maple","Walnut","","",3.5,4.5,25,"t","f",400,0,"2011-07-27 14:13:03","2011-08-16 16:52:22","6194025.jpg","image/pjpeg",22889,"2011-07-27 14:13:03"
-834,6195065,"Mulberry","Walnut","Collectors Edition","",8.25,5.5,65,"t","f",520,1,"2011-07-27 14:26:09","2012-05-17 16:22:01","6195065.jpg","image/pjpeg",22778,"2011-07-27 14:26:09"
+834,"6195065-S5MU","Mulberry","Walnut","Collectors Edition","03/21/14 AI:HD;Shape#5;Wood:MU;NoBrass [ac]
+03/21/14 Hold: Retail-Bob Scherer; need to have Mary add custom Pyrography [ac].
+04/25/14 Mary returned with completed Pyrography; original list $480.00, new list $725; pay Mary $75.00 after AU is paid for sale [ac].
+04/29/14 Sold: Retail-Bob Scherer; Inv#3392 [ac]. ",5.75,5.5,65,"t","f",725,0,"2011-07-27 14:26:09","2014-04-30 15:59:48","6195065_w-Cowboy_Pyrography.JPG","image/jpeg",89494,"2014-04-30 14:43:29"
 835,6196045,"Sweet Gum","Ebonized Oak","Collectors Edition","",8,4.5,45,"t","f",400,0,"2011-07-27 14:27:47","2011-08-09 16:06:27","6196045.jpg","image/pjpeg",22373,"2011-07-27 14:27:47"
 836,6197035,"Tulip Poplar","Ebonized Oak","Signature Series","Sold 01/26/12 Bearden FH for $180.00 as part of ISO (changed from CKS @ $400.00 list to SKM @ $360.00 as part of ISO commitment) [ac].",5.5,5.5,35,"t","f",360,0,"2011-07-27 14:29:16","2012-01-26 22:09:44","6197035.jpg","image/pjpeg",21711,"2011-07-27 14:29:16"
 837,"6198050-S1BE","Box Elder","Walnut","Signature Series","Sold 06/01/12 Paws, Whiskers & Wags [ac].
@@ -1650,15 +1657,17 @@ INV# 2803 10/31/11 @ $195.00 net
 08/02/13 Removed from Website; Clark added to sales kit [ac].
 11/08/13 Added to website [ac].
 11/27/13 Sold: Paws Memorial-TX; Inv#3304 [ac].
-12/18/13 Returned from Paws Memorial-TX; CM#3308 [ac].",9.75,7,210,"t","f",1200,1,"2011-07-27 18:33:51","2013-12-18 17:44:12","6210210.jpg","image/jpeg",38088,"2013-06-17 19:24:03"
+12/18/13 Returned from Paws Memorial-TX;CM#3308 [ac].
+04/22/14 Sold: Memorial Gallery (PO#32711);Ship to Lou Bondurant; Inv#3390 [ac].
+05/05/14 Returned from Lou Bondurant for a different urn (no issues with urn, just a family preference); Credited Memorial Gallery; Inv#3395 [ac].",9.75,7,210,"t","f",1200,1,"2011-07-27 18:33:51","2014-05-05 17:17:17","6210210.jpg","image/jpeg",38088,"2013-06-17 19:24:03"
 870,6211200,"Ambrosia Maple","Ebonized Oak","Fine Art","This Urn features decorative, tri-colored apoxy with gold mica flecs
 SOLD 10/31/11 INV# 2802 Coggins FH @ $600.00 net",11.75,6.75,200,"t","t",1500,0,"2011-07-27 18:37:47","2011-11-02 17:52:35","6211200.jpg","image/pjpeg",28250,"2011-07-27 18:37:47"
-871,"8229215-S5MA","Spalted Maple","Ebonized Oak","Collectors Edition","Returned from Blount & Curry, needs work ? [ac].
+871,"8229215-S5MA-BR","Spalted Maple","Ebonized Oak","Collectors Edition","Returned from Blount & Curry, needs work ? [ac].
 04/30/13 AI:??;Shape#5;Wood:MA;Brass [ac].
 05/15/13 Needs refinish, photo, new height [ac].
 07/18/13 New finish, top, height, photo & Serial Number (was 6212215; ready for website [ac].
 11/08/13 Added to website [ac].
-01/13/14 Sold: Turrentine-Jackson-Morrow for display replenishment; Inv#33xx [ac].",12.5,6.75,215,"t","f",1200,0,"2011-07-27 18:40:48","2014-01-13 20:51:55","8229215.jpg","image/jpeg",53799,"2013-07-19 13:23:03"
+01/13/14 Sold: Turrentine-Jackson-Morrow for display replenishment; Inv#3320 [ac].",12.5,6.75,215,"t","f",1200,0,"2011-07-27 18:40:48","2014-03-25 20:16:56","8229215.jpg","image/jpeg",53799,"2013-07-19 13:23:03"
 872,6213240,"Cherry","Walnut","Collectors Edition","Sold 04/12/12 Montlawn [ac].",12.8,7.75,240,"t","f",1200,0,"2011-07-27 18:43:08","2012-04-12 14:59:32","6213240.jpg","image/pjpeg",24140,"2011-07-27 18:43:08"
 873,"6162260-A5BE-NB","Box Elder","Ebonized Oak","Signature Series","01/23/13 AI:??; Shape#5; Waiting for Brass [ac]. 
 01/24/13 Removed from Website, but available [ac].
@@ -1685,10 +1694,10 @@ Sold to Memorial Gallery 1-31-12 ACS",13,7.5,240,"t","f",900,0,"2011-07-27 19:25
 05/15/13 AI:??; Shape#2; Waiting for Brass [ac].
 05/15/13 Top & Flange missing [ac].",13,7,230,"t","f",900,-1,"2011-07-27 19:28:36","2013-11-07 16:44:29","6171230.jpg","image/pjpeg",23940,"2011-07-27 19:28:36"
 883,6172265,"Sycamore","Ebonized Oak","Signature Series","",13.25,7.75,265,"t","f",900,0,"2011-07-27 19:30:35","2011-09-26 21:25:51","6172265.jpg","image/pjpeg",23306,"2011-07-27 19:30:35"
-884,"6173270-S4MA","Ambrosia Maple Burl","Ebonized Oak","Collectors Edition","01/23/13 AI:??;Shape#4;Wood:MA;Brass [ac]. 
+884,"6173270-S4MA-BR","Ambrosia Maple Burl","Ebonized Oak","Collectors Edition","01/23/13 AI:??;Shape#4;Wood:MA;Brass [ac]. 
 01/24/13 Removed from Website, but available [ac].
 11/08/13 Added to website [ac].
-02/07/14 Sold: Retail: Tier & Joan Humphreys; Inv#3334 [ACS]",10.5,7.75,270,"t","f",1200,0,"2011-07-28 17:35:07","2014-02-07 19:26:59","6173270.jpg","image/pjpeg",24853,"2011-07-28 17:35:07"
+02/07/14 Sold: Retail: Tier & Joan Humphreys; Inv#3334 [ACS]",10.5,7.75,270,"t","f",1200,0,"2011-07-28 17:35:07","2014-03-25 20:11:23","6173270.jpg","image/pjpeg",24853,"2011-07-28 17:35:07"
 885,6174220,"Box Elder","Ebonized Oak","Signature Series","01/23/13 AI:??;Shape#4;Wood:BE;Brass [ac]. 
 01/24/13 Removed from Website, but available [ac].
 11/08/13 Added to website [ac].
@@ -1964,8 +1973,10 @@ SOLD: 11/30/11 #2833 Restland of Dallas for stock replenishment [ac].",13,7.25,2
 1021,6368020,"Tulip Poplar","Ebonized Oak","Signature Series","ADDED: 12/06/11 [ac]. Sold to Central Carolina Pet 12-29-11 ACS",4.5,4.25,20,"t","f",300,0,"2011-12-06 20:44:00","2011-12-29 17:11:49","6368020.jpg","image/jpeg",39975,"2011-12-06 20:44:00"
 1022,6367030,"Spalted Maple","Ebonized Oak","Signature Series","ADDED: 12/06/11 [ac].Sold to Heaven's Pets-12-22-11-ACS",8.25,3.75,30,"t","f",300,0,"2011-12-06 20:48:41","2011-12-22 18:06:25","6367030.jpg","image/jpeg",38232,"2011-12-06 20:48:41"
 1023,6369040,"Tulip Poplar","Ebonized Oak","Signature Series","ADDED: 12/06/11 [ac]. Sold to Deceased Pet Care 1-9-12 ACS",7.5,4.75,40,"t","f",360,0,"2011-12-06 20:52:45","2012-01-09 16:36:16","6369040.jpg","image/jpeg",37604,"2011-12-06 20:52:45"
-1024,"6364055-S7CH","Cherry","Ebonized Oak","Collector's Edition","ADDED: 12/07/11 [ac].
-02/03/14 Sold: Retail - Christina Wong; Inv#3332 [ac].",9.25,5.25,55,"t","f",480,0,"2011-12-07 18:01:15","2014-02-04 12:55:10","6364055.jpg","image/jpeg",57593,"2011-12-07 18:01:15"
+1024,"6364055-S7CH","Cherry","Ebonized Oak","Collector's Edition","12/07/11 AI:??;Shape#7;Wood:CH;NoBrass [ac].
+02/03/14 Sold:Retail-Christina Wong;Inv#3332 [ac].
+02/17/14 Credit:Retail-Christina Wong;Inv#3338[ac].
+05/06/14 Sold: Paws,Whiskers & Wags; Inv#3397 [ac].",9.25,5.25,55,"t","f",480,0,"2011-12-07 18:01:15","2014-05-06 16:08:03","6364055_Cherry_S1.jpg","image/jpeg",72947,"2014-03-26 12:29:51"
 1025,6347050,"Spalted Pecan","Ebonized Oak","Signature Series","ADDED: 12/07/11 [ac].
 Sold 06/01/12 Paws, Whiskers & Wags [ac].",6,4.5,50,"t","f",360,0,"2011-12-07 18:12:14","2012-06-01 20:30:39","6347050.jpg","image/jpeg",48281,"2011-12-07 18:12:14"
 1026,6371035,"Spalted Oak","Ebonized Oak","Collector's Edition","ADDED: 12/07/11 [ac].
@@ -2092,10 +2103,11 @@ Sold 09/19/12 Southcare Inv#3032",7,4.5,20,"t","f",400,0,"2012-04-05 14:47:32","
 Sold to Fairchild FH 4-10-12",7.25,4,30,"t","f",400,0,"2012-04-05 14:50:59","2012-04-10 20:49:42","6372030.JPG","image/jpeg",78302,"2012-04-05 14:50:59"
 1075,7112040,"Black Jack Oak","Ebonized Oak","Signature Series","Added 4-5-12 ACS
 Sold 03/04/13 Whitley Garner STEI 10331 for family [ac].",9.25,4.5,40,"t","f",360,0,"2012-04-05 14:55:38","2013-03-04 20:21:02","7112040.JPG","image/jpeg",80866,"2012-04-05 14:55:38"
-1076,7116035,"Black Jack Oak","Ebonized Oak","Collector's Edition","Added 4-5-12 ACS
+1076,"7116035-S1OA","Black Jack Oak","Ebonized Oak","Collector's Edition","Added 4-5-12 ACS
 04/30/13 Per ACS, on Repair Table, remove from web [ac].
 06/10/13 AI:??;Shape#1;Wood:OA;No Brass [ac].
-06/10/13 Added back to web [ACS]",8.25,4,35,"t","f",480,1,"2012-04-05 14:58:53","2013-08-07 15:52:20","7116035.JPG","image/jpeg",38836,"2013-06-10 15:07:00"
+06/10/13 Added back to web [ACS]
+04/01/14 Sold: Retail-Lindajane Moore; Inv#3374 [ac].",8.25,4,35,"t","f",480,0,"2012-04-05 14:58:53","2014-04-01 21:30:08","7116035.JPG","image/jpeg",38836,"2013-06-10 15:07:00"
 1077,7104030,"Spalted Maple","Ebonized Oak","Signature Series","Added 4-5-12 ACS
 Sold to Rose Mortuary 8-22-12",3.25,4.5,30,"t","f",300,0,"2012-04-05 15:01:50","2012-08-22 17:48:38","7104030.JPG","image/jpeg",80629,"2012-04-05 15:01:50"
 1078,7106050,"Spalted Maple","Walnut","Collector's Edition","Added 4-5-12 ACS
@@ -2250,13 +2262,14 @@ Sold 09/04/12 Dream Land Pet Memorial Center {for display) INV# 3021 [ac].",6.75
 Kay ----------   Houston TX",8.75,6.75,60,"t","t",800,0,"2012-05-18 15:25:33","2012-05-23 14:21:43","7265060.jpg","image/jpeg",53800,"2012-05-18 15:25:33"
 1133,7234050,"Box Elder","Ebonized Oak","Collector's Edition","Added 5-18-12 ACS
 Sold to Rose Mortuary 8-22-12",6.75,6.25,50,"t","f",480,0,"2012-05-18 15:28:03","2012-08-22 17:48:07","7234050.jpg","image/jpeg",42344,"2012-05-18 15:28:03"
-1134,7249035,"Box Elder","Ebonized Oak","Collector's Edition","Added 5-18-12 ACS",8.5,4.5,35,"t","f",480,1,"2012-05-18 15:30:21","2012-06-07 16:06:44","7249035.jpg","image/jpeg",72991,"2012-06-07 16:06:44"
+1134,"7249035-S1BE","Box Elder","Ebonized Oak","Collector's Edition","Added 5-18-12 ACS
+04/08/14 Sold: Hankins & Whittington for display; Inv#3377 [ac].",8.5,4.5,35,"t","f",480,0,"2012-05-18 15:30:21","2014-04-08 17:44:49","7249035newtop.jpg","image/jpeg",43914,"2014-04-08 17:44:49"
 1135,7275080,"Cedar","Ebonized Oak","Collector's Edition","Added 5-18-12 ACS
 Gave to Danny Tibbits 9-5-12",8.5,5.5,80,"t","f",520,0,"2012-05-18 15:32:35","2013-09-05 21:01:01","7275080.jpg","image/jpeg",40334,"2012-05-18 15:32:35"
 1136,7321020,"Spalted Maple","Walnut","Fine Art","Added 5-18-12 ACS Sold to D.W. Newcomer 1-15-13
 Inv. # 3114",6.25,4.75,20,"t","t",480,0,"2012-05-18 15:35:19","2013-01-15 16:02:47","7321020.jpg","image/jpeg",42314,"2012-05-18 15:35:19"
-1137,7270235,"Spalted Maple","Ebonized Oak","Collector's Edition","Added 5-18-12 ACS
-Sold to Rose Mortuary 8-22-12",12.25,8,235,"t","f",1200,0,"2012-05-18 15:42:09","2012-08-22 17:46:50","7270235.jpg","image/jpeg",48307,"2012-05-18 15:42:09"
+1137,"7270235-C1MA-120822","Spalted Maple","Ebonized Oak","Collector's Edition","Added 5-18-12 ACS
+Consigned to Rose Mortuary 8-22-12; Inv#3039 09/28/12 [ac].",12.25,8,235,"t","f",1200,-1,"2012-05-18 15:42:09","2014-03-25 19:37:06","7270235.jpg","image/jpeg",48307,"2012-05-18 15:42:09"
 1138,"7228045-SneBE","Box Elder","Ebonized Oak","Fine Art","Added 5-18-12
 Sold to Paws whiskers and Wags 4-23-13 ACS",8.75,5.25,45,"t","t",800,0,"2012-05-18 15:45:27","2014-02-05 20:01:48","7228045.jpg","image/jpeg",49504,"2012-05-18 15:45:27"
 1139,7225480,"Spalted Tulip Poplar","Ebonized Oak","Collector's Edition","Sold to Heritage Pres. Church for Tim Parr's Wife/Columbarium Niche. 12-19-12 ACS",11,10.5,450,"t","f",2200,0,"2012-06-12 13:12:04","2012-12-19 15:45:31","7225480.jpg","image/jpeg",80360,"2012-06-12 13:12:04"
@@ -2355,10 +2368,11 @@ Condigned 08/15/12 Hodges Funeral Home (with Seth Minso 239-597-3101) [ac].",18,
 08/14/13 Changed price from $4.2k to $3.4k [ac].",12.5,11.5,295,"t","t",3400,1,"2012-06-26 16:54:53","2013-08-14 20:32:41","7257295_W-_Steel_Rose.jpg","image/jpeg",51843,"2012-06-26 16:54:53"
 1175,7274420,"Ambrosia Maple Burl","Ebonized Oak","Collector's Edition","Added at ""0"" 6-25-12 ACS
 Sold 06/27/12 Iris Valdez-Corey (as a Signature Series @ $1,600.00) [ac].",11,9,420,"t","f",2200,0,"2012-06-26 16:58:06","2012-06-26 21:32:26","7274420.jpg","image/jpeg",87712,"2012-06-26 16:58:06"
-1176,7133230,"Spalted Pecan","Ebonized Oak","Collector's Edition","06/25/12 Added ACS
+1176,"7133230-S8PE-BR","Spalted Pecan","Ebonized Oak","Collector's Edition","06/25/12 Added ACS
 01/23/13 AI:??; Shape#8; Wood:PE; Brass [ac].
 05/15/13 Top missing [ac].
-07/18/13 New top, height, photo; added back to web [ac].",14,7.75,230,"t","f",1200,1,"2012-06-26 17:01:27","2013-07-19 12:48:21","7133230.jpg","image/jpeg",44848,"2013-07-19 12:48:21"
+07/18/13 New top, height, photo; added back to web [ac].
+04/08/14 Sold: Kerr Brothers; Inv# 3379 [ac].",14,7.75,230,"t","f",1200,0,"2012-06-26 17:01:27","2014-04-15 13:56:37","7133230.jpg","image/jpeg",44848,"2013-07-19 12:48:21"
 1177,1111200,"Test Order Purposes Only","None","Test","Added 07/17/12 to test on-line order process [ac].
 Successful Test 07/17/12 using order process from artisticwoodurns.com [ac].
 Successful Test 07/17/12 using order process from artisticpeturns.com [ac].",0,0,20,"t","f",0.01,0,"2012-07-17 13:54:03","2012-07-17 14:44:01","No_Photo_Available_.jpg","image/jpeg",15058,"2012-07-17 13:54:03"
@@ -2460,8 +2474,8 @@ Sold 09/04/12 Dream Land Pet Memorial Center (for display) INV# 3021 [ac].",8.25
 1216,7362025,"Sycamore w/ Raised Dog Paw","Ebonized Oak","Collector's Edition","Added at ""0"" 8-30-12 ACS
 AI:??;Shape#1;Wood:SY;NoBrass [ac].
 08/27/13 Added to web [ac].",8.25,4,25,"t","f",400,1,"2012-08-30 14:16:31","2013-08-27 15:10:45","7362025.jpg","image/jpeg",70124,"2012-08-30 14:16:31"
-1217,7297080,"Box Elder w/ Dog Paw Imprint","Ebonized Oak","Collector's Edition","Added at ""0"" 8-30-12 ACS
-04/16/13 Added to website [ac].",9,5.5,80,"t","f",520,1,"2012-08-30 14:23:08","2013-04-16 18:06:38","7297080.jpg","image/jpeg",36313,"2012-08-30 14:23:08"
+1217,7297080,"Box Elder w/ Dog Paw Imprint","Ebonized Oak","Collector's Edition","08/30/12 AI:CC;Shape#5;Wood:BE;NoBrass ACS
+04/16/13 Added to website [ac].",9.25,5.5,80,"t","f",520,1,"2012-08-30 14:23:08","2014-03-27 20:46:42","7297080_Box_Elder_S1.jpg","image/jpeg",76505,"2014-03-27 20:46:42"
 1218,7167205,"Pecan with Eagle & Flag Pyrography","Ebonized Oak","Fine Art","BRASS
 Added 9-5-12 ACS",10.25,6.75,205,"t","t",2300,1,"2012-09-05 16:57:40","2013-01-23 18:07:26","7167205_Both_Sides.jpg","image/jpeg",18873,"2012-09-05 16:57:40"
 1219,7434235,"Tulip Poplar","Ebonized Oak","Signature Series","Added 09/20/12 [ac].
@@ -2470,8 +2484,8 @@ Sold 09/21/12 Memorial Gallery Order 22782 for Joe Vaz; INV# 3035 09/26/12 [ac].
 Sold 08/24/12 Highland Memorial for display Inv#3017 [ac].",13.25,7.5,230,"t","f",900,0,"2012-09-20 19:29:00","2012-09-20 20:49:38","7400230.jpg","image/jpeg",40657,"2012-09-20 19:29:00"
 1221,7401225,"Box Elder","Ebonized Oak","Collector's Edition","Added 09/20/12 (completed 08/21/12) [ac].
 Sold 08/24/12 Rose Mortuary for display INV#3013; purchased with a finial top [ac].",11.5,7.25,225,"t","f",1200,0,"2012-09-20 19:31:04","2012-09-20 19:53:36","7401235.jpg","image/jpeg",43438,"2012-09-20 19:31:04"
-1222,7365120,"Red Oak Burl","Ebonized Oak","Fine Art","Added 09/20/12 (completed 08/21/12) [ac].
-Consigned 08/24/12 Rose Mortuary for display [ac].",9.5,8,120,"t","t",1000,0,"2012-09-20 20:02:58","2012-09-20 20:23:56","7365120.jpg","image/jpeg",62562,"2012-09-20 20:02:58"
+1222,"7365120-CneOA-120824","Red Oak Burl","Ebonized Oak","Fine Art","Added 09/20/12 (completed 08/21/12) [ac].
+Consigned 08/24/12 Rose Mortuary for display [ac].",9.5,8,120,"t","t",1000,-1,"2012-09-20 20:02:58","2014-03-25 19:32:52","7365120.jpg","image/jpeg",62562,"2012-09-20 20:02:58"
 1223,7259030,"Pecan","Ebonized Oak","Signature Series","Added 09/20/12 (completed 04/10/12) [ac].
 Sold 04/12/12 Central Carolina Pet Services INV#2922 [ac].","",4.25,30,"t","f",300,0,"2012-09-20 20:14:20","2012-09-20 20:14:20","7259030.jpg","image/jpeg",50352,"2012-09-20 20:14:20"
 1224,7354230,"Ambrosia Maple Burl","Ambrosia Maple Burl","Fine Art ","Added to web 09/27/12 [ac].
@@ -2484,8 +2498,9 @@ Sold 10/15/12 Faithful Friends - Raleigh #3048 (from the NFDA Expo)[ac].",8,5,45
 1227,"7397230-B","Cherry","Ebonized Oak","Signature Series","w-Brass Inserts
 Added 10/15/12 [ac].
 Sold 10/15/12 Downing & Lahey (from NFDA Expo)[ac].",11.75,7.25,230,"t","f",900,0,"2012-10-15 20:43:20","2013-11-08 16:42:28","7397230.jpg","image/jpeg",31893,"2012-10-15 20:43:20"
-1228,"7421110-CneMA-121012","Ambrosia Maple Burl","Ebonized Oak","Fine Art","10/17/12 Added ACS
-10/17/12 Invoiced as CONSIGNMENT to Dysart-Cofoid; Inv#3056 [ac]",9.75,7.25,110,"t","f",1000,-1,"2012-10-17 17:38:38","2013-11-07 16:50:53","7421110.jpg","image/jpeg",62378,"2012-10-17 17:38:38"
+1228,"7421110-SneMA","Ambrosia Maple Burl","Ebonized Oak","Fine Art","10/17/12 Added ACS
+10/17/12 Invoiced as CONSIGNMENT to Dysart-Cofoid; Inv#3056 [ac]
+03/25/14 Sold: Dysart-Cofoid; Inv#3369 [ac].",9.75,7.25,110,"t","f",1000,0,"2012-10-17 17:38:38","2014-03-25 19:25:50","7421110.jpg","image/jpeg",62378,"2012-10-17 17:38:38"
 1229,"7437320-B","Camphor","Ebonized Oak","Collector's Edition","w-Brass Inserts
 Added and Sold to Dysart-Cofoid 10-17-12 ACS",12.75,9.75,320,"t","f",1200,0,"2012-10-17 17:46:57","2013-11-08 16:43:26","7437320.jpg","image/jpeg",43307,"2012-10-17 17:46:57"
 1230,7322030,"Vermont Maple","Ebonized Oak","Collector's Edition","Added and sold to Dysart-Cofoid 10-17-12 ACS",8.25,4.75,30,"t","f",400,0,"2012-10-17 17:53:50","2014-02-10 22:45:26","7322030.jpg","image/jpeg",38306,"2012-10-17 17:53:50"
@@ -2499,13 +2514,13 @@ Added 10-22-12 ACS
 01/29/13 SOLD: Retail - Jacky Walker INV#3124 [ac].",11.5,8.5,265,"t","f",1200,0,"2012-10-22 16:39:39","2013-11-08 16:35:30","7433265.jpg","image/jpeg",38819,"2012-10-22 16:39:39"
 1235,7388035,"Cedar","Ebonized Oak","Signature Series","Added 10-22-12 ACS
 04/15/13 Sold: Heaven's Pets (took from ICCFA show) INV#3158 [ac].",8.5,4.25,35,"t","f",360,0,"2012-10-22 16:43:54","2013-04-16 17:18:14","7388035.jpg","image/jpeg",37376,"2012-10-22 16:43:54"
-1236,7375010,"Red Oak Burl","Ebonized Oak","Fine Art","Added @ 0QTY on 10-22-12 ACS
-Sold 10/25/12 Dream Land Pet Memorial Services on CONSIGNMENT Invoice# 3065 [ac].",6.25,4,10,"t","t",500,0,"2012-10-22 16:51:11","2012-10-26 19:03:27","7375010.jpg","image/jpeg",38973,"2012-10-22 16:51:11"
+1236,"7375010-CneOA-121025","Red Oak Burl","Ebonized Oak","Fine Art","Added @ 0QTY on 10-22-12 ACS
+Consigned 10/25/12 Dream Land Pet Memorial Services; Inv#3065 [ac].",6.25,4,10,"t","t",500,-1,"2012-10-22 16:51:11","2014-03-25 19:42:26","7375010.jpg","image/jpeg",38973,"2012-10-22 16:51:11"
 1237,"7436330-B","Magnolia","Ebonized Oak","Collector's Edition","w-Brass Inserts
 Added 10-22-12 ACS
 01/08/13 SOLD: El Camino-Encinitos INV#3108 [ac]",12.5,9.5,330,"t","f",1200,0,"2012-10-22 16:56:46","2013-11-08 16:43:57","7436330.jpg","image/jpeg",45743,"2012-10-22 16:56:45"
-1238,7406090,"Red Oak Burl","Ebonized Oak","Fine Art","Added 10-22-12 ACS
-Consigned 11/15/12 Whitley-Garner #3078 [ac].",9.5,7,90,"t","t",900,0,"2012-10-22 17:07:16","2012-11-15 14:08:08","7406090.jpg","image/jpeg",57757,"2012-10-22 17:07:16"
+1238,"7406090-CneOA-121115","Red Oak Burl","Ebonized Oak","Fine Art","Added 10-22-12 ACS
+Consigned 11/15/12 Whitley-Garner #3078 [ac].",9.5,7,90,"t","t",900,-1,"2012-10-22 17:07:16","2014-03-25 19:30:44","7406090.jpg","image/jpeg",57757,"2012-10-22 17:07:16"
 1240,7415040,"Red Oak Burl","Ebonized Oak","Fine Art","Added 10-22-12 ACS
 Sold 01/09/13 Vessel (Anne Noble) for ISO [ac].",9.25,5,40,"t","t",800,0,"2012-10-22 17:12:03","2013-01-09 21:25:29","7415040.jpg","image/jpeg",48265,"2012-10-22 17:12:03"
 1241,7381040,"Cherry Burl","Hand Carved Cherry","Fine Art","10/22/12 Added. AI:CC;Shape#NE;Wood:CH;Brass [ac].
@@ -2545,10 +2560,11 @@ Sold 12/10/12 Dream Land Pet (family came to shop to pick out) [ac].",8,7,70,"t"
 1256,"7390210-S6CA-BR","Camphor","Ebonized Oak","Collector's Edition","added 1-14-13 ACS BRASS
 01/23/13 Identified as SHAPE #6 [ac].
 01/30/13 Sold: Cremation Society of Illinois [ac].",11,8.25,210,"t","f",1200,0,"2013-01-14 20:41:26","2013-11-08 16:35:02","7390210.jpg","image/jpeg",42067,"2013-01-30 15:16:43"
-1257,"7416255-R4CH-131007-B","Cherry","Cherry","Collector's Edition","01/14/13 Added.AI:??;Shape#4;Wood:CH;Brass ACS
+1257,"7416255-CM4CH-140401","Cherry","Cherry","Collector's Edition","01/14/13 Added.AI:??;Shape#4;Wood:CH;Brass ACS
 08/14/13 Changed top,height,photo [ac].
 09/19/13 Removed from web; part of Clark's sales kit [ac].
-10/07/13 Added back to inventory; need to reglue flange [ac].",14,8.25,255,"t","f",1200,-1,"2013-01-14 20:48:30","2013-11-05 14:01:51","7416255.jpg","image/jpeg",38241,"2013-08-15 16:43:03"
+10/07/13 Added back to web;need to reglue flange [ac].
+04/01/14 Hold for ICCFA Display [ac].",14,8.25,255,"t","f",1200,-1,"2013-01-14 20:48:30","2014-04-02 15:15:03","7416255.jpg","image/jpeg",38241,"2013-08-15 16:43:03"
 1258,"7429270-S4CA-BR","Camphor","Ebonized Oak","Collector's Edition","Added 1-14-13 ACS Brass
 01/23/13 Identified as SHAPE #4 [ac].
 06/19/13 Sold: Mackey Mortuary for Display with LP top[ac].",12.75,8,270,"t","f",1200,0,"2013-01-14 20:53:01","2013-06-21 20:51:20","7429270.jpg","image/jpeg",44941,"2013-01-30 14:40:04"
@@ -2646,7 +2662,8 @@ Sold to Paws Whiskers and Wags 4-23-13 ACS",8,6,65,"t","f",480,0,"2013-02-28 19:
 06/25/13 Sold: Memorial Gallery order#27671 Inv#3208 [ac].",9,4.75,50,"t","f",480,0,"2013-03-14 20:53:52","2013-07-02 19:43:07","7329050s1.jpg","image/jpeg",45243,"2013-03-14 20:53:52"
 1295,7396030,"Sycamore","Ebonized Oak","Signature Series","03/14/13 Added to website, shape#9 [ac].
 03/25/13 Sold: Memorial Gallery Order#13402 Inv#3152 [ac].",6.75,5.5,30,"t","f",300,0,"2013-03-14 20:57:33","2013-03-25 19:31:21","7396030s1.jpg","image/jpeg",43437,"2013-03-14 20:57:33"
-1296,7323030,"Vermont Maple","Ebonized Oak","Collector's Edition","03/14/13 Added to website; shape#6 [ac].",7.25,4.75,30,"t","f",400,1,"2013-03-14 21:00:34","2013-03-14 21:00:34","7323030s1.jpg","image/jpeg",47947,"2013-03-14 21:00:34"
+1296,"7323030-S6MA","Vermont Maple","Ebonized Oak","Collector's Edition","03/14/13 Added to website; shape#6 [ac].
+04/14/14 Sold: Downing & Lahey; inv#3380 [ac].",7.25,4.75,30,"t","f",400,0,"2013-03-14 21:00:34","2014-04-15 13:50:28","7323030s1.jpg","image/jpeg",47947,"2013-03-14 21:00:34"
 1297,"7318025-S5BE","Box Elder","Ebonized Oak","Signature Series","03/14/13 Added to website; AI:??;Shape#5;Wood:BE;NoBrass [ac].
 08/27/13 Removed from web;part of Clark's sales kit [ac].
 08/30/13 Added back to web [ac].
@@ -2666,20 +2683,20 @@ Sold to Paws Whiskers and Wags 4-23-13 ACS",8,6,65,"t","f",480,0,"2013-02-28 19:
 08/14/13 Changed from $1.8k VE to $1.2k CE [ac].",9,8.75,235,"t","f",1200,1,"2013-04-04 19:23:25","2013-08-14 19:04:22","8131235ve.jpg","image/jpeg",38617,"2013-04-04 19:23:25"
 1304,7378035,"Camphor","Ebonized Oak","Collector's Edition","Added 04/16/13 Shape#1 [ac].
 04/16/13 Sold: Heaven's Pets (from ICCFA Expo) INV#3158 [ac].",7.25,5,35,"t","f",480,0,"2013-04-16 17:04:13","2013-04-16 17:04:13","7378035.jpg","image/jpeg",90691,"2013-04-16 17:04:13"
-1305,8114060,"Red Oak Burl","Ebonized Oak","Fine Art","04/16/13 Added Shape#NE [ac].
-04/16/13 Sold (Consigned) Heaven's Pets (from ICCFA Expo) INV#3159 [ac].",7.75,6,60,"t","t",800,0,"2013-04-16 17:25:26","2013-04-16 17:25:26","8114060.jpg","image/jpeg",101960,"2013-04-16 17:25:26"
+1305,"8114060-CneOA-130416","Red Oak Burl","Ebonized Oak","Fine Art","04/16/13 Added Shape#NE [ac].
+04/16/13 Consigned: Heaven's Pets (from ICCFA Expo) INV#3159 [ac].",7.75,6,60,"t","t",800,-1,"2013-04-16 17:25:26","2014-03-25 19:43:49","8114060.jpg","image/jpeg",101960,"2013-04-16 17:25:26"
 1306,"7134190-S2BE-BR","Box Elder with Hand Carved Rose","Rosewood","Fine Art","04/16/13 Added to web.  Shape#2; Carving by Mary Chulik [ac].
 04/16/13 Sold: Montlawn STEI#33341 for stock; INV#3160 [ac].",14,6.75,190,"t","f",2200,0,"2013-04-16 18:02:49","2013-07-24 16:29:33","7134190carvedrose.jpg","image/jpeg",92576,"2013-04-16 18:02:49"
 1307,"8118045-SneMA","Ambrosia Maple Burl","Ebonized Oak","Fine Art","Added 04/16/13. AI:CC;Shape#NE [ac].
 Sold to Paws Whiskers and Wags 4-23-13 ACS
 04/29/13 Invoice# 3172 [ac].",6.75,6.25,45,"t","t",800,0,"2013-04-16 18:28:22","2014-02-05 19:52:51","8118045.jpg","image/jpeg",96113,"2013-04-16 18:28:22"
-1308,"7346320-S2CA","Camphor","Walnut","Collector's Edition","04/16/13 Added. AI:??;Shape#2;Wood:CA;Brass [ac].
+1308,"7346320-S2CA-BR","Camphor","Walnut","Collector's Edition","04/16/13 Added. AI:??;Shape#2;Wood:CA;Brass [ac].
 04/30/13 Damaged at ICCFA Show per AMS [ac].
 06/22/13 Repaired [ac].
 07/01/13 Added to website [ac].
 08/27/13 Removed from web;part of Bob Jenkin's sales inventory [ac].
 02/11/14 Bob returned;added back to web [ACS]
-02/12/14 Sold: Turrentine-Jackson-Morrow; for display; Inv#3337 [ac].",14.75,8.5,320,"t","f",1200,0,"2013-04-16 19:48:26","2014-02-14 18:31:47","7346320.jpg","image/jpeg",80219,"2013-04-16 19:48:26"
+02/12/14 Sold: Turrentine-Jackson-Morrow; for display; Inv#3337 [ac].",14.75,8.5,320,"t","f",1200,0,"2013-04-16 19:48:26","2014-03-25 20:09:21","7346320.jpg","image/jpeg",80219,"2013-04-16 19:48:26"
 1309,7410010,"Box Elder w-Carnelian Inlay","Ruby Jeweled Wood","Fine Art","04/16/13 Added [ac].",7.5,5,10,"t","t",600,1,"2013-04-16 20:08:14","2013-11-03 01:24:53","7410010.jpg","image/jpeg",91350,"2013-04-16 20:08:14"
 1310,7413145,"Maple Burl","Ebonized Oak","Fine Art","04/16/13 Added [ac]. AI:CC, Shape#NE, Brass [ac].
 05/14/13 Sold: Deceased Pet Care PO#1368 [ac].",9.25,8.75,145,"t","t",1200,0,"2013-04-16 20:12:51","2013-05-14 18:09:32","7413145s1.jpg","image/jpeg",65573,"2013-04-16 20:12:51"
@@ -2742,8 +2759,9 @@ Sold to A.S Turner & Sons 4-23-13 ACS",10.75,7.5,220,"t","f",900,0,"2013-04-18 1
 04/29/13 Sold: Paws, Whiskers & Wags [ac].",5.75,5.25,20,"t","t",600,0,"2013-04-29 22:05:32","2014-02-05 20:04:49","7418020.jpg","image/jpeg",50170,"2013-04-29 22:05:32"
 1334,"8125070-SneOA","Red Oak Burl","Ebonized Oak","Fine Art","04/30/13 Added.  AI:CC;Shape#NE [ac].
 07/23/13 Sold: Joan Kennedy with Cypress Falls Pet Resort; Inv#3232 [ac].",7.25,6.5,70,"t","t",1000,0,"2013-04-30 20:56:10","2013-07-31 13:29:02","8125070.jpg","image/jpeg",49671,"2013-05-13 14:34:29"
-1335,8135260,"Maple Burl","Ebonized Oak","Fine Art","04/30/13 Added. AI:CC;Shape#NE;Wood:MA;Brass [ac].
-07/23/13 New top,height, photo [ac].",13.5,8.75,260,"t","t",2300,1,"2013-04-30 21:01:50","2013-07-25 16:44:37","8135260_w-finial.jpg","image/jpeg",45407,"2013-07-25 16:44:37"
+1335,"8135260-SneMA-BR","Maple Burl","Ebonized Oak","Fine Art","04/30/13 Added. AI:CC;Shape#NE;Wood:MA;Brass [ac].
+07/23/13 New top,height, photo [ac].
+04/22/14 Sold: Retail - Robert Wilfur; Inv#3387 [ac].",13.5,8.75,260,"t","t",2300,0,"2013-04-30 21:01:50","2014-04-22 16:01:02","8135260_w-finial.jpg","image/jpeg",45407,"2013-07-25 16:44:37"
 1336,"8121275-S2SY-BR","Sycamore","Ebonized Oak","Signature Series","04/30/13 Added. AI:CC;Shape#2;Brass [ac].
 05/10/13 Sold: Caballeros-Rivero 8th St location per Chris Hamiel (with a walnut flange & top)[ac].",11,9.5,275,"t","f",900,0,"2013-04-30 21:11:42","2013-07-02 15:59:38","8121275.jpg","image/jpeg",48171,"2013-04-30 21:11:42"
 1337,7398290,"Spalted Pecan","Ebonized Oak","Collector's Edition","05/06/13 Added.  AI:??, Shape#3, Brass [ac].
@@ -2780,11 +2798,13 @@ Commisioned for Deceased Pet care. Completed and Sold 5-21-13 ACS",7,3.5,20,"t",
 1351,"7335025-S1CH","Cherry","Ebonized Oak","Collector's Edition","05/28/13 Added. AI:CC; Shape#1; No Brass ACS
 10/11/13 Sold: Deceased Pet Care;PO#1729 (with shorter finial); Inv#32-- [ac].",7.25,4,25,"t","f",400,0,"2013-05-28 16:45:15","2013-10-11 20:21:37","7335025.jpg","image/jpeg",32631,"2013-05-28 16:45:15"
 1352,7319065,"Box Elder","Ebonized Oak","Signature Series","06/10/13 Added. AI:??; Shape#2; No brass ACS",9.75,5.75,65,"t","f",390,1,"2013-06-10 15:42:18","2013-06-17 20:56:19","7319065.jpg","image/jpeg",32262,"2013-06-10 15:42:18"
-1353,7384020,"Cherry","Ebonized Oak","Collector's Edition","06/10/13 Added. AI:CC; Shape#3; No Brass [ac].",7.5,3.25,20,"t","f",400,1,"2013-06-10 15:57:30","2013-06-17 20:05:37","7384020.jpg","image/jpeg",37937,"2013-06-10 15:57:30"
+1353,"7384020-CM3CH-140401","Cherry","Ebonized Oak","Collector's Edition","06/10/13 Added. AI:CC; Shape#3; No Brass [ac].
+04/01/14 Hold for ICCFA Display [ac].",7.5,3.25,20,"t","f",400,-1,"2013-06-10 15:57:30","2014-04-02 15:17:44","7384020.jpg","image/jpeg",37937,"2013-06-10 15:57:30"
 1354,7411030,"Sycamore","Ebonized Oak","Signature Series","06/10/13 Added. AI:CC; Shape#6; No Brass ACS",7.25,4.25,30,"t","f",300,1,"2013-06-10 16:10:51","2013-06-17 21:05:27","7411030.jpg","image/jpeg",41722,"2013-06-10 16:10:51"
-1355,"7389025-BJ6CH-130827","Cherry","Walnut","Collector's Edition","06/10/13 Added.AI:CC;Shape#6;Wood:CH; NoBrass ACS
+1355,"7389025-C6CH-140130","Cherry","Walnut","Collector's Edition","06/10/13 Added.AI:CC;Shape#6;Wood:CH; NoBrass ACS
 08/27/13 Removed from web;part of Bob Jenkin's sales kit [ac].
-",4.75,4.5,25,"t","f",400,-1,"2013-06-10 16:23:22","2013-11-07 16:54:54","7389025.jpg","image/jpeg",37600,"2013-06-10 16:23:22"
+01/30/14 Consigned to Loving Heart Pet Memorial Services thru Bob Jenkins; RE Inv#3365 [ac].
+",4.75,4.5,25,"t","f",400,-1,"2013-06-10 16:23:22","2014-03-25 14:01:42","7389025.jpg","image/jpeg",37600,"2013-06-10 16:23:22"
 1356,"7366020-S1BE","Beech","Ebonized Oak","Signature Series","06/10/13 Added.AI:CC;Shape#1;Wood:BC;No Brass ACS
 09/19/13 Removed from web; part of Clark's sales kit [ac].
 10/07/13 Added back to website [ac].
@@ -2813,8 +2833,10 @@ Commisioned for Deceased Pet care. Completed and Sold 5-21-13 ACS",7,3.5,20,"t",
 10/07/13 Added back to website [ac].",10.5,8,260,"t","t",2400,1,"2013-07-18 16:02:20","2013-10-07 16:53:16","8134260_magnolia_carving.jpg","image/jpeg",52574,"2013-07-18 16:02:20"
 1367,"8112025-SneOA","Red Oak Burl","Ebonized Oak","Fine Art","07/18/13 AI:CC; Shape#NE; Wood:OA; No Brass [ac].
 07/19/13 Sold: Deceased Pet Care for display; Inv#3226 [ac].",8.75,4.5,25,"t","t",600,0,"2013-07-18 16:10:56","2013-07-22 17:34:55","8112025.jpg","image/jpeg",44157,"2013-07-18 16:10:56"
-1368,"8232030-HneMA-130716","Spalted Maple Burl","Walnut","Fine Art","07/18/13 AI:CM; Shape#NE; Wood:MA; No Brass [ac].
-07/16/13 Sold: Dunbar FH - Hard Scrabble Rd for display [ac].",9.5,5.5,30,"t","t",600,-1,"2013-07-18 17:38:24","2013-11-07 16:45:38","8232030.jpg","image/jpeg",43734,"2013-07-18 17:38:24"
+1368,"8232030-SneMA","Spalted Maple Burl","Walnut","Fine Art","07/18/13 AI:CM; Shape#NE; Wood:MA; No Brass [ac].
+07/16/13 Sold: Dunbar FH - Hard Scrabble Rd for display [ac].
+04/30/14 Remove from Hold [ac].
+04/30/14 Sold: Deceased Pet Care; Inv#3393 [ac].",9.5,5.5,30,"t","t",600,0,"2013-07-18 17:38:24","2014-04-30 15:34:54","8232030.jpg","image/jpeg",43734,"2013-07-18 17:38:24"
 1369,"7474090-S6BC","Spalted Beech","Ebonized Oak","Collector's Edition","07/19/13 AI:??; Shape#6; Wood:BC; No Brass [ac].
 07/19/13 Added to website [ac].
 11/08/13 Retail - David Buchwald (referral from Evergreen Animal Hospital); Inv#3288 [ac].",10.25,5.5,90,"t","f",520,0,"2013-07-19 12:46:02","2013-11-08 15:52:07","7474090.jpg","image/jpeg",44687,"2013-07-19 12:46:02"
@@ -2873,7 +2895,7 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 10/07/13 Added back to website [ac].
 12/09/13 sold Hold to ship w/3 custom urns for Amy Kloes Neptune society Santa Rosa 
 02/27/14 Removed from HOLD;Add back to web [ac].
-03/22/14 Sold: Retail-Adam Hill, referral from PW&W; Inv#33xx [ac]. ",7,6.25,60,"t","f",480,0,"2013-08-04 19:16:01","2014-03-24 15:02:15","8158060.jpg","image/jpeg",44634,"2013-08-04 19:16:01"
+03/22/14 Sold: Retail-Adam Hill, sold at small keepsake price, referral from PW&W; Inv#3362 [ac]. ",7,6.25,60,"t","f",480,0,"2013-08-04 19:16:01","2014-03-25 11:52:28","8158060.jpg","image/jpeg",44634,"2013-08-04 19:16:01"
 1387,"8138025-SneOA","Red Oak Burl","Ebonized Oak","Fine Art","08/04/13 AI:CC;Shape#NE;Wood:OA;No Brass [ac]
 08/04/13 Kept off website; Clark added to sales kit [ac].
 08/13/13 Added back to web [ac].
@@ -2897,9 +2919,10 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 09/19/13 Removed from web; part of Clark's sales kit [ac].
 10/07/13 Added back to website [ac].
 11/22/13 Sold: Everly-Wheatley FH; Inv#3298 [ac].",10.5,7.5,260,"t","t",1500,0,"2013-08-04 21:06:39","2013-11-22 16:03:29","8234260_w-Top_Inset.jpg","image/jpeg",12882,"2013-08-04 21:06:39"
-1391,8190110,"Box Elder","Ebonized Oak","Collector's Edition","08/04/13 AI:CC;Shape#9;Wood:BE;No Brass [ac].
+1391,"8190110-CM9BE-140401","Box Elder","Ebonized Oak","Collector's Edition","08/04/13 AI:CC;Shape#9;Wood:BE;No Brass [ac].
 08/04/13 Kept off website;Clark added to sales kit [ac].
-08/14/13 Added to web [ac].",7.5,9.25,110,"t","f",600,1,"2013-08-04 21:13:28","2013-08-14 15:37:06","8190110.jpg","image/jpeg",40401,"2013-08-04 21:13:28"
+08/14/13 Added to web [ac].
+04/01/14 Hold for ICCFA Display [ac].",7.5,9.25,110,"t","f",600,-1,"2013-08-04 21:13:28","2014-04-02 15:06:42","8190110.jpg","image/jpeg",40401,"2013-08-04 21:13:28"
 1392,"8165045-S1CE","Cedar","Ebonized Oak","Collector's Edition","08/05/13 AI:CC;Shape#1;Wood:CE;No Brass [ac].
 08/05/13 Kept off website; Clark added to sales kit [ac].
 08/14/13 Added to website [ac].
@@ -2951,15 +2974,15 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 10/07/13 Added back to website [ac].
 03/17/14 Sold: Faithful Friends - Nashville, w-LP top; Inv#3356 [ac].",8.25,6.5,80,"t","f",520,0,"2013-08-15 15:53:51","2014-03-17 19:02:21","8189080lp.jpg","image/jpeg",43281,"2014-03-17 19:02:20"
 1405,8140130,"Ambrosia Maple Burl","Walnut","Collector's Edition","08/15/13 Added.AI:CC;Shape#7;Wood:MA;No Brass ac.",11.75,7.25,130,"t","f",600,1,"2013-08-15 15:58:49","2013-08-15 15:58:49","8140130.jpg","image/jpeg",42752,"2013-08-15 15:58:49"
-1406,8191150,"Box Elder","Ebonized Oak","Collector's Edition","08/15/13 Added.AI:CC;Shape#1;Wood:BE;No Brass ac.",9.5,8.25,150,"t","f",600,1,"2013-08-15 16:04:40","2013-08-15 16:04:40","8191150.jpg","image/jpeg",42547,"2013-08-15 16:04:40"
+1406,8191150,"Box Elder","Ebonized Oak","Collector's Edition","08/15/13 Added.AI:CC;Shape#1;Wood:BE;NoBrass ac.",9.5,8.25,150,"t","f",600,1,"2013-08-15 16:04:40","2014-03-27 18:11:57","8191150_Box_Elder_S1.jpg","image/jpeg",82006,"2014-03-27 18:11:56"
 1407,"8139080-S4MA","Ambrosia Maple Burl","Walnut","Collector's Edition","08/15/13 Added.AI:CC;Shape#4;Wood:MA;No Brass ac.
 09/19/13 Removed from wb; part of Clark's sales kit [ac].
 10/07/13 Added back to website [ac].
 02/13/14 Hold: Into the Sunset Pet Transition Center for ISO [ac].
 02/20/14: Sold; Inv#3343 [ac].",9.75,6.25,80,"t","f",520,0,"2013-08-15 16:11:37","2014-02-20 21:19:44","8139080.jpg","image/jpeg",38780,"2013-08-15 16:11:37"
-1408,"3506220-S1MA","Ambrosia Maple","Ebonized Oak","Signature Series","08/15/13 Added.AI:HD;Shape#1;Wood:MA;Brass ac.
+1408,"3506220-S1MA-BR","Ambrosia Maple","Ebonized Oak","Signature Series","08/15/13 Added.AI:HD;Shape#1;Wood:MA;Brass ac.
 10/07/13 Added to website [ac].
-11/27/13 Sold: Paws Memorial-TX;Inv#3303 [ac].",13.5,7.5,220,"t","f",900,0,"2013-08-15 16:37:57","2013-12-18 17:45:31","3506220.jpg","image/jpeg",45133,"2013-08-15 16:37:57"
+11/27/13 Sold: Paws Memorial-TX;Inv#3303 [ac].",13.5,7.5,220,"t","f",900,0,"2013-08-15 16:37:57","2014-03-25 21:29:26","3506220.jpg","image/jpeg",45133,"2013-08-15 16:37:57"
 1409,"8259030-SneBW","Black Walnut","Walnut","Fine Art","08/15/13 Added. AI:CM;Shape#NE;Wood:BW;No Brass ac
 08/15/13 Commissioned for Cindy Barlow via Hinsdale [ac].",9.25,6,30,"t","t",600,0,"2013-08-15 21:14:44","2013-08-30 13:25:32","8259030.jpg","image/jpeg",44376,"2013-08-15 21:33:40"
 1410,"8260070-S3SY","Sycamore","Ebonized Oak","Signature Series","08/15/13 Added.AI:CM;Shape#3;Wood:WY;No Brass ac.
@@ -2981,15 +3004,18 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 10/15/13 Sold: J.F.Floyd for stock replenishment [ac].",10.5,8.5,160,"t","t",1000,0,"2013-08-23 19:19:16","2013-10-15 20:02:32","8284160.jpg","image/jpeg",47984,"2013-08-23 19:19:16"
 1418,8148255,"Ambrosia Maple","Hand Carved Cherry Flame ","Visual Embrace","08/26/13 Added.AI:CC;Shape#6;Wood:MA;Brass [ac].",10.5,9.75,255,"t","f",1800,1,"2013-08-26 13:39:08","2013-08-26 13:39:08","8148255.jpg","image/jpeg",46045,"2013-08-26 13:39:08"
 1419,8220250,"Eucalyptus","Ebonized Oak","Collector's Edition","08/26/13 Added.AI:CC;Shape#7;Wood:EU;Brass [ac].",13.25,8.5,250,"t","f",1200,1,"2013-08-26 13:42:27","2013-08-26 13:42:27","8220250.jpg","image/jpeg",40408,"2013-08-26 13:42:27"
-1420,7457290,"Sycamore","Ebonized Oak","Collector's Edition","08/26/13 Added.AI:CC;Shape#4;Wood:SY;Brass [ac].",11.25,8.25,290,"t","f",1200,1,"2013-08-26 13:49:57","2013-08-26 13:49:57","7457290.jpg","image/jpeg",43412,"2013-08-26 13:49:57"
+1420,"7457290-S4SY","Sycamore","Ebonized Oak","Collector's Edition","08/26/13 Added.AI:CC;Shape#4;Wood:SY;Brass [ac].
+03/27/14 Sold: Turrentine-Jackson-Morrow; Inv#33xx [ac].",11.25,8.25,290,"t","f",1200,0,"2013-08-26 13:49:57","2014-03-27 21:52:15","7457290.jpg","image/jpeg",43412,"2013-08-26 13:49:57"
 1421,8130280,"Curly Magnolia","Ebonized Oak","Collector's Edition","08/26/13 Added.AI:CC;Shape#3;Wood:MG;Brass [ac].",11.25,8.5,280,"t","f",1200,1,"2013-08-26 15:12:14","2013-08-26 15:12:14","8130280.jpg","image/jpeg",41635,"2013-08-26 15:12:14"
 1422,8129320,"Magnolia","Poplar & Magnolia","Collector's Edition","08/26/13 Added.AI:CC;Shape#6;Wood:MG;Brass [ac].
 09/19/13 Removed from web; part of Clark's sales kit [ac].
 10/07/13 Added back to website [ac].
 11/19/13: Hold: Ponders FH for Display; waiting to invoice [ac].
 01/16/14 Picked up from Ponders; added back to web [ac].",10,8.5,320,"t","f",1200,1,"2013-08-26 15:16:23","2014-01-16 22:23:36","8129320.jpg","image/jpeg",43771,"2013-08-26 15:16:23"
-1423,"8244150-BJneCE-130827","Cedar","Cedar","Fine Art","08/27/13 Added.AI:CC;Shape#NE;Wood:CE;NoBrass [ac]
-08/27/13 Removed from web;part of Bob Jenkin's sales inventory [ac].",10.25,8.25,150,"t","t",1200,-1,"2013-08-27 14:15:08","2013-11-07 16:55:56","8244150.jpg","image/jpeg",40754,"2013-08-27 14:15:08"
+1423,"8244150-CneCE-140130","Cedar","Cedar","Fine Art","08/27/13 Added.AI:CC;Shape#NE;Wood:CE;NoBrass [ac]
+08/27/13 Removed from web;part of Bob Jenkin's sales inventory [ac].
+01/30/14 Consigned to Loving Hearts Pet Memorial Services thru Bob Jenkins; RE Inv#3365 [ac].
+",10.25,8.25,150,"t","t",1200,-1,"2013-08-27 14:15:08","2014-03-25 14:04:35","8244150.jpg","image/jpeg",40754,"2013-08-27 14:15:08"
 1424,"8180255-S6BE-BR","Box Elder","Carved Ebonized Cherry Flame ","Visual Embrace","08/27/13 Added.AI:CC;Shape#6;Wood:BE;Brass [ac].
 05/16/13 Artist Statement: ""Working with this special piece of wood was like collaborating with a great painter.""
 08/27/13 Removed from web;part of Clark's sales inventory [ac].
@@ -3004,24 +3030,26 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 08/27/13 Removed from web;part of Bob Jenkin' sales kit [ac].
 02/11/14 Bob returned;added back to web [ACS]
 03/24/14 Sold: Lawrence FH; Inv#33xx [ac].",9.5,8,225,"t","f",900,0,"2013-08-27 14:24:34","2014-03-24 14:19:35","8123225.jpg","image/jpeg",39175,"2013-08-27 14:24:34"
-1427,"3284190-S1BE","Ambrosia Maple","Ebonized Oak","Signature Series","AI:CM;Shape#1;Wood:MA;Brass [ac].
+1427,"3284190-S1BE-B","Ambrosia Maple","Ebonized Oak","Signature Series","AI:CM;Shape#1;Wood:MA;Brass [ac].
 06/21/13 Returned from Cannon FH;needs repairs [ac].
 08/27/13 New top,finish,photo,remeasured capacity from 180 to 190;added back to web [ac].
-1-2-14 Sold: Memorial Gallery, order#30963; Inv#3315 [ac].",9.5,7,190,"t","f",900,0,"2013-08-27 14:29:13","2014-01-02 21:04:24","3284190.jpg","image/jpeg",38011,"2013-08-27 14:29:13"
+1-2-14 Sold: Memorial Gallery, order#30963; Inv#3315 [ac].",9.5,7,190,"t","f",900,0,"2013-08-27 14:29:13","2014-03-25 20:19:20","3284190.jpg","image/jpeg",38011,"2013-08-27 14:29:13"
 1428,"8141250-SneMA-BR","Ambrosia Maple Burl","Ebonized Oak","Fine Art","08/27/13 Added.AI:CC;Shape:NE;Wood:MA;Brass [ac].
 08/27/13 Removed from web;part of Clark's sales inventory [ac].
 08/28/13 Sold: Kerr Brothers-Downtown, Inv#3251 (@ adjusted price of $1800 list) [ac].",10.25,9.75,250,"t","t",2200,0,"2013-08-27 14:40:43","2013-08-30 15:17:05","8141250.jpg","image/jpeg",55385,"2013-08-27 14:40:43"
 1429,"8171050-S1PO","Tulip Poplar","Ebonized Oak","Collector's Edition","08/27/13 Added.AI:CC;Shape#1;Wood:PO;NoBrass [ac].
 08/27/13 Removed from web;added to Bob Jenkins sales kit [ac].
 08/28/13 Sold: Kerr Brothers-Harrodsburg, Inv#3250 [ac].",6.25,4.75,50,"t","f",480,0,"2013-08-27 21:38:45","2013-08-30 12:45:00","8171050.jpg","image/jpeg",32897,"2013-08-27 21:38:45"
-1430,"7292040-BJ4BE-130827","Box Elder","Ebonized Oak","Collector's Edition","08/27/13 Added.AI:CC;Shape#4;Wood:BE;NoBrass [ac].
+1430,"7292040-C4BE-140130","Box Elder","Ebonized Oak","Collector's Edition","08/27/13 Added.AI:CC;Shape#4;Wood:BE;NoBrass [ac].
 08/27/13 Removed from web;added to Bob Jenkins sales kit [ac].
-",6.75,5.25,40,"t","f",480,-1,"2013-08-27 21:41:33","2013-11-07 16:54:13","7292040.jpg","image/jpeg",34474,"2013-08-27 21:41:33"
+01/30/14 Consigned to Loving Hearts Pet Memorial Services thru Bob Jenkins; RE: Inv#3365 [ac].",6.75,5.25,40,"t","f",480,-1,"2013-08-27 21:41:33","2014-03-25 13:54:47","7292040.jpg","image/jpeg",34474,"2013-08-27 21:41:33"
 1431,"8223040-S5MA","Ambrosia Maple","Walnut","Signature Series","08/27/13 Added.AI:CC;Shape#5;Wood:MA;NoBrass [ac].
 08/27/13 Removed from web;part of Bob Jenkins sales kit [ac].
 08/28/13 Sold: Kerr Bothers-Harrodsburg, Inv#3250 [ac].",4.75,4.75,40,"t","f",360,0,"2013-08-27 21:47:13","2013-08-30 12:43:31","8223040.jpg","image/jpeg",35673,"2013-08-27 21:47:13"
-1432,"8236140-BJneMA-130827","Ambrosia Maple","Walnut","Fine Art","08/27/13 Added.AI:CC;Shape:NE;Wood:MA;NoBrass [ac].
-08/27/13 Removed from web;part of Bob Jenkins sales kit [ac].",9.25,8.5,140,"t","t",1200,-1,"2013-08-27 22:26:49","2013-11-07 16:53:19","8236140.jpg","image/jpeg",40066,"2013-08-27 22:26:49"
+1432,"8236140-SneMA","Ambrosia Maple","Walnut","Fine Art","08/27/13 Added.AI:CC;Shape:NE;Wood:MA;NoBrass [ac].
+08/27/13 Removed from web;part of Bob Jenkins sales kit [ac].
+01/30/14 Consigned to Loving Hearts Pet Memorial Services thru Bob Jenkins; RE Inv#3365 [ac].
+03/25/14 Sold: Loving Hearts Pet Memorial; Reverse Consignment on Inv#3366, Sale on Inv#3367 [ac].",9.25,8.5,140,"t","t",1200,0,"2013-08-27 22:26:49","2014-04-01 15:56:09","8236140.jpg","image/jpeg",40066,"2013-08-27 22:26:49"
 1433,"7430230-S1PO-BR","Tulip Poplar","Tulip Poplar","Collector's Edition","08/27/13 Added.AI:??;Shape#1;Wood:PO;Brass [ac].
 08/27/13 Removed from web;part of Clark's sales kit [ac].
 08/30/13 Added back to web [ac].
@@ -3029,12 +3057,12 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 1434,8239130,"Deodara Cedar","Sapphire Jeweled Wood","Fine Art","08/27/13 Added.AI:CC;Shape#NE;Wood:CE;Brass [ac].
 08/27/13 Removed from web;part of Clark's sales inventory [ac].
 08/30/13 Added back to web [ac].",11.75,7.75,130,"t","t",1200,1,"2013-08-27 23:21:51","2013-08-30 16:44:00","8239130.jpg","image/jpeg",38455,"2013-08-27 23:21:51"
-1435,"8206270-S2EU","Eucalyptus with Mica Inlay","Ambrosia Maple Burl","Visual Embrace","08/27/13 Added.AI:CC;Shape#2;Wood:EU;Brass [ac].
+1435,"8206270-S2EU-BR","Eucalyptus with Mica Inlay","Ambrosia Maple Burl","Visual Embrace","08/27/13 Added.AI:CC;Shape#2;Wood:EU;Brass [ac].
 08/27/13 Removed from web;part of Clark's sales inventory [ac].
 08/30/13 Added back to web [ac].
 11/19/13 Hold: Ponders FH for Display; waiting to invoice [ac].
 01/16/14 Picked up from Ponders; added back to web [ac].
-01/30/14 Sold: Kerr Brothers - Harrodsburg Rd; Inv#xxxx [ac].",11.75,9,270,"t","f",1800,0,"2013-08-27 23:25:27","2014-01-30 17:35:00","8206270.jpg","image/jpeg",48202,"2013-08-27 23:25:27"
+01/30/14 Sold: Kerr Brothers - Harrodsburg Rd; Inv#3329 [ac].",11.75,9,270,"t","f",1800,0,"2013-08-27 23:25:27","2014-03-25 20:13:52","8206270.jpg","image/jpeg",48202,"2013-08-27 23:25:27"
 1436,3281290,"Box Elder","Ruby Jeweled Wood","Collector's Edition","07/22/13 Returned from Deceased Pet Care to refresh display;needs brass,refinish [ac].
 08/27/13 Added.AI:CM;Shape#4;Wood:BE;Brass [ac].
 08/27/13 Removed from web;part of Bob Jenkin's sales inventory [ac].
@@ -3043,7 +3071,8 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 10/08/13 Hold: Tom Hollingsworth [ac].
 10/25/13 Gifted to Tom Hollingsworth [ac].",7.75,5,45,"t","f",480,0,"2013-10-08 16:04:55","2013-11-06 18:46:59","8246045.jpg","image/jpeg",31655,"2013-10-08 16:04:55"
 1438,8196050,"Ambrosia Maple","Walnut","Collector's Edition","10/08/13 AI:CC;Shape#5;Wood:MA;NoBrass [ac].",6.25,4.5,50,"t","f",480,1,"2013-10-08 16:11:48","2013-10-11 21:10:49","8196050.jpg","image/jpeg",31647,"2013-10-08 16:11:48"
-1439,8224050,"Ambrosia Maple","Walnut","Collector's Edition","10/08/13 AI:CC;Shape#1;Wood:MA;NoBrass [ac].",5.75,5,50,"t","f",480,1,"2013-10-08 17:06:17","2013-10-08 17:06:17","8224050.jpg","image/jpeg",33996,"2013-10-08 17:06:17"
+1439,"8224050-S1MA","Ambrosia Maple","Walnut","Collector's Edition","10/08/13 AI:CC;Shape#1;Wood:MA;NoBrass [ac].
+05/13/14 Sold: Deceased Pet Care; PO#2221; Inv#3400 [ac].",5.75,5,50,"t","f",480,0,"2013-10-08 17:06:17","2014-05-13 18:07:04","8224050.jpg","image/jpeg",33996,"2013-10-08 17:06:17"
 1440,"8247030-S5CE","Cedar","Ebonized Oak","Collector's Edition","10/08/13 AI:CC;Shape#5;Wood:CE;NoBrass [ac].
 11/22/13 Sold: Hankins & Whittington for display; Inv#3299 [ac].",4.5,4.5,30,"t","f",400,0,"2013-10-08 17:15:57","2013-11-22 20:01:31","8247030s1.jpg","image/jpeg",31128,"2013-11-22 20:00:51"
 1441,"7351040-S1CH","Cherry","Ebonized Oak","Collector's Edition","10/08/13 AI:CC;Shape#1;Wood:CH;NoBrass [ac].
@@ -3057,18 +3086,19 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 02/17/14 Sold: Paws, Whiskers & Wags;for display; Inv#3340 [ac].",7,6.5,60,"t","f",480,0,"2013-10-08 21:27:47","2014-02-17 20:22:51","8156060lp.jpg","image/jpeg",41843,"2014-02-17 19:52:10"
 1445,8157040,"Ambrosia Maple","Walnut","Collector's Edition","10/09/13 AI:CC;Shape#2:Wood:MA;NoBrass [ac].",4.25,5,40,"t","f",480,1,"2013-10-09 12:28:35","2013-10-09 12:28:35","8157040.jpg","image/jpeg",31157,"2013-10-09 12:28:35"
 1446,7499250,"Pecan","Walnut Burl","Signature Series","10/09/13 AI:CC;Shape#3;Wood:PE;Brass [ac].",10.25,7.25,250,"t","f",900,1,"2013-10-09 12:34:13","2013-10-09 12:34:13","7499250.jpg","image/jpeg",32221,"2013-10-09 12:34:13"
-1447,"7452290-S6MA","Spalted Maple","Ebonized Oak","Collector's Edition","10/09/13 AI:CC;Shape#6;Wood:MA;Brass [ac].
-12/26/13 Sold: Turrentine-Jackson-Morrow FH for display; Inv#3312 [ac].",11.25,9.25,290,"t","f",1200,0,"2013-10-09 12:39:18","2013-12-30 17:15:00","7452290s1.jpg","image/jpeg",39592,"2013-10-09 12:39:18"
+1447,"7452290-S6MA-BR","Spalted Maple","Ebonized Oak","Collector's Edition","10/09/13 AI:CC;Shape#6;Wood:MA;Brass [ac].
+12/26/13 Sold: Turrentine-Jackson-Morrow FH for display; Inv#3312 [ac].",11.25,9.25,290,"t","f",1200,0,"2013-10-09 12:39:18","2014-03-25 20:19:51","7452290s1.jpg","image/jpeg",39592,"2013-10-09 12:39:18"
 1448,8214230,"Black Walnut","Ebonized Oak","Collector's Edition","10/09/13 AI:CM;Shape#1;Wood:BW;Brass [ac].",11.25,9,230,"t","f",1200,1,"2013-10-09 13:17:00","2013-10-09 13:17:00","8214230s1.jpg","image/jpeg",30762,"2013-10-09 13:17:00"
 1449,7510250,"Box Elder","Ruby Jeweled Wood","Fine Art","10/09/13 AI:CM;Shape#ne;Wood:BE;Brass [ac].",10.25,9,250,"t","t",1900,1,"2013-10-09 14:27:18","2013-10-09 14:27:18","7510250.jpg","image/jpeg",39043,"2013-10-09 14:27:18"
 1450,8216150,"Box Elder","Ruby Jeweled Wood","Fine Art","10/09/13 AI:CC;Shape#ne;Wood:BE;Brass [ac].",9.25,9,150,"t","t",1100,1,"2013-10-09 14:33:37","2013-10-09 14:33:37","8216150.jpg","image/jpeg",37346,"2013-10-09 14:33:37"
 1451,8124150,"Ambrosia Maple Burl","Walnut","Fine Art","10/09/13 AI:CC;Shape#ne;Wood:MA;Brass [ac].",10,8.25,150,"t","t",1300,1,"2013-10-09 14:46:22","2013-10-09 14:46:22","8124150.jpg","image/jpeg",40388,"2013-10-09 14:46:22"
 1452,7493125,"Ambrosia Maple","Walnut","Fine Art","10/09/13 AI:CC;Shape#ne;Wood:MA;NoBrass [ac].",10.75,9,125,"t","t",1100,1,"2013-10-09 14:54:09","2013-10-09 14:54:09","7493125.jpg","image/jpeg",35686,"2013-10-09 14:54:09"
-1453,7219245,"Camphor","Walnut Burl","Signature Series","10/10/13 AI:??;Shape#2;Wood:CA;Brass [ac].",11.75,8.25,245,"t","f",900,1,"2013-10-10 21:40:59","2013-10-10 21:40:59","7219245.jpg","image/jpeg",35615,"2013-10-10 21:40:59"
+1453,"7219245-S2CA-BR","Camphor","Walnut Burl","Signature Series","10/10/13 AI:??;Shape#2;Wood:CA;Brass [ac].
+03/27/14 Sold: Turrentine-Jackson-Morrow; Inv#33xx [ac].",11.75,8.25,245,"t","f",900,0,"2013-10-10 21:40:59","2014-03-27 21:52:58","7219245.jpg","image/jpeg",35615,"2013-10-10 21:40:59"
 1454,8230220,"Birds Eye Maple","Walnut","Collector's Edition","10/10/13 AI:CM;Shape#7;Wood:MA;Brass [ac].",14.25,8,220,"t","f",1200,1,"2013-10-10 21:46:07","2013-10-10 21:46:07","8230220.jpg","image/jpeg",28521,"2013-10-10 21:46:07"
 1455,8225250,"Box Elder","Ebonized Oak","Signature Series","10/10/13 AI:CM;Shape#2;Wood:BE;Brass [ac].",9.5,7.5,250,"t","f",900,1,"2013-10-10 21:51:08","2013-10-10 21:51:08","8225250.jpg","image/jpeg",36599,"2013-10-10 21:51:08"
-1456,"8227280-S4BW","Black Walnut","Ebonized Oak","Signature Series","10/10/13 AI:CM;Shape#4;Wood:BW;Brass [ac].
-01/09/14 Sold: J.E. Foust; Inv#33xx ACS",12.5,7.75,280,"t","f",900,0,"2013-10-10 21:59:12","2014-01-10 12:55:18","8227280.jpg","image/jpeg",31206,"2013-10-10 21:59:12"
+1456,"8227280-S4BW-BR","Black Walnut","Ebonized Oak","Signature Series","10/10/13 AI:CM;Shape#4;Wood:BW;Brass [ac].
+01/09/14 Sold: J.E. Foust; Inv#3318 ACS",12.5,7.75,280,"t","f",900,0,"2013-10-10 21:59:12","2014-03-25 20:17:56","8227280.jpg","image/jpeg",31206,"2013-10-10 21:59:12"
 1457,7345070,"Box Elder","Ebonized Oak","Signature Series","10/10/13 AI:CC;Shape#2;Wood:BE;NoBrass [ac].",8.75,6,70,"t","f",390,1,"2013-10-10 22:08:29","2013-10-10 22:08:29","7345070.jpg","image/jpeg",32251,"2013-10-10 22:08:29"
 1458,7359040,"Cherry","Ebonized Oak","Collector's Edition","10/11/13 AI:CC;Shape#3;Wood:CH:NoBrass [ac].",7.25,4,40,"t","f",480,1,"2013-10-11 20:09:31","2013-10-11 20:09:31","7359040.jpg","image/jpeg",31825,"2013-10-11 20:09:31"
 1459,"8173050-S1BE","Box Elder","Ebonized Oak","Signature Series","10/11/13 AI:CC;Shape#1;Wood:BE:NoBrass [ac].
@@ -3087,23 +3117,25 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 10/15/13 Includes Custom Flange by Mary Chulick that we owe $150.00 at POS [ac].
 10/31/13 Sold: Oakey's Funeral Service at CE pricing for South Chapel display; Inv#3283 [ac].
 ",10,8.25,260,"t","t",1800,0,"2013-10-15 20:46:00","2013-10-31 13:56:09","8132260.jpg","image/jpeg",36411,"2013-10-15 20:46:00"
-1466,"8160255-S9MA","Ambrosia Maple Burl with Turquoise Inlay","Natural Edge Ambrosia Maple Burl with Turquoise Pool","Fine Art","10/15/13 AI:CC;Shape#9;Wood:MA;Brass [ac]. 
+1466,"8160255-S9MA-BR","Ambrosia Maple Burl with Turquoise Inlay","Natural Edge Ambrosia Maple Burl with Turquoise Pool","Fine Art","10/15/13 AI:CC;Shape#9;Wood:MA;Brass [ac]. 
 12/09/13 Sold: Eric Fritsch; Inv#3307 [ac].
-",10.25,9.75,255,"t","t",2400,0,"2013-10-15 20:50:43","2014-01-10 20:03:59","8160255.jpg","image/jpeg",43956,"2013-10-15 20:50:43"
+",10.25,9.75,255,"t","t",2400,0,"2013-10-15 20:50:43","2014-03-25 20:20:55","8160255.jpg","image/jpeg",43956,"2013-10-15 20:50:43"
 1467,"8176175-S4BE-BR","Box Elder","Ebonized Oak","Collector's Edition","10/15/13 AI:CC;Shape#4;Wood:BE;Brass [ac].
 02/25/14 Sold: Dream Land Pet Memorial Center;customer picked out here at AU (Suzanne Fox); Inv#33xx [ac].",11.5,7.25,175,"t","f",600,0,"2013-10-15 20:59:04","2014-02-25 22:02:54","8176175.jpg","image/jpeg",36459,"2013-10-15 20:59:04"
 1468,8201200,"Box Elder","Ebonized Oak","Collector's Edition","10/15/13 AI:CC;Shape#7;Wood:BE;Brass [ac].",9.75,7.75,200,"t","f",1200,1,"2013-10-15 21:02:49","2013-10-15 21:02:49","8201200.jpg","image/jpeg",36416,"2013-10-15 21:02:49"
-1469,8264020,"Box Elder","Ebonized Oak","Fine Art","10/15/13:CC;Shape#NE;Wood:BE;NoBrass [ac].
+1469,"8264020-SneBE","Box Elder","Ebonized Oak","Fine Art","10/15/13:CC;Shape#NE;Wood:BE;NoBrass [ac].
 11/19/13 Hold: Ponders FH on Display; waiting to invoice [ac].
-01/16/14 Picked up from Ponders; added back to web [ac].",7.5,4.5,20,"t","t",600,1,"2013-10-15 21:14:54","2014-01-16 22:24:17","8264020.jpg","image/jpeg",33708,"2013-10-15 21:14:54"
+01/16/14 Picked up from Ponders; added back to web [ac].
+03/28/14 Sold: Retail-Jim Platt; Inv#3371 [ac].",7.5,4.5,20,"t","t",600,0,"2013-10-15 21:14:54","2014-03-28 19:36:55","8264020.jpg","image/jpeg",33708,"2013-10-15 21:14:54"
 1470,8266150,"Box Elder","Ebonized Curly Maple","Fine Art","10/15/13 AI:CC;Shape#NE;Wood:BE;Brass [ac].",6.25,9.5,150,"t","t",1000,1,"2013-10-15 21:19:50","2013-10-15 21:19:50","8266150.jpg","image/jpeg",34699,"2013-10-15 21:19:50"
 1471,8268170,"Box Elder","Ebonized Oak","Fine Art","10/15/13 AI:CC;Shape#NE;Wood:BE;Brass [ac].",11.25,8,170,"t","t",1000,1,"2013-10-15 21:22:01","2013-10-15 21:22:01","8268170.jpg","image/jpeg",38555,"2013-10-15 21:22:01"
 1472,"8250010-BJneCE-140311","Cedar","Ebonized Oak","Fine Art","10/15/13 AI:CC;Shape#NE;Wood:CE;NoBrass [ac].
 03/11/14 Sent to Bob Jenkins for sales kit [ac].",5,4.25,10,"t","t",600,-1,"2013-10-15 21:24:13","2014-03-12 18:11:00","8250010.jpg","image/jpeg",33744,"2013-10-15 21:24:13"
 1473,8288020,"Cedar","Ebonized Oak","Fine Art","10/15/13 AI:CC;Shape#NE;Wood:CE;NoBrass [ac].",5,4.75,20,"t","t",600,1,"2013-10-15 21:31:04","2013-11-03 01:14:16","8288020.jpg","image/jpeg",33149,"2013-10-15 21:31:04"
-1474,"8298240-S6CE","Cedar","Cedar","Collector's Edition","10/15/13: AI:CC;Shape#6;Wood:CE;Brass [ac].
-02/06/14 Sold: Retail-Carolyn Bane; Inv#3333 [ac].",8.5,8.5,240,"t","f",1200,0,"2013-10-15 21:34:18","2014-02-07 23:02:03","8298240.jpg","image/jpeg",36483,"2013-10-15 21:34:18"
-1475,8314135,"Cedar","Cedar","Collector's Edition","10/15/13 AI:CC:Shape#1;Wood:CE;Brass [ac].",8.5,6.5,135,"t","f",600,1,"2013-10-15 21:38:20","2013-10-15 21:38:20","8314135.jpg","image/jpeg",35591,"2013-10-15 21:38:20"
+1474,"8298240-S6CE-BR","Cedar","Cedar","Collector's Edition","10/15/13: AI:CC;Shape#6;Wood:CE;Brass [ac].
+02/06/14 Sold: Retail-Carolyn Bane; Inv#3333 [ac].",8.5,8.5,240,"t","f",1200,0,"2013-10-15 21:34:18","2014-03-25 20:12:21","8298240.jpg","image/jpeg",36483,"2013-10-15 21:34:18"
+1475,"8314135-S1CE","Cedar","Cedar","Collector's Edition","10/15/13 AI:CC:Shape#1;Wood:CE;Brass [ac].
+4/18/14 Sold: Retail-Adrienne Kalmes (w-Meadow Hills Corporation) at wholesale pricing; Inv#3386 [ac]. ",8.5,6.5,135,"t","f",600,0,"2013-10-15 21:38:20","2014-04-18 18:23:56","8314135.jpg","image/jpeg",35591,"2013-10-15 21:38:20"
 1476,"8323040-S9BW-B","Black Walnut","Walnut Burl","Collector's Edition","10/15/13 AI:CC;Shape#9:Wood:BW;Brass [ac].
 10/31/13 Sold: Oakey's Funeral Service for South Chapel display; Inv#3283 [ac].",4,6.75,40,"t","f",480,0,"2013-10-15 21:50:18","2013-10-31 13:57:55","8323040.jpg","image/jpeg",29516,"2013-10-15 21:50:18"
 1477,"8326345-S4MA-BR","Spalted Maple Burl","Walnut Burl with Maple Burl Holy Cross","Fine Art","10/15/13 AI:CC;Shape#4;Wood:MA;Brass [ac].
@@ -3121,11 +3153,12 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 02/20/14: Sold; Inv#3343 [ac].",4.25,5.75,30,"t","f",300,0,"2013-10-28 21:24:30","2014-02-20 21:14:01","8299030s1.jpg","image/jpeg",36829,"2013-10-28 21:24:29"
 1480,"7201150-S1BE","Box Elder","Ebonized Oak","Collector's Edition","01/07/14: AI:CM;Shape#1;Wood:BE;NoBrass [ac]
 01/07/14: Sold: Memorial Gallery Order 30917; Inv#",9.5,6,150,"t","f",600,0,"2014-01-07 20:14:16","2014-01-07 20:14:16","7201150.jpg","image/jpeg",30513,"2014-01-07 20:14:16"
-1481,"8329245-S1BW","American Black Walnut","Cherry","Collector's Edition","01/16/14 AI:CM;Shape#1;Wood:BW;Brass [ac]
-01/16/14 Sold: Kerr Brothers FH for replenishment order; Inv#3321 [ac].",9.25,8,245,"t","f",1200,0,"2014-01-16 16:36:06","2014-01-16 16:36:06","8329245s1.jpg","image/jpeg",32774,"2014-01-16 16:36:06"
-1482,"8320020-BJ6DW","Dogwood","Walnut","Collector's Edition","02/11/14 AI:CC;Shape#6;Wood:DW;NoBrass [ACS]
+1481,"8329245-S1BW-BR","American Black Walnut","Cherry","Collector's Edition","01/16/14 AI:CM;Shape#1;Wood:BW;Brass [ac]
+01/16/14 Sold: Kerr Brothers FH for replenishment order; Inv#3321 [ac].",9.25,8,245,"t","f",1200,0,"2014-01-16 16:36:06","2014-03-25 20:14:27","8329245s1.jpg","image/jpeg",32774,"2014-01-16 16:36:06"
+1482,"8320020-S6DW","Dogwood","Walnut","Collector's Edition","02/11/14 AI:CC;Shape#6;Wood:DW;NoBrass [ACS]
 03/11/14 Sent to Bob Jenkins for sales kit [ac].
-",4,4,20,"t","f",400,-1,"2014-02-11 18:42:41","2014-03-12 18:26:18","8320020.jpg","image/jpeg",47586,"2014-02-11 18:42:41"
+05/05/14 Sold: Retail-Courtney Turner, with engraved top; (shipped from Bob's inventory); Inv#3394 [ac].
+",4,4,20,"t","f",400,0,"2014-02-11 18:42:41","2014-05-09 19:17:50","8320020.jpg","image/jpeg",47586,"2014-02-11 18:42:41"
 1483,"8281025-S2MA","Ambrosia Maple","Walnut","Collector's Edition","Added 2-11-14 ACS
 03/04/14 Sold: Paws, Whiskers & Wags; sold w-EO LP top; Inv#3350 [ac].",7,4.75,25,"t","f",400,0,"2014-02-11 18:47:44","2014-03-04 20:27:43","8281025.jpg","image/jpeg",49594,"2014-02-11 18:47:44"
 1484,"8272020-S6CH","Cherry","Walnut","Signature Series","02/11/14 AI:??;Shape#6;Wood:CH;NoBrass [ACS].
@@ -3134,21 +3167,61 @@ This urn is for Michel's father in laws cremated remains  AMS",7,6.25,45,"t","f"
 02/26/14: Sold: Faithful Friends-NC; Inv#3348 [ac].",5,3.5,25,"t","f",400,0,"2014-02-11 18:58:13","2014-02-26 20:23:43","8305025.jpg","image/jpeg",48152,"2014-02-11 18:58:13"
 1486,"8183025-S9BE","Box Elder","Ebonized Oak","Collector's Edition","02/17/14: AI:CC;Shape#9;Wood:BE;NoBrass [ac]
 02/17/14: Sold: Paws, Whiskers & Wags; customer order; Inv#3342 [ac].",4,5.5,25,"t","f",400,0,"2014-02-17 17:44:31","2014-02-17 20:24:31","8183025.jpg","image/jpeg",47548,"2014-02-17 17:44:31"
-1487,9104030,"Red Bud","Walnut","Signature Series","03/11/14 AI:CM;Shape#4;Wood:RB;NoBrass
-03/11/14 Sold: Memorial Gallery, Order 16370; Inv#3354 [ac].",4,5,30,"t","f",300,0,"2014-03-12 16:05:40","2014-03-24 17:25:41","9104030.jpg","image/jpeg",39572,"2014-03-12 16:05:40"
-1488,8274040,"Ambrosia Maple","Walnut","Collector's Edition","03/24/14 AI:CC;Shape#7;Wood:MA;NoBrass [ac].",8.5,4.75,40,"t","f",480,1,"2014-03-24 16:07:48","2014-03-24 16:07:48","8274040_Ambrosia_Maple_S1.jpg","image/jpeg",83565,"2014-03-24 16:07:48"
-1489,8252030,"Eastern Red Cedar","Ebonized Oak","Collector's Edition","03/24/14 AI:CC;Shape#5;Wood:CE;NoBrass; Kings Cove Cedar [ac]",4.5,4.25,30,"t","f",400,1,"2014-03-24 16:28:21","2014-03-24 16:28:21","8252030_Cedar_S1.jpg","image/jpeg",85281,"2014-03-24 16:28:21"
+1487,"9104030-S4RB","Red Bud","Walnut","Signature Series","03/11/14 AI:CM;Shape#4;Wood:RB;NoBrass
+03/11/14 Sold: Memorial Gallery, Order 16370; Inv#3354 [ac].",4,5,30,"t","f",300,0,"2014-03-12 16:05:40","2014-04-01 15:50:40","9104030.jpg","image/jpeg",39572,"2014-03-12 16:05:40"
+1488,"8274040-S7MA","Ambrosia Maple","Walnut","Collector's Edition","03/24/14 AI:CC;Shape#7;Wood:MA;NoBrass [ac].
+04/30/14 Sold: Deceased Pet Care; Inv#3393 [ac].",8.5,4.75,40,"t","f",480,0,"2014-03-24 16:07:48","2014-05-01 12:25:35","8274040_Ambrosia_Maple_S1.jpg","image/jpeg",83565,"2014-03-24 16:07:48"
+1489,"8252030-S5CE","Eastern Red Cedar","Ebonized Oak","Collector's Edition","03/24/14 AI:CC;Shape#5;Wood:CE;NoBrass; Kings Cove Cedar [ac]
+05/14/14 Sold: Kerr Bros; Inv#3401 [ac].",4.5,4.25,30,"t","f",400,0,"2014-03-24 16:28:21","2014-05-14 16:27:20","8252030_Cedar_S1.jpg","image/jpeg",85281,"2014-03-24 16:28:21"
 1490,8316030,"Bradford Pear","Cherry","Signature Series","03/24/14 AI:CC;Shape#1:Wood:BP;NoBrass;Massey Tree Svc Origin [ac].",4.5,4.25,30,"t","f",300,1,"2014-03-24 16:36:10","2014-03-24 16:36:10","8316030_Bradford_Pear_S1.jpg","image/jpeg",81488,"2014-03-24 16:36:10"
-1491,8278030,"Spalted Sycamore","Walnut","Signature Series","03/24/14 AI:CC;Shape#6;Wood:SY;NoBrass [ac].",7,5,30,"t","f",300,1,"2014-03-24 16:51:50","2014-03-24 16:51:50","8278030_Spalted_Sycamore_S1.jpg","image/jpeg",90382,"2014-03-24 16:51:50"
+1491,"8278030-S6SY","Spalted Sycamore","Walnut","Signature Series","03/24/14 AI:CC;Shape#6;Wood:SY;NoBrass [ac].
+04/02/14 Sold: Griffin Leggett-Rest Hills, Little Rock, STEI#04331; Inv#3376 [ac].",7,5,30,"t","f",300,0,"2014-03-24 16:51:50","2014-04-02 18:26:04","8278030_Spalted_Sycamore_S1.jpg","image/jpeg",90382,"2014-03-24 16:51:50"
 1492,7360030,"Sycamore","Walnut","Signature Series","03/24/14 AI:CC;Shape#5;Wood:SY;NoBrass [ac].",6,3.25,30,"t","f",300,1,"2014-03-24 16:58:26","2014-03-24 16:58:26","7360030_Sycamore_S1.jpg","image/jpeg",81145,"2014-03-24 16:58:26"
-1493,8265050,"Box Elder","Ebonized Maple","Collector's Edition","03/24/14 AI:CC;Shape#4;Wood:BE;NoBrass [ac]",6,5,50,"t","f",480,1,"2014-03-24 17:04:57","2014-03-24 17:04:57","8265050_Box_Elder_S1.jpg","image/jpeg",78724,"2014-03-24 17:04:57"
+1493,"8265050-S4BE","Box Elder","Ebonized Maple","Collector's Edition","03/24/14 AI:CC;Shape#4;Wood:BE;NoBrass [ac]
+04/08/14 Sold: Turrentine-Jackson-Morrow; Inv#3378 [ac].",6,5,50,"t","f",480,0,"2014-03-24 17:04:57","2014-04-15 14:00:31","8265050_Box_Elder_S1.jpg","image/jpeg",78724,"2014-03-24 17:04:57"
 1494,8309055,"Magnolia","Tulip Poplar","Signature Series","03/24/14 AI:CC;Shape#4;Wood:MG;NoBrass;Chastain Road Origin [ac].",6.75,5,55,"t","f",360,1,"2014-03-24 17:12:43","2014-03-24 17:12:43","8309055_Magnolia_S1.jpg","image/jpeg",80886,"2014-03-24 17:12:43"
 1495,8251030,"Eastern Red Cedar","Ebonized Cherry","Collector's Edition","03/24/14 AI:CC;Shape#6;Wood:CE;NoBrass;Kings Cove Origin [ac].",7.5,5.5,30,"t","f",400,1,"2014-03-24 17:35:05","2014-03-24 17:35:05","8251030_Cedar_S1.jpg","image/jpeg",81782,"2014-03-24 17:35:05"
 1496,7352050,"Cherry","Walnut Burl","Collector's Edition","03/24/14 AI:??;Shape#6;Wood:CH;NoBrass [ac].",7.5,4.25,50,"t","f",480,1,"2014-03-24 17:41:21","2014-03-24 17:41:21","7352050_Cherry_S1.jpg","image/jpeg",80646,"2014-03-24 17:41:21"
-1497,8321135,"Dogwood","Walnut","Collector's Edition","03/24/14 AI:CC;Shape#7;Wood:DW;NoBrass [ac].",9.5,6.5,135,"t","f",600,1,"2014-03-24 18:04:54","2014-03-24 18:04:54","8321135_Dogwood_S1.jpg","image/jpeg",84845,"2014-03-24 18:04:54"
+1497,"8321135-CM7DW-140401","Dogwood","Walnut","Collector's Edition","03/24/14 AI:CC;Shape#7;Wood:DW;NoBrass [ac].
+04/01/14 Hold for ICCFA Display [ac].",9.5,6.5,135,"t","f",600,-1,"2014-03-24 18:04:54","2014-04-02 15:12:44","8321135_Dogwood_S1.jpg","image/jpeg",84845,"2014-03-24 18:04:54"
 1498,"8263055-S9BE","Box Elder","Ebonized Oak","Collector's Edition","03/24/14 AI:CC;Shape#9;Wood:BE;NoBrass [ac].
 03/23/14 Sold: Retail-Alex Coleman, referral from Northside Chapel; Inv#3360 [ac].",4.5,7,55,"t","f",480,0,"2014-03-24 19:23:22","2014-03-24 19:23:22","8263055_Box_Elder_S1.jpg","image/jpeg",79100,"2014-03-24 19:23:22"
 1499,"8170300-S2MA-BR","Spalted Maple","Ebonized Oak","Collector's Edition","03/24/14 AI:CC;Shape#2;Wood:MA;Brass [ac].
 03/23/14 Sold: Retial-Alex Coleman, referral from Northside Chapel; Inv#3360 [ac].",11.25,9.25,300,"t","f",1200,0,"2014-03-24 19:40:59","2014-03-24 19:52:43","8170300_Spalted_Maple_S1.jpg","image/jpeg",96357,"2014-03-24 19:40:59"
 1500,"7382060-S2CH","Cherry","Walnut","Collector's Edition","03/24/14 AI:??;Shape#2;Wood:CH;NoBrass [ac]
 03/23/14 Sold: Retail-Alex Coleman, referral from Northside Chapel; Inv#3360 [ac].",8.5,5.25,60,"t","f",480,0,"2014-03-24 19:54:45","2014-03-24 19:54:45","7382060_Cherry_S1.jpg","image/jpeg",87752,"2014-03-24 19:54:45"
+1501,7285050,"Box Elder","Ebonized Maple","Signature Series","03/25/14 AI:??;Shape#2;Wood:BE;NoBrass [ac].",5,5.5,50,"t","f",360,1,"2014-03-26 12:16:54","2014-03-26 12:16:54","7285050_Box_Elder_S1.jpg","image/jpeg",77828,"2014-03-26 12:16:53"
+1502,8319035,"Cherry","Walnut","Collector's Edition","03/25/14 AI:CC;Shape#7;Wood:CH;NoBrass [ac].",9,4.25,35,"t","f",480,1,"2014-03-26 12:22:11","2014-03-26 12:23:14","8319035_Cherry_S1.jpg","image/jpeg",78767,"2014-03-26 12:22:10"
+1503,"8304130-H8BP-140325","Bradford Pear","Carved Cherry Flame Finial","Fine Art","03/25/14 AI:CM;Shape#8;Wood:BP;NoBrass [ac].
+03/25/14 Hold: Commissioned Urn for Shawn Hamilton & Tanya Murdoch [ac].",12.25,6.25,130,"t","f",1100,-1,"2014-03-26 13:08:55","2014-03-26 13:08:55","8304130_Bradford_Pear_S1.jpg","image/jpeg",81602,"2014-03-26 13:08:55"
+1504,7296080,"Box Elder","Ebonized Oak","Collector's Edition","03/25/14 AI:CC;Shape#5;Wood:BE;NoBrass [ac].",10.25,5,80,"t","f",520,1,"2014-03-26 13:20:11","2014-03-26 13:20:11","7296080_Box_Elder_S1.jpg","image/jpeg",79875,"2014-03-26 13:20:11"
+1505,7307080,"Box Elder","Ebonized Oak","Signature Series","03/25/14 AI:CC;Shape#1;Wood:BE;NoBrass [ac].",9.25,6,80,"t","f",390,1,"2014-03-26 13:28:51","2014-03-26 13:28:51","7307080_Box_Elder_S1.jpg","image/jpeg",73964,"2014-03-26 13:28:51"
+1506,"9106035-S9MA","Ambrosia Maple","Walnut","Collector's Edition","03/27/14 AI:CM;Shape#9;Wood:MA;NoBrass [ac].
+03/27/14 Hold: Retail-Cloud Conrad [ac].
+04/22/14 Sold: Retail-Cloud Conrad (referral from PW&W); Inv#3388 [ac].",6.75,6.25,35,"t","f",480,0,"2014-03-27 19:02:10","2014-04-22 18:06:22","9106035_Ambrosia_Maple_S1.jpg","image/jpeg",83248,"2014-03-27 19:02:10"
+1507,8295060,"Bradford Pear","Walnut","Collector's Edition","03/28/14 AI:CC;Shape#9;Wood:BP;NoBrass [ac].",7,7.5,60,"t","f",480,1,"2014-03-28 13:04:25","2014-03-28 13:04:25","8295060_Bradford_Pear_S1.jpg","image/jpeg",77217,"2014-03-28 13:04:25"
+1508,"8293030-CM6BP-140328","Bradford Pear","Walnut","Collector's Edition","03/28/14 AI:CC;Shape#6;Wood:BP;NoBrass [ac].
+03/28/14 Hold: Clark taking to ICCFA Expo [ac].",6.5,5.25,30,"t","f",400,-1,"2014-03-28 17:19:46","2014-03-28 17:19:46","8293030_Bradford_Pear_S1.jpg","image/jpeg",74481,"2014-03-28 17:19:46"
+1509,"8275030-CM2CH-140328","Cherry","Walnut Burl","Signature Series","03/28/14 AI:CC;Shape#2;Wood:CH;NoBrass [ac].
+03/28/14 Hold: Clark took to ICCFA for Expo display [ac].",4.25,4.75,30,"t","f",300,-1,"2014-03-28 17:31:03","2014-03-28 17:31:58","8275030_Cherry_S1.jpg","image/jpeg",73852,"2014-03-28 17:31:03"
+1510,"8286020-CM1CE-140328","Cedar","Cedar","Collector's Edition","03/28/14 AI:CC;Shape#1;Wood:CE;NoBrass [ac].
+03/28/14 Hold: Clark taking to ICCFA Expo for display [ac].",3.5,4,20,"t","f",400,-1,"2014-03-28 17:41:24","2014-03-28 17:41:24","8286020_Cedar_S1.jpg","image/jpeg",78006,"2014-03-28 17:41:24"
+1511,"8289035-CMneCE-140331","Cedar","Ebonized Oak","Fine Art","03/31/14 AI:CC;Shape#ne;Wood:CE;NoBrass [ac].
+03/31/14 Hold for ICCFA Display [ac].","",5.5,35,"t","t",700,-1,"2014-03-31 20:04:55","2014-03-31 21:08:42","8289035_Cedar_S1.jpg","image/jpeg",71719,"2014-03-31 20:04:55"
+1512,"7441210-S3PE-BR","Spalted Pecan","Walnut Burl","Collector's Edition","03/31/14 AI:CM;Shape#3;Wood:PE;Brass [ac].
+05/01/14 Hold: Memorial Gallery Order 32711 (Lou Bondurant); customer sending back original & wants this urn instead, wait to receive original urn before shipping [ac].
+05/05/14 Sold: Memorial Gallery; Inv#3395 [ac].
+",13.75,7,210,"t","f",1200,0,"2014-03-31 20:17:25","2014-05-14 13:02:39","7441210_Spalted_Pecan_S1.jpg","image/jpeg",84807,"2014-03-31 20:17:25"
+1513,"8146285-CM2MG-140331","Magnolia with Magnolia Blooms Flange","Walnut","Fine Art","03/31/14 AI:CC;Shape#2;Wood:MG;Brass [ac].
+03/31/14 Includes Pyrography Flange from Mary that we owe $150 upon sale of urn [ac].
+03/31/14 Hold for ICCFA Display [ac].","",9,285,"t","t",1600,-1,"2014-03-31 20:32:35","2014-03-31 20:32:35","8146285_Magnolia_S1.jpg","image/jpeg",80281,"2014-03-31 20:32:35"
+1514,"8181265-CM2BE-140331","Box Elder","Ruby Jeweled Wood","Collector's Edition","03/31/14 AI:CC;Shape#2;Wood:BE;Brass [ac].
+03/31/14 Hold for ICCFA Display [ac].","",9.5,265,"t","f",1200,-1,"2014-03-31 20:42:02","2014-03-31 20:42:02","8181265_Box_Elder_S3.jpg","image/jpeg",89965,"2014-03-31 20:42:02"
+1515,"8269085-CM7BW-140331","Black Walnut","Ebonized Oak","Collector's Edition","03/31/14 AI:CC;Shape#7;Wood:BW;NoBrass [ac].
+03/31/14 Hold for ICCFA Display [ac].",12.5,4.75,85,"t","f",520,-1,"2014-03-31 20:49:47","2014-03-31 20:49:47","8269085_Black_Walnut_S1.jpg","image/jpeg",75269,"2014-03-31 20:49:47"
+1516,"8162270-CM9MA-140331","Ambrosia Maple Burl with Turquoise Inlay","Maple Burl Holy Cross","Fine Art","03/31/14 AI:CC;Shape#9;Wood:MA;Brass [ac].
+03/31/14 Hold for ICCFA Display [ac].","",9.75,270,"t","t",1800,-1,"2014-03-31 20:58:43","2014-03-31 20:59:27","8162270_Ambrosia_Maple_Burl_S1.jpg","image/jpeg",85005,"2014-03-31 20:58:42"
+1517,"7465215-CM1MA-140401","Spalted Maple","Ebonized Oak","Collector's Edition","04/01/14 AI:CM;Shape#1;Wood:MA;Brass [ac].
+04/01/14 Hold for ICCFA Display [ac].",13.25,7.75,215,"t","f",1200,-1,"2014-04-02 14:37:30","2014-04-02 14:37:30","7465215_Spalted_Maple_S1.jpg","image/jpeg",88347,"2014-04-02 14:37:30"
+1518,"8331410-CMneMA-140401","Ambrosia Maple Burl","Walnut Hand Carved Flame Finial","Fine Art","04/02/14 AI:CM;Shape#ne;Wood:MA;Brass [ac].
+04/02/14 Hold for ICCFA Display [ac].","","",410,"t","t",3800,-1,"2014-04-02 14:51:16","2014-04-02 14:51:16","8331410_Ambrosia_Maple_Burl_S1.jpg","image/jpeg",93825,"2014-04-02 14:51:16"

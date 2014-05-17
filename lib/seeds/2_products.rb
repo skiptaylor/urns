@@ -17,8 +17,8 @@ CSV.open(data, { headers: true }) do |csv_lines|
       top_material:     line['finial'],
       material_old:     line['material'],
       style_old:        line['style'],
-      material_id:      2,
-      productstyle_id:  2,
+      material_id:      47,
+      productstyle_id:  6,
       origin_id:        2,
       depth:            0
     )

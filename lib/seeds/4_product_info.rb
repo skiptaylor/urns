@@ -6,6 +6,10 @@
 # User.create email: 'johndoe@example.com', password: 'secret123'
 
 
+other = Woodtype.create(
+  :wood_type  => 'Other'
+)
+
 box = Woodtype.create(
   :wood_type  => 'Box Elder'
 )
@@ -74,9 +78,6 @@ magnolia = Woodtype.create(
   :wood_type  => 'Magnolia'
 )
 
-other = Woodtype.create(
-  :wood_type  => 'Other'
-)
 
 
 
@@ -357,7 +358,11 @@ material46 = Material.create(
   :woodtype_id    => 18
 )
 
-
+material47 = Material.create(
+  :material_type  => 'none',
+  :description    => ' ',
+  :woodtype_id    => 1
+)
 
 
 
@@ -525,6 +530,11 @@ The Fine Art line from Artistic Urns, for **When Ordinary Just Won\'t Do!**'
 style11 = Productstyle.create(
   :product_style  => 'Accessories',
   :description    => '**Accessories** and **Customize** your urn stuff goes here.'
+)
+
+style12 = Productstyle.create(
+  :product_style  => 'Miniature Keepsake Urn',
+  :description    => 'The **Acorn Keepsake** is a miniature urn with a capacity of about 2 cubic inches.'
 )
 
 #

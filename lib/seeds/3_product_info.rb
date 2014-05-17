@@ -80,7 +80,11 @@ magnolia = Woodtype.create(
 
 
 
-
+material0 = Material.create(
+  :material_type  => 'none',
+  :description    => ' ',
+  :woodtype_id    => 1
+)
 
 material1 = Material.create(
   :material_type  => 'Ambrosia Maple',
@@ -358,11 +362,6 @@ material46 = Material.create(
   :woodtype_id    => 18
 )
 
-material47 = Material.create(
-  :material_type  => 'none',
-  :description    => ' ',
-  :woodtype_id    => 1
-)
 
 
 

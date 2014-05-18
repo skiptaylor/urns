@@ -30,14 +30,14 @@ class Routes < Urns::Base
   
     def auth_distributor
       unless session[:distributor] == true || session[:admin] == true
-        flash[:alert] = 'You must sign in to see that page.'
+        session[:alert] = 'You must sign in to see that page.'
         redirect '/index'
       end
     end
 
     def auth_admin
       unless session[:admin] == true
-        flash[:alert] = 'You must be an admin to see that page.'
+        session[:alert] = 'You must be an admin to see that page.'
         redirect '/index'
       end
     end

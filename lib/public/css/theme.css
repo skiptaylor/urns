@@ -505,7 +505,7 @@ ul {
 	margin-bottom: 32px;
 }
 
-div.alert {
+div#alert {
 	display: none;
 	position: absolute;
 	width: 100%;

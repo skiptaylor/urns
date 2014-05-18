@@ -6,7 +6,7 @@ Sequel.migration do
       DateTime :created_at
       DateTime :updated_at
 
-      String :material_type, default: '0'
+      String :material_type, default: 'none'
 
       Text :description
 

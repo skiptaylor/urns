@@ -15,18 +15,7 @@ class Routes < Urns::Base
     # 
     # end
     
-  	def alert
-  		unless flash[:alert].nil?
-  			flash[:alert][:style]   ||= ''
-  			flash[:alert][:message] ||= ''
-  			msg =  ''
-  			msg << "<div class='alert #{session[:alert][:style]}'>"
-  			msg << "#{flash[:alert][:message]}"
-  			msg << "</div>"
-  			flash[:alert] = nil
-  			msg
-  		end
-  	end
+  	
   
     def auth_distributor
       unless session[:distributor] == true || session[:admin] == true

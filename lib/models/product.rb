@@ -19,19 +19,19 @@ class Product < Sequel::Model
   dataset_module do
 
     def mini
-      where 'capacity > 2 and capacity <= 7'
+      where 'capacity > 1 and capacity <= 7'
     end
 
     def small
-      where 'capacity > 8 and capacity <= 30'
+      where 'capacity > 7 and capacity <= 30'
     end
 
     def medium
-      where 'capacity > 31 and capacity <= 60'
+      where 'capacity > 30 and capacity <= 60'
     end
 
     def large
-      where 'capacity > 61 and capacity <= 90'
+      where 'capacity > 60 and capacity <= 90'
     end
 
     def vlarge
@@ -39,15 +39,15 @@ class Product < Sequel::Model
     end
 
     def keepsake
-      where 'capacity > 2 and capacity <= 185'
+      where 'capacity > 1 and capacity <= 185'
     end
 
     def individual
-      where 'capacity > 185 and capacity <= 390'
+      where 'capacity > 185 and capacity <= 389'
     end
 
     def companion
-      where 'capacity > 390 and capacity <= 799'
+      where 'capacity > 389 and capacity <= 799'
     end
 
     def equine

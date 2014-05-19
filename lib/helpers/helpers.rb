@@ -16,14 +16,14 @@ class Routes < Urns::Base
     # end
     
   	def alert
-  		unless session[:alert].nil?
-  			session[:alert][:style]   ||= ''
-  			session[:alert][:message] ||= ''
+  		unless flash[:alert].nil?
+  			flash[:alert][:style]   ||= ''
+  			flash[:alert][:message] ||= ''
   			msg =  ''
   			msg << "<div class='alert #{session[:alert][:style]}'>"
-  			msg << "#{session[:alert][:message]}"
+  			msg << "#{flash[:alert][:message]}"
   			msg << "</div>"
-  			session[:alert] = nil
+  			flash[:alert] = nil
   			msg
   		end
   	end

@@ -488,25 +488,7 @@ ul {
 }
 
 
-.r-label	{
-	color: #697f82; 
-	font-weight: 600; 
-	font-size: 1.5em; 
-	line-height: 1.5em;
-}
 
-.r-label-no-pad	{
-	color: #697f82; 
-	font-weight: 600; 
-	font-size: 1.5em; 
-	line-height: 1.1em;
-}
-
-.l-label	{
-	display: inline-block;
-	width: 90px;
-	text-align: right;
-}
 
 .full-size	{
 	margin-bottom: 32px;

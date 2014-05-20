@@ -492,7 +492,15 @@ ul {
 	color: #697f82; 
 	font-weight: 600; 
 	font-size: 1.5em; 
-	line-height: 1.5em;
+	line-height: 1.1em;
+	margin-top: .4em;
+}
+
+.r-label-no-margin	{
+	color: #697f82; 
+	font-weight: 600; 
+	font-size: 1.5em; 
+	line-height: 1.1em;
 }
 
 .l-label	{

@@ -493,10 +493,10 @@ ul {
 	font-weight: 600; 
 	font-size: 1.5em; 
 	line-height: 1.1em;
-	margin-top: .4em;
+	padding-top: 6px;
 }
 
-.r-label-no-margin	{
+.r-label-no-pad	{
 	color: #697f82; 
 	font-weight: 600; 
 	font-size: 1.5em; 

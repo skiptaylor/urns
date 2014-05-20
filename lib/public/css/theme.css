@@ -487,8 +487,24 @@ ul {
            transition: all 0.2s ease-in-out;
 }
 
+.r-label	{
+	display: block;
+	width: 360px;
+	color: #697f82;
+	margin-left: 100px; 
+	font-weight: 600; 
+	font-size: 1.5em; 
+	line-height: 1.2em;
+	margin-bottom: .4em;
+}
 
-
+.l-label	{
+	display: inline-block;
+	width: 90px;
+	line-height: 1.8em;
+	text-align: right;
+	float: left;
+}
 
 .full-size	{
 	margin-bottom: 32px;

@@ -56,6 +56,7 @@ class Product < Sequel::Model
 
     def by_wood_type(wood_type)
       where(material_id: Material.where(woodtype_id: Woodtype.where(wood_type: wood_type).select(:id)).select(:id))
+      
     end
 
     def active
@@ -63,10 +64,7 @@ class Product < Sequel::Model
     end
 
     def fineart
-      where(
-        productstyle_id: [Productstyle.where(product_style: 'Fine Art').select(:id),
-          Productstyle.where(product_style: 'Fine Art Keepsake').select(:id)]
-        ).select(:id)
+      where(productstyle_id: [Productstyle.where(product_style: 'Fine Art').select(:id), Productstyle.where(product_style: 'Fine Art Keepsake').select(:id)])
     end
 
     def niche

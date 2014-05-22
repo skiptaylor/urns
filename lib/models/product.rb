@@ -19,7 +19,7 @@ class Product < Sequel::Model
   dataset_module do
 
     def mini
-      where 'capacity > 1 and capacity <= 7'
+      where 'capacity > 0 and capacity <= 7'
     end
 
     def small
@@ -39,7 +39,7 @@ class Product < Sequel::Model
     end
 
     def keepsake
-      where 'capacity > 1 and capacity <= 185'
+      where 'capacity > 0 and capacity <= 185'
     end
 
     def individual
@@ -63,7 +63,10 @@ class Product < Sequel::Model
     end
 
     def fineart
-      where(productstyle_id: [Productstyle.where(product_style: 'Fine Art').select(:id), Productstyle.where(product_style: 'Fine Art Keepsake').select(:id)]).select(:id)
+      where(
+        productstyle_id: [Productstyle.where(product_style: 'Fine Art').select(:id),
+          Productstyle.where(product_style: 'Fine Art Keepsake').select(:id)]
+        ).select(:id)
     end
 
     def niche

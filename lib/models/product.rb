@@ -56,7 +56,6 @@ class Product < Sequel::Model
 
     def by_wood_type(wood_type)
       where(material_id: Material.where(woodtype_id: Woodtype.where(wood_type: wood_type).select(:id)).select(:id))
-      
     end
 
     def active

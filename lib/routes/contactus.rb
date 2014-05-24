@@ -19,7 +19,7 @@ module Urns
         :phone      => params[:phone],
         :comment    => params[:comment]
     )
-      params[:read]    ? contactus.update(:read true)    : contactus.update(:read false)
+      params[:read]    ? contactus.update(read: true)    : contactus.update(read: false)
 
       redirect "/contactus/thank-you"
     end
@@ -39,7 +39,7 @@ module Urns
       :phone      => params[:phone],
       :comment    => params[:comment]
       )
-      params[:read]    ? contactus.update(:read true)    : contactus.update(:read false)
+      params[:read]    ? contactus.update(read: true)    : contactus.update(read: false)
 
       redirect "/admin/dashboard"
     end

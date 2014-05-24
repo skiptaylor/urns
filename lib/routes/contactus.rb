@@ -3,7 +3,7 @@ module Urns
 
     get "/contactus/contactuses/?" do
       @contactus = Contactus.all
-      erb :"/admin/dashboard, layout: "/layout_product".to_sym
+      erb :"/admin/dashboard", layout: "/layout_product".to_sym
     end
 
     get "/contactus/new/?" do

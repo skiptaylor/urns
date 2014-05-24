@@ -17,37 +17,37 @@
 						<h4>Contact Us</h4>
 						<form role="form">
 						  <div class="form-group">
-						    <label for="inputText">Name</label>
+						    <label for="name">Name</label>
 						    <div class="controls">
-						      <input type="text" class="form-control span5" id="inputName" placeholder="Name">
+						      <input type="text" class="form-control span5" id="name" placeholder="Name" value="<%= @contactus.name %>">
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label for="inputText">Company</label>
+						    <label for="company">Company</label>
 						    <div class="controls">
-						      <input type="text" class="form-control span5" id="inputCompany" placeholder="Company">
+						      <input type="text" class="form-control span5" id="company" placeholder="Company" value="<%= @contactus.company %>">
 						    </div>
 						  </div>
 						  <div class="form-group">
-							  <label for="inputEmail">Email</label>
+							  <label for="email">Email</label>
 							      <div class="controls">
-							        <input type="text" class="form-control span5" id="inputEmail" placeholder="Email">
+							        <input type="text" class="form-control span5" id="email" placeholder="Email" value="<%= @contactus.email %>">
 							      </div>
 						  </div>
 						  <div class="form-group">
-						    <label for="inputTel">Phone</label>
+						    <label for="phone">Phone</label>
 						    <div class="controls">
-						      <input type="text" class="form-control span5" id="inputTel" placeholder="Phone">
+						      <input type="text" class="form-control span5" id="phone" placeholder="Phone" value="<%= @contactus.phone %>">
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label for="inputText">Comment</label>
+						    <label for="Comment">Comment</label>
 						    <div class="controls">
-						      <textarea type="text" class="form-control span5" id="inputText" placeholder="Comment" rows="7"></textarea>
+						      <textarea type="text" class="form-control span5" id="Comment" placeholder="Comment" rows="7"><%= @contactus.comment %></textarea>
 						    </div>
 						  </div>
 						  <div class="form-group">
-						    <label for="inputText"> </label>
+						    <label for="contactus"> </label>
 							 <div class="controls">
 						      <button type="submit" class="btn btn-success">Send</button>
 						    </div>

@@ -13,8 +13,7 @@ Sequel.migration do
       
       Text    :comment
       
-      Boolean :reliquary, default: false
-
+      # Boolean :read, default: false
     end
   end
 end

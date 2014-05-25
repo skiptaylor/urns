@@ -13,7 +13,6 @@ Sequel.migration do
       
       Text    :comment
       
-      # Boolean :read, default: false
     end
   end
 end

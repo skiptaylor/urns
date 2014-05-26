@@ -12,14 +12,13 @@ module Urns
     end
 
     post "/contact/new/?" do
-      contact = Contact.create(
+      Contact.create(
         :name       => params[:name],
         :company    => params[:company],
         :email      => params[:email],
         :phone      => params[:phone],
         :comment    => params[:comment]
     )
-      params[:read]    ? contact.update(read: true)    : contact.update(read: false)
 
       redirect "/contactus/thank-you"
     end
@@ -39,7 +38,6 @@ module Urns
       :phone      => params[:phone],
       :comment    => params[:comment]
       )
-      params[:read]    ? contact.update(read: true)    : contact.update(read: false)
 
       redirect "/admin/dashboard"
     end

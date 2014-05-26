@@ -12,7 +12,7 @@ module Urns
     end
 
     post "/contact/new/?" do
-      contactus = Contactus.create(
+      contact = Contact.create(
         :name       => params[:name],
         :company    => params[:company],
         :email      => params[:email],

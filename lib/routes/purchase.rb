@@ -138,7 +138,6 @@ class Routes < Urns::Base
   end
 
   post "/admin/purchase/:id/edit/?" do
-    cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     purchase = Purchase[params[:id]]
     purchase.update(
       :stripe_id          => params[:stripe_id],

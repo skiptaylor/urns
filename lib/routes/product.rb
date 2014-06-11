@@ -96,7 +96,6 @@ class Routes < Urns::Base
   end
 
   get '/product/:id/product/?' do
-    @photo = @product.photos
     @product = Product[params[:id]]
     erb :"/product/product"
   end

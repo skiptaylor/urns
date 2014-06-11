@@ -25,37 +25,41 @@ class Routes < Urns::Base
   
     redirect "/distributor/#{params[:distributor_id]}/distributor"
   end
-  
+
   get "/distributor/:distributor_id/logo/:id/edit/?" do
-    auth_admin
     @distributor = Distributor[params[:distributor_id]]
     @logo = Logo[params[:id]]
     erb :"distributor/logo/logo_edit"
   end
-
+  
   post "/distributor/:distributor_id/logo/:id/edit/?" do
-    auth_admin
     @distributor = Distributor[params[:distributor_id]]
     logo = Logo[params[:id]]
     logo.update(
-      :logo_notes => params[:logo_notes]
+      :logo_notes       => params[:logo_notes]
     )
     if params[:logo]
-      logo.photo.destroy if logo.photo
       Photo.create(
-        :source => params[:logo],
+        :source       => params[:logo],
         :description  => params[:description],
-        :logo_id => logo.id
+        :logo_id      => logo.id
       )
     end
   
     redirect "/distributor/#{params[:distributor_id]}/distributor"
   end
-
+  
   get "/distributor/:distributor_id/logo/:logo_id/logo/?" do
     @distributor = Distributor[params[:distributor_id]]
     @logo = Logo[params[:id]]
     erb :"distributor/logo/logo"
+  end
+  
+  get "/distributor/:distributor_id/logo/:id/delete/?" do
+    @distributor = Distributor[params[:distributor_id]]
+    logo = Logo[params[:id]]
+    logo.destroy
+    redirect "/distributor/#{params[:distributor_id]}/edit"
   end
 
 end

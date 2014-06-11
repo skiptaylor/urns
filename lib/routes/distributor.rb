@@ -1,5 +1,43 @@
 class Routes < Urns::Base
 
+  get '/distributor/distributors/new/?' do
+    @distributor = Distributor.new
+    erb :"/distributor/distributor_edit"
+  end
+
+  post '/distributor/distributors/new/?' do
+    distributor = Distributor.create(
+      :name           => params[:name],
+      :type           => params[:type],
+      :subdomain      => params[:subdomain],
+      :site           => params[:site],
+      :phone          => params[:phone],
+      :phone2         => params[:phone2],
+      :mobile         => params[:mobile],
+      :addr1          => params[:addr1],
+      :addr2          => params[:addr2],
+      :city           => params[:city],
+      :state          => params[:state],
+      :zip            => params[:zip],
+      :country        => params[:country],
+      :notes          => params[:notes],
+      :discount_code  => params[:discount_code],
+      :discount_rate  => params[:discount_rate],
+      :contact        => params[:contact],
+      :contact_title  => params[:contact_title],
+      :species        => params[:species],
+      :facility       => params[:facility],
+      :email          => params[:email],
+      :username       => params[:username],
+      :password       => params[:password],
+      :logo_id        => params[:logo]
+    )
+    params[:active] 		? distributor.update(:active => true)    : distributor.update(:active => false)
+    params[:allow_po] 	? distributor.update(:allow_po => true)  : distributor.update(:allow_po => false)
+
+    redirect "/distributor/#{distributor.id}/edit"
+  end
+
   get '/distributor/distributors/?' do
     @distributor = Distributor
   
@@ -11,21 +49,68 @@ class Routes < Urns::Base
       @distributor = @distributor.where(Sequel.like(:state, "%#{params[:search_state]}%"))
     end  
   
-    erb :"/distributor/distributors", layout: "/layout_product".to_sym
+    erb :"/distributor/distributors"
   end
 
   get '/distributor/:id/distributor/?' do
+    @logo = Logo[params[:id]]
     @distributor = Distributor[params[:id]]
-    erb :"/distributor/distributor", layout: "/layout_product".to_sym
+    erb :"/distributor/distributor"
   end
+
+  get '/distributor/:id/edit/?' do
+    @logo = Logo[params[:id]]
+    @distributor = Distributor[params[:id]]
+    erb :"/distributor/distributor_edit"
+  end
+
+  post '/distributor/:id/edit/?' do
+    @logo = Logo[params[:id]]
+    distributor = Distributor[params[:id]]
+    distributor.update(
+      :name           => params[:name],
+      :type           => params[:type],
+      :subdomain      => params[:subdomain],
+      :site           => params[:site],
+      :phone          => params[:phone],
+      :phone2         => params[:phone2],
+      :mobile         => params[:mobile],
+      :addr1          => params[:addr1],
+      :addr2          => params[:addr2],
+      :city           => params[:city],
+      :state          => params[:state],
+      :zip            => params[:zip],
+      :country        => params[:country],
+      :notes          => params[:notes],
+      :discount_code  => params[:discount_code],
+      :discount_rate  => params[:discount_rate],
+      :contact        => params[:contact],
+      :contact_title  => params[:contact_title],
+      :species        => params[:species],
+      :facility       => params[:facility],
+      :email          => params[:email],
+      :username       => params[:username],
+      :password       => params[:password],
+      :logo_id        => params[:logo]
+    )
+    params[:active] 		? distributor.update(:active => true)    : distributor.update(:active => false)
+    params[:allow_po] 	? distributor.update(:allow_po => true)  : distributor.update(:allow_po => false)
+  
+  
+    redirect "/distributor/#{distributor.id}/edit"
+  end
+
+  get '/distributor/:id/delete/?' do
+    distributor = Distributor[params[:id]]
+    distributor.destroy
+    redirect "/distributor/distributors"
+  end  
 
   get '/distributor/signin/?' do
     erb :'/distributor/signin'
   end
 
   post '/distributor/signin/?' do
-    session[:distributor] = nil
-    
     params[:username].strip!
     params[:username].downcase!
     params[:password].strip!
@@ -36,6 +121,7 @@ class Routes < Urns::Base
         session[:distributor] = distributor.id
         flash[:alert] = 'You are now signed in.'
         redirect "/index"
+        redirect "/distributor/#{session[:distributor]}/profile"
       else
         flash[:alert] = 'Username/password combo does not match. Try again.'
         erb :'/distributor/signin'
@@ -54,7 +140,7 @@ class Routes < Urns::Base
 
   get '/distributor/signout/?' do
     session[:distributor] = nil
-    flash[:alert] = 'You are now signed out. Thank you, come again!'
+    flash[:alert] = 'You are now signed out.'
     redirect '/index'
   end
   

@@ -96,6 +96,7 @@ class Routes < Urns::Base
       end
 
       purchase.shipping = purchase.shipping_cost
+      purchase.amount   = purchase.grand_total
       purchase.tax      = purchase.tax_rate
       purchase.save
 

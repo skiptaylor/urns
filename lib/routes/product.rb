@@ -168,53 +168,32 @@ class Routes < Urns::Base
     product.destroy
     redirect "/product/products"
   end
-
-  # get "/product/gallery/:range/?" do
-  #   @product = Product.all
-  # 
-  #   if params[:search] && !params[:search].nil?
-  #     @product = @product.all(:serial_number.like => "%#{params[:search]}%")
-  #   else
-  #   
-  #   @product = Product.send(params[:range])
-  #   woodtype      = params[:wood_type]  || 'All'
-  #   shape         = params[:shape]      || 'All'
-  # 
-  #   @product = @product.by_wood_type(woodtype) unless woodtype == 'All'
-  #   @product = @product.all(shape: shape) unless shape == 'All'
-  #   
-  # end
-  # 
-  #   case params[:range]
-  #   when "keepsake"
-  #   @range_title = "Keepsake"
-  #   @range_description = 'Keepsake urns are sized to hold a portion of an adult\'s cremated remains.  Capacities vary from 10 to 185 cubic inches.  Sometimes called sharing urns, they are often used to split remains among more than one family member.  Also popular for scattering over multiple areas, each keepsake urn can be used for a different location.  Many find comfort in keeping a small portion of the remains to remember their loved one, and the keepsake urn is the perfect way to preserve it.'
-  #   when 'large'
-  #   @range_title = 'Individual'
-  #   @range_description = 'Individual urns are full size and will contain an adult\'s entire cremated remains.  The term individual urn refers to an urn with the capacity of about 190 cubic inches or greater.  Physical dimensions will vary depending on total capacity, shape of the urn and the type of top.'
-  #   when 'companion'
-  #   @range_title = 'Companion'
-  #   @range_description = 'Companion urns are typically 380 cubic inches and greater. They are designed to hold the cremated remains of two adults. Companion urns are often chosen by couples who make the decision to remain together after passing. Many families will choose to purchase a companion urn before both have passed as a personal decision to remain close in eternity.'
-  #   when 'niche'
-  #   @range_title = 'Niche'
-  #   @range_description = 'Niche urns are full size urns that will contain an adult\'s entire cremated remains.  They have the physical dimensions that allow them to fit in a 12" x 12" x 12" niche.  Height includes the top, and tops are interchangeable.  Families may be able to swap a top to lower the height.  Niches vary in size; check with the property manager to verify the dimensions of your niche.'
-  #   when 'fineart'
-  #   @range_title = 'Fine Art'
-  #   @range_description = 'Fine Art urns are Artistic Urns extreme creations.  These pieces range in sizes from keepsake to individual to companion and vary dramatically in design and outcome.  Many are \'natural edge\' urns turned outward resulting in truly one-off works of art.  Others are embellished with gemstones, garnished with custom tops or enhanced with pyrography, relief carving or painting.  These Fine Art urns are our most expensive and most desired pieces.'
-  #   when 'accessories'
-  #   @range_title = 'Accessories'
-  #   @range_description = 'These are Accessories'
-  #   else
-  #   @range_title = 'Artistic Urns'
-  #   @range_description = ''
-  #   end
-  # 
-  #   erb :"/product/gallery"
-  # end
-  # 
-  # get '/product/:id/show/?' do
-  #   @product = Product[params[:id]]
-  #   erb :"/product/show_product"
-  # end
   
+  get "/product/gallery/:range/?" do
+    @product = Product.active.filter(wood: 't')
+  
+    if params[:search] && !params[:search].nil?
+      @product = @product.where(Sequel.like(:serial_number, "%#{params[:search]}%"))
+    else
+      @product = @product.send(params[:range])
+      woodtype      = params[:wood_type]   || 'All'
+      wood_color1   = params[:wood_color1] || 'All'
+      shape         = params[:shape]       || 'All'
+     
+      @product = @product.by_wood_type(woodtype) unless woodtype == 'All'
+      @product = @product.where(wood_color1: wood_color1) unless wood_color1 == 'All'
+      @product = @product.where(shape: shape) unless shape == 'All'
+    end
+    
+    @range_title       = range_title(params[:range])
+    @range_description = range_desc(params[:range])
+    
+    erb :"/product/gallery"
+  end
+
+  get '/product/:id/show/?' do
+    @product = Product[params[:id]]
+    erb :"/product/show_product"
+  end
+
 end

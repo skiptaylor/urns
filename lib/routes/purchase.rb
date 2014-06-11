@@ -169,10 +169,10 @@ class Routes < Urns::Base
     redirect "/admin/purchases"
   end
 
-  get "/purchase/:id/delete/?" do
+  get "/admin/purchase/:id/delete/?" do
     purchase = Purchase[params[:id]]
     purchase.destroy
-    redirect "/purchases"
+    redirect "/admin/purchases"
   end
 
 end

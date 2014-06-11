@@ -14,19 +14,17 @@ class Routes < Urns::Base
     #   end
     # 
     # end
-    
-  	
   
     def auth_distributor
       unless session[:distributor] == true || session[:admin] == true
-        session[:alert] = 'You must sign in to see that page.'
+        flash[:alert] = 'You must sign in to see that page.'
         redirect '/index'
       end
     end
 
     def auth_admin
       unless session[:admin] == true
-        session[:alert] = 'You must be an admin to see that page.'
+        flash[:alert] = 'You must be an admin to see that page.'
         redirect '/index'
       end
     end
@@ -60,12 +58,22 @@ class Routes < Urns::Base
       'active' if match
     end
     
+    def alert
+      "<div id='alert'>#{flash[:alert]}</div>" if flash[:alert]
+    end
+    
     def hidden
       'display: none;'
     end
     
     def numeric? x
       true if Float(x) rescue false
+    end
+    
+    def self.registered(app)
+      app.enable :sessions
+      app.set :session_secret, [*('A'..'Z')].sample(40).join if app.session_secret.nil?
+      app.use Rack::Flash
     end
 
   end

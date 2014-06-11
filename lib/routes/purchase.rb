@@ -1,5 +1,10 @@
 class Routes < Urns::Base
 
+  get "/checkout/creditcard/?" do
+    @purchase = Purchase.all
+    erb :"/checkout/checkout"
+  end
+  
   get "/purchase/new/?" do
     @state = State.all
     @service = Service.all
@@ -104,16 +109,32 @@ class Routes < Urns::Base
 		end
   end
 
-  get "/purchases/?" do
-    @purchase = Purchase.where(shopping_session: session[:shopping_session])
-    erb :"/checkout/purchases"
+  get "/admin/purchase/:id/purchase/?" do
+    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    @total = ShoppingCartItem.total(session[:shopping_session])
+    @state = State.all
+    @item = Item.all
+    @purchase = Purchase[params[:id]]
+    erb :"/admin/purchase"
   end
 
-  get "/purchase/:id/edit/?" do
-    @state = State.all
-    @service = Service.all
+  get "/admin/purchases/?" do
     @purchase = Purchase[params[:id]]
-    erb :"/checkout/checkout"
+    @service = Service.all
+    @product = Product.all
+    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    @total = ShoppingCartItem.total(session[:shopping_session])
+    @purchase = Purchase.all
+    erb :"/admin/purchases"
+  end
+  
+  get "/admin/purchase/:id/edit/?" do
+    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    @total = ShoppingCartItem.total(session[:shopping_session])
+    @state = State.all
+    @item = Item.all
+    @purchase = Purchase[params[:id]]
+    erb :"/admin/purchase_edit"
   end
 
   post "/purchase/:id/edit/?" do
@@ -145,7 +166,7 @@ class Routes < Urns::Base
       :service_id         => params[:service]
     )
 
-    redirect "/purchase/#{purchase.id}/confirm"
+    redirect "/admin/purchases"
   end
 
   get "/purchase/:id/delete/?" do

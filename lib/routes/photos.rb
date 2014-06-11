@@ -27,7 +27,7 @@ class Routes < Urns::Base
     auth_admin
     @product = Product[params[:product_id]]
     @photo = Photo[params[:id]]
-    erb :"/product/photos/photo",
+    erb :"/product/photos/photo"
   end
 
   get "/product/:product_id/photos/:id/edit/?" do

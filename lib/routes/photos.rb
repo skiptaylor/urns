@@ -4,7 +4,7 @@ class Routes < Urns::Base
     auth_admin
     @product = Product[params[:product_id]]
     @photo = Photo.new
-    erb :"/product/photos/photo_edit", layout: "/layout_product".to_sym 
+    erb :"/product/photos/photo_edit"
   end
 
   post "/product/:product_id/photos/new/?" do
@@ -27,14 +27,14 @@ class Routes < Urns::Base
     auth_admin
     @product = Product[params[:product_id]]
     @photo = Photo[params[:id]]
-    erb :"/product/photos/photo", layout: "/layout_product".to_sym
+    erb :"/product/photos/photo",
   end
 
   get "/product/:product_id/photos/:id/edit/?" do
     auth_admin
     @product = Product[params[:product_id]]
     @photo = Photo[params[:id]]
-    erb :"/product/photos/photo_edit", layout: "/layout_product".to_sym
+    erb :"/product/photos/photo_edit"
   end
 
   post "/product/:product_id/photos/:id/edit/?" do
@@ -53,7 +53,7 @@ class Routes < Urns::Base
     auth_admin
     @product = Product[params[:product_id]]
     @photo = @product.photos
-    erb :"/product/photos/photos", layout: "/layout_product".to_sym
+    erb :"/product/photos/photos"
   end
 
   get "/product/:product_id/photos/:id/delete/?" do

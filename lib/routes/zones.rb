@@ -3,7 +3,7 @@ class Routes < Urns::Base
   get "/shipping/zones/new/?" do
     auth_admin
     @zone = Zone.new
-    erb :"/shipping/zones/zones_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/zones/zones_edit"
   end
 
   post "/shipping/zones/new/?" do
@@ -18,13 +18,13 @@ class Routes < Urns::Base
   get "/shipping/zones/zones/?" do
     auth_admin
     @zone = Zone
-    erb :"/shipping/zones/zones", layout: "/layout_product".to_sym
+    erb :"/shipping/zones/zones"
   end
 
   get "/shipping/zones/:id/edit/?" do
     auth_admin
     @zone = Zone[params[:id]]
-    erb :"/shipping/zones/zones_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/zones/zones_edit"
   end
 
   post "/shipping/zones/:id/edit/?" do

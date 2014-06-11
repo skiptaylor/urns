@@ -84,7 +84,7 @@ class Routes < Urns::Base
         # if product.quantity < 0
         #   # Do something to flag the product as sold out?
         # end
-        unless product.accessories == "true"
+        unless product.accessories = true
           product.status = "Sold"
         end
         product.save

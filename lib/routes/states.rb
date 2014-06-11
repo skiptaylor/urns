@@ -3,7 +3,7 @@ class Routes < Urns::Base
   get "/states/new/?" do
     auth_admin
     @state = State.new
-    erb :"/states/states_edit", layout: "/layout_product".to_sym
+    erb :"/states/states_edit"
   end
 
   post "/states/new/?" do
@@ -20,13 +20,13 @@ class Routes < Urns::Base
   get "/states/states/?" do
     auth_admin
     @state = State
-    erb :"/states/states", layout: "/layout_product".to_sym
+    erb :"/states/states"
   end
 
   get "/states/:id/edit/?" do
     auth_admin
     @state = State[params[:id]]
-    erb :"/states/states_edit", layout: "/layout_product".to_sym
+    erb :"/states/states_edit"
   end
 
   post "/states/:id/edit/?" do

@@ -2,7 +2,7 @@ class Routes < Urns::Base
 
   get "/shipping/sizes/new/?" do
     @size = Size.new
-    erb :"/shipping/sizes/size_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/sizes/size_edit"
   end
 
   post "/shipping/sizes/new/?" do
@@ -17,12 +17,12 @@ class Routes < Urns::Base
 
   get "/shipping/sizes/sizes/?" do
     @size = Size.all
-    erb :"/shipping/sizes/sizes", layout: "/layout_product".to_sym
+    erb :"/shipping/sizes/sizes"
   end
 
   get "/shipping/sizes/:id/edit/?" do
     @size = Size[params[:id]]
-    erb :"/shipping/sizes/size_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/sizes/size_edit"
   end
 
   post "/shipping/sizes/:id/edit/?" do

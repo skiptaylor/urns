@@ -3,7 +3,7 @@ class Routes < Urns::Base
   get "/distributor/:distributor_id/logo/new/?" do
     @distributor = Distributor[params[:id]]
     @logo = Logo.new
-    erb :"/distributor/logo/logo_edit", layout: "/layout_product".to_sym
+    erb :"/distributor/logo/logo_edit"
   end
 
   post "/distributor/:distributor_id/logo/new/?" do
@@ -30,7 +30,7 @@ class Routes < Urns::Base
     auth_admin
     @distributor = Distributor[params[:distributor_id]]
     @logo = Logo[params[:id]]
-    erb :"distributor/logo/logo_edit", layout: "/layout_product".to_sym
+    erb :"distributor/logo/logo_edit"
   end
 
   post "/distributor/:distributor_id/logo/:id/edit/?" do
@@ -55,7 +55,7 @@ class Routes < Urns::Base
   get "/distributor/:distributor_id/logo/:logo_id/logo/?" do
     @distributor = Distributor[params[:distributor_id]]
     @logo = Logo[params[:id]]
-    erb :"distributor/logo/logo", layout: "/layout_product".to_sym
+    erb :"distributor/logo/logo"
   end
 
 end

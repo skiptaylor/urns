@@ -2,7 +2,7 @@ class Routes < Urns::Base
 
   get "/shipping/services/new/?" do
     @service = Service.new
-    erb :"/shipping/services/service_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/services/service_edit"
   end
 
   post "/shipping/services/new/?" do
@@ -15,12 +15,12 @@ class Routes < Urns::Base
 
   get "/shipping/services/services/?" do
     @service = Service
-    erb :"/shipping/services/services", layout: "/layout_product".to_sym
+    erb :"/shipping/services/services"
   end
 
   get "/shipping/services/:id/edit/?" do
     @service = Service[params[:id]]
-    erb :"/shipping/services/service_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/services/service_edit"
   end
 
   post "/shipping/services/:id/edit/?" do

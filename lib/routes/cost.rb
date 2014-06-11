@@ -5,7 +5,7 @@ class Routes < Urns::Base
     @zone = Zone.all
     @size = Size.all
     @cost = Cost.new
-    erb :"/shipping/costs/cost_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/costs/cost_edit"
   end
 
   post "/shipping/costs/new/?" do
@@ -21,7 +21,7 @@ class Routes < Urns::Base
 
   get "/shipping/costs/costs/?" do
     @cost = Cost.order(:amount)
-    erb :"/shipping/costs/costs", layout: "/layout_product".to_sym
+    erb :"/shipping/costs/costs"
   end
 
   get "/shipping/costs/:id/edit/?" do
@@ -29,7 +29,7 @@ class Routes < Urns::Base
     @zone = Zone.all
     @size = Size.all
     @cost = Cost[params[:id]]
-    erb :"/shipping/costs/cost_edit", layout: "/layout_product".to_sym
+    erb :"/shipping/costs/cost_edit"
   end
 
   post "/shipping/costs/:id/edit/?" do

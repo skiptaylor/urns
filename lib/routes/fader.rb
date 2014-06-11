@@ -3,12 +3,12 @@ module Urns
 
     get "/fader/faders/?" do
       @fader = Fader.all
-      erb :"/fader/faders", layout: "/layout_product".to_sym
+      erb :"/fader/faders"
     end
 
     get "/fader/faders/new/?" do
       @fader = Fader.new
-      erb :"/fader/fader_edit", layout: "/layout_product".to_sym
+      erb :"/fader/fader_edit"
     end
 
     post "/fader/faders/new/?" do
@@ -33,12 +33,12 @@ module Urns
 
     get "/fader/:id/fader/?" do
       @fader = Fader.get(params[:id])
-      erb :"/fader/fader", layout: "/layout_product".to_sym
+      erb :"/fader/fader"
     end
 
     get "/fader/:id/edit/?" do
       @fader = Fader.get(params[:id])
-      erb :"/fader/fader_edit", layout: "/layout_product".to_sym
+      erb :"/fader/fader_edit"
     end
 
     post "/fader/:id/edit/?" do

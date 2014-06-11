@@ -1,4 +1,4 @@
-module Urns
+
   class Routes < Urns::Base
 
     get '/sample/?' do
@@ -14,4 +14,4 @@ module Urns
     end
 
   end
-end
+

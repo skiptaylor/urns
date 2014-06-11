@@ -141,7 +141,6 @@ class Routes < Urns::Base
     cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     total = ShoppingCartItem.total(session[:shopping_session])
     state = State.all
-    item = Item.all
     purchase = Purchase[params[:id]]
     purchase.update(
       :stripe_id          => params[:stripe_id],

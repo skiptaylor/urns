@@ -17,6 +17,7 @@ class Routes < Urns::Base
       :country        => params[:country],
       :notes          => params[:notes],
       :contact        => params[:contact],
+      :phone          => params[:phone],
       :facility_name  => params[:facility_name],
       :distributor_id => params[:id]
     )
@@ -49,6 +50,7 @@ class Routes < Urns::Base
       :notes          => params[:notes],
       :facility_name  => params[:facility_name],
       :contact        => params[:contact],
+      :phone          => params[:phone],
       :distributor_id => params[:id]
     )
     

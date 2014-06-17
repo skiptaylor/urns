@@ -1,13 +1,13 @@
 class Routes < Urns::Base
 
-  get "/distributor/:id/shipto/new/?" do
-    distributor = Distributor[params[:id]]
+  get "/distributor/:distributor_id/shiptos/new/?" do
+    @distributor = Distributor[params[:distributor_id]]
     @shipto = Shipto.new
     erb :"/distributor/shipto_edit" 
   end
 
-  post "/distributor/:id/shipto/new/?" do
-    distributor = Distributor[params[:id]]
+  post "/distributor/:distributor_id/shiptos/new/?" do
+    distributor = Distributor[params[:distributor_id]]
     Shipto.create(
       :addr1          => params[:addr1],
       :addr2          => params[:addr2],
@@ -19,26 +19,26 @@ class Routes < Urns::Base
       :contact        => params[:contact],
       :phone          => params[:phone],
       :facility_name  => params[:facility_name],
-      :distributor_id => params[:id]
+      :distributor_id => params[:distributor_id]
     )
     
-    redirect "/distributor/#{params[:id]}/shiptos"
+    redirect "/distributor/#{params[:distributor_id]}/shiptos"
   end
 
-  get "/distributor/:id/shiptos/?" do
-    @distributor = Distributor[params[:id]]
+  get "/distributor/:distributor_id/shiptos/?" do
+    @distributor = Distributor[params[:distributor_id]]
     shipto = Shipto
     erb :"/distributor/shiptos"
   end
 
-  get "/distributor/:distributor_id/shipto/:id/edit/?" do
-    distributor = Distributor[params[:id]]
+  get "/distributor/:distributor_id/shiptos/:id/edit/?" do
+    @distributor = Distributor[params[:distributor_id]]
     @shipto = Shipto[params[:id]]
     erb :"/distributor/shipto_edit" 
   end
 
-  post "/distributor/:distributor_id/shipto/:id/edit/?" do
-    distributor = Distributor[params[:id]]
+  post "/distributor/:distributor_id/shiptos/:id/edit/?" do
+    distributor = Distributor[params[:distributor_id]]
     shipto = Shipto[params[:id]]
     shipto.update(
       :addr1          => params[:addr1],
@@ -51,17 +51,17 @@ class Routes < Urns::Base
       :facility_name  => params[:facility_name],
       :contact        => params[:contact],
       :phone          => params[:phone],
-      :distributor_id => params[:id]
+      :distributor_id => params[:distributor_id]
     )
     
-    redirect "/distributor/#{params[:id]}/shiptos"
+    redirect "/distributor/#{params[:distributor_id]}/shiptos"
   end
 
-  get "/distributor/:distributor_id/shipto/:id/delete/?" do
-    distributor = Distributor[params[:id]]
+  get "/distributor/:distributor_id/shiptos/:id/delete/?" do
+    distributor = Distributor[params[:distributor_id]]
     shipto = Shipto[params[:id]]
     shipto.destroy
-    redirect "/distributor/#{params[:id]}/shiptos"
+    redirect "/distributor/#{params[:distributor_id]}/shiptos"
   end 
   
 end

@@ -1,13 +1,13 @@
 class Routes < Urns::Base
 
   get "/distributor/:id/shipto/new/?" do
-    distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor[params[:id]]
     @shipto = Shipto.new
     erb :"/distributor/shipto_edit" 
   end
 
   post "/distributor/:id/shipto/new/?" do
-    distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor[params[:id]]
     Shipto.create(
       :addr1          => params[:addr1],
       :addr2          => params[:addr2],
@@ -32,13 +32,13 @@ class Routes < Urns::Base
   end
 
   get "/distributor/:distributor_id/shipto/:id/edit/?" do
-    distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor[params[:id]]
     @shipto = Shipto[params[:id]]
     erb :"/distributor/shipto_edit" 
   end
 
   post "/distributor/:distributor_id/shipto/:id/edit/?" do
-    distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor[params[:id]]
     shipto = Shipto[params[:id]]
     shipto.update(
       :addr1          => params[:addr1],

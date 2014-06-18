@@ -2,7 +2,6 @@ class Routes < Urns::Base
 
   get "/distributor/:distributor_id/logo/new/?" do
     @distributor = Distributor[params[:distributor_id]]
-    @logo = Logo.destroy
     @logo = Logo.new
     erb :"/distributor/logo/logo_edit"
   end

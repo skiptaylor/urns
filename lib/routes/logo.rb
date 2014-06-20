@@ -8,7 +8,6 @@ class Routes < Urns::Base
 
   post "/distributor/:distributor_id/logo/new/?" do
     distributor = Distributor.where(id: params[:distributor_id]).first
-    
     logo = Logo.create(
       :distributor_id   => params[:distributor_id],
       :logo_notes       => params[:logo_notes]

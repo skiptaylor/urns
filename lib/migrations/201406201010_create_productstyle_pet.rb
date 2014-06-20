@@ -1,6 +1,6 @@
 Sequel.migration do
   change do
-    create_table(:productstyle_pet) do
+    create_table(:productstyle_pets) do
       primary_key :id
 
       DateTime :created_at

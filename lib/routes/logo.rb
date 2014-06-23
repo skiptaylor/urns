@@ -16,7 +16,6 @@ class Routes < Urns::Base
     distributor.update(logo_id: logo.id)
     
     if params[:logo]
-      logo.photo.destroy if logo.photo
       Photo.create(
         :source       => params[:logo],
         :description  => params[:description],
@@ -64,7 +63,7 @@ class Routes < Urns::Base
   end
   
   get "/distributor/:distributor_id/logo/:id/delete/?" do
-    @distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor[params[:distributor_id]]
     logo = Logo[params[:id]]
     logo.destroy
     redirect "/distributor/#{params[:distributor_id]}/edit"

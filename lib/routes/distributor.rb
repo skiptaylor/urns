@@ -54,18 +54,15 @@ class Routes < Urns::Base
 
   get '/distributor/:id/distributor/?' do
     @distributor = Distributor[params[:id]]
-    @logo = Logo[params[:logo_id]]
     erb :"/distributor/distributor"
   end
 
   get '/distributor/:id/edit/?' do
     @distributor = Distributor[params[:id]]
-    @logo = Logo[params[:logo_id]]
     erb :"/distributor/distributor_edit"
   end
 
   post '/distributor/:id/edit/?' do
-    logo = Logo[params[:logo_id]]
     distributor = Distributor[params[:id]]
     distributor.update(
       :name           => params[:name],

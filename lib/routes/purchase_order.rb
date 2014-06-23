@@ -1,12 +1,17 @@
 class Routes < Urns::Base
 
   get "/distributor/:id/purchase_order/new/?" do
+    @service = Service.all
+    unless @purchase = Purchase.where(shopping_session: session[:shopping_session]).first
+      @purchase = Purchase.create(shopping_session: session[:shopping_session])
+    end
     @distributor = Distributor[params[:distributor_id]]
     @purchase_order = PurchaseOrder.new
-    erb :"/distributor/po_edit"
+    erb :"/checkout/checkout"
   end
 
   post "/distributor/:id/purchase_order/new/?" do
+    purchase = Purchase.where(shopping_session: session[:shopping_session]).first
     PurchaseOrder.create(
       :po_number      => params[:po_number],
       :po_date        => params[:po_date],
@@ -16,6 +21,10 @@ class Routes < Urns::Base
   
     redirect "/distributor/#{params[:id]}/purchase_orders"
   end
+
+  
+  
+  
     
   get "/distributor/:id/purchase_orders/?" do
     @distributor = Distributor[session[:distributor]]

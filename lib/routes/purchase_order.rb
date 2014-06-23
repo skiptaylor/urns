@@ -11,6 +11,7 @@ class Routes < Urns::Base
   end
 
   post "/distributor/:id/purchase_order/new/?" do
+    distributor = Distributor[params[:distributor_id]]
     purchase = Purchase.where(shopping_session: session[:shopping_session]).first
     PurchaseOrder.create(
       :po_number      => params[:po_number],

@@ -89,7 +89,7 @@ class Routes < Urns::Base
       :email          => params[:email],
       :username       => params[:username],
       :password       => params[:password],
-      :logo           => params[:logo]
+      :logo_id        => params[:logo]
     )
     params[:active] 		? distributor.update(:active => true)    : distributor.update(:active => false)
     params[:allow_po] 	? distributor.update(:allow_po => true)  : distributor.update(:allow_po => false)

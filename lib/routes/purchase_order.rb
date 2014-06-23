@@ -5,13 +5,13 @@ class Routes < Urns::Base
     unless @purchase = Purchase.where(shopping_session: session[:shopping_session]).first
       @purchase = Purchase.create(shopping_session: session[:shopping_session])
     end
-    @distributor = Distributor[params[:distributor_id]]
+    @distributor = Distributor.where(session: session[:distributor]).first
     @purchase_order = PurchaseOrder.new
     erb :"/checkout/checkout"
   end
 
   post "/distributor/:id/purchase_order/new/?" do
-    distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor.where(session: session[:distributor]).first
     purchase = Purchase.where(shopping_session: session[:shopping_session]).first
     PurchaseOrder.create(
       :po_number      => params[:po_number],

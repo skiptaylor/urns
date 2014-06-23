@@ -45,7 +45,6 @@ class Routes < Urns::Base
       :logo_notes       => params[:logo_notes]
     )
     if params[:logo]
-      logo.photo.destroy if logo.photo
       Photo.create(
         :source       => params[:logo],
         :description  => params[:description],

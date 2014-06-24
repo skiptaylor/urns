@@ -43,6 +43,7 @@ class Routes < Urns::Base
     distributor = Distributor.where(id: params[:distributor_id]).first
     logo = Logo[params[:id]]
     logo.update(
+      :distributor_id   => params[:distributor_id],
       :logo_notes       => params[:logo_notes]
     )
     
@@ -55,8 +56,6 @@ class Routes < Urns::Base
       )
     end
     
-    distributor.update(logo_id: logo.id)
-
     redirect "/distributor/#{params[:distributor_id]}/distributor"
   end
   

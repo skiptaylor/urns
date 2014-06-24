@@ -45,6 +45,9 @@ class Routes < Urns::Base
     logo.update(
       :logo_notes       => params[:logo_notes]
     )
+    
+    distributor.update(logo_id: logo.id)
+    
     if params[:logo]
       logo.photo.destroy if logo.photo
       Photo.create(

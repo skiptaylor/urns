@@ -54,6 +54,7 @@ class Routes < Urns::Base
 
   get '/distributor/:id/distributor/?' do
     @distributor = Distributor[params[:id]]
+    @logo = Logo[params[:logo_id]]
     erb :"/distributor/distributor"
   end
 

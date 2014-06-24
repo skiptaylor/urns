@@ -33,37 +33,37 @@ class Routes < Urns::Base
     erb :"distributor/logo/logos"
   end
 
-  get "/distributor/:distributor_id/logo/:id/edit/?" do
-    @distributor = Distributor[params[:distributor_id]]
-    @logo = Logo[params[:id]]
-    erb :"distributor/logo/logo_edit"
-  end
-
-  post "/distributor/:distributor_id/logo/:id/edit/?" do
-    distributor = Distributor[params[:distributor_id]]
-    logo = Logo[params[:id]]
-    logo.update(
-      :distributor_id   => params[:distributor_id],
-      :logo_notes       => params[:logo_notes]
-    )
-    
-    if params[:logo]
-      logo.photo.destroy if logo.photo
-      Photo.create(
-        :source       => params[:logo],
-        :description  => params[:description],
-        :logo_id      => logo.id
-      )
-    end
-    
-    redirect "/distributor/#{params[:distributor_id]}/distributor"
-  end
+  # get "/distributor/:distributor_id/logo/:id/edit/?" do
+  #   @distributor = Distributor[params[:distributor_id]]
+  #   @logo = Logo[params[:id]]
+  #   erb :"distributor/logo/logo_edit"
+  # end
+  #
+  # post "/distributor/:distributor_id/logo/:id/edit/?" do
+  #   distributor = Distributor[params[:distributor_id]]
+  #   logo = Logo[params[:id]]
+  #   logo.update(
+  #     :distributor_id   => params[:distributor_id],
+  #     :logo_notes       => params[:logo_notes]
+  #   )
+  #
+  #   if params[:logo]
+  #     logo.photo.destroy if logo.photo
+  #     Photo.create(
+  #       :source       => params[:logo],
+  #       :description  => params[:description],
+  #       :logo_id      => logo.id
+  #     )
+  #   end
+  #
+  #   redirect "/distributor/#{params[:distributor_id]}/distributor"
+  # end
   
-  get "/distributor/:distributor_id/logo/:logo_id/logo/?" do
-    @distributor = Distributor[params[:distributor_id]]
-    @logo = Logo[params[:id]]
-    erb :"distributor/logo/logo"
-  end
+  # get "/distributor/:distributor_id/logo/:logo_id/logo/?" do
+ #    @distributor = Distributor[params[:distributor_id]]
+ #    @logo = Logo[params[:id]]
+ #    erb :"distributor/logo/logo"
+ #  end
   
   get "/distributor/:distributor_id/logo/:id/delete/?" do
     distributor = Distributor[params[:distributor_id]]

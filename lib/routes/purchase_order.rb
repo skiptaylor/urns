@@ -1,12 +1,12 @@
 class Routes < Urns::Base
 
-  get "/distributor/:id/purchase_order/new/?" do
+  get "/distributors/:distributor_id/purchase_order/new/?" do
     @distributor = Distributor[params[:distributor_id]]
     @purchase_order = PurchaseOrder.new
     erb :"/distributor/purchase_order_edit"
   end
 
-  post "/distributor/:id/purchase_order/new/?" do
+  post "/distributors/:distributor_id/purchase_order/new/?" do
     distributor = Distributor[params[:distributor_id]]
     PurchaseOrder.create(
       :po_number      => params[:po_number],

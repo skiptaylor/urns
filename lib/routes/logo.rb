@@ -7,7 +7,7 @@ class Routes < Urns::Base
   end
 
   post "/distributor/:distributor_id/logo/new/?" do
-    @distributor = Distributor[params[:distributor_id]]
+    distributor = Distributor[params[:distributor_id]]
     logo = Logo.create(
       :distributor_id   => params[:distributor_id],
       :logo_notes       => params[:logo_notes]

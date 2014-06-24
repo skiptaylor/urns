@@ -1,22 +1,22 @@
 class Routes < Urns::Base
 
-  get "/distributor/:distributor_id/purchase_order/new/?" do
-    @distributor = Distributor[params[:distributor_id]]
-    @purchase_order = PurchaseOrder.new
-    erb :"/distributor/purchase_order_edit"
-  end
-
-  post "/distributor/:distributor_id/purchase_order/new/?" do
-    distributor = Distributor[params[:distributor_id]]
-    PurchaseOrder.create(
-      :po_number      => params[:po_number],
-      :po_date        => params[:po_date],
-      :method         => params[:method],
-      :distributor_id => params[:distributor_id]
-    )
-  
-    redirect "/distributor/#{params[:id]}/purchase_order"
-  end
+  # get "/distributor/:distributor_id/purchase_order/new/?" do
+#     @distributor = Distributor[params[:distributor_id]]
+#     @purchase_order = PurchaseOrder.new
+#     erb :"/distributor/purchase_order_edit"
+#   end
+#
+#   post "/distributor/:distributor_id/purchase_order/new/?" do
+#     distributor = Distributor[params[:distributor_id]]
+#     PurchaseOrder.create(
+#       :po_number      => params[:po_number],
+#       :po_date        => params[:po_date],
+#       :method         => params[:method],
+#       :distributor_id => params[:distributor_id]
+#     )
+#
+#     redirect "/distributor/#{params[:id]}/purchase_order"
+#   end
   
   get "/distributor/:id/purchase_orders/?" do
     @distributor = Distributor[session[:distributor]]

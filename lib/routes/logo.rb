@@ -40,7 +40,7 @@ class Routes < Urns::Base
   end
 
   post "/distributor/:distributor_id/logo/:id/edit/?" do
-    distributor = Distributor.where(id: params[:distributor_id]).first
+    distributor = Distributor[params[:distributor_id]]
     logo = Logo[params[:id]]
     logo.update(
       :distributor_id   => params[:distributor_id],

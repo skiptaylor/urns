@@ -120,7 +120,6 @@ class Routes < Urns::Base
         session[:distributor] = distributor.id
         flash[:alert] = 'You are now signed in.'
         redirect "/index"
-        redirect "/distributor/#{session[:distributor]}/profile"
       else
         flash[:alert] = 'Username/password combo does not match. Try again.'
         erb :'/distributor/signin'

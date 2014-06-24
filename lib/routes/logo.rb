@@ -46,15 +46,15 @@ class Routes < Urns::Base
       :distributor_id   => params[:distributor_id],
       :logo_notes       => params[:logo_notes]
     )
-    #
-    # if params[:logo]
-    #   logo.photo.destroy if logo.photo
-    #   Photo.create(
-    #     :source       => params[:logo],
-    #     :description  => params[:description],
-    #     :logo_id      => logo.id
-    #   )
-    # end
+    
+    if params[:logo]
+      logo.photo.destroy if logo.photo
+      Photo.create(
+        :source       => params[:logo],
+        :description  => params[:description],
+        :logo_id      => logo.id
+      )
+    end
     
     redirect "/distributor/#{params[:distributor_id]}/distributor"
   end

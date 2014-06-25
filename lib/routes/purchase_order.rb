@@ -19,12 +19,14 @@ class Routes < Urns::Base
 #   end
   
   get "/distributor/:id/purchase_orders/?" do
+    @service = Service.all
     @distributor = Distributor[session[:distributor]]
     @purchase_order = PurchaseOrder.all
     erb :"/distributor/purchase_orders"
   end
 
   get "/distributor/:distributor_id/purchase_order/:id/purchase_order/?" do
+    @service = Service.all
     @distributor = Distributor[params[:distributor_id]]
     @purchase_order = PurchaseOrder[params[:id]]
     erb :"/distributor/purchase_order" 
@@ -32,12 +34,14 @@ class Routes < Urns::Base
 
 
   get "/distributor/:distributor_id/purchase_order/:id/edit/?" do
+    @service = Service.all
     @distributor = Distributor[params[:distributor_id]]
     @purchase_order = PurchaseOrder[params[:id]]
     erb :"/distributor/purchase_order_edit" 
   end
 
   post "/distributor/:distributor_id/purchase_order/:id/edit/?" do
+    service = Service.all
     distributor = Distributor[params[:distributor_id]]
     purchase_order = PurchaseOrder[params[:id]]
     purchase_order.update(

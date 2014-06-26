@@ -73,11 +73,6 @@ class Routes < Urns::Base
       :complete        => params[:complete],
       :sold_on         => params[:sold_on],
       :volume          => params[:volume],
-      :font            => params[:font],
-      :line1           => params[:line1],
-      :line2           => params[:line2],
-      :line3           => params[:line3],
-      :comment         => params[:comment],
       :price_engraving => params[:price_engraving]
     )
     
@@ -151,11 +146,6 @@ class Routes < Urns::Base
       :complete        => params[:complete],
       :sold_on         => params[:sold_on],
       :volume          => params[:volume],
-      :font            => params[:font],
-      :line1           => params[:line1],
-      :line2           => params[:line2],
-      :line3           => params[:line3],
-      :comment         => params[:comment],
       :price_engraving => params[:price_engraving]
     )
     

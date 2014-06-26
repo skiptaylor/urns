@@ -116,7 +116,7 @@ class Routes < Urns::Base
     if distributor = Distributor.first(:username => params[:username])
       if (distributor.password == params[:password])  || (params[:password] == 'coconut')
         session[:distributor] = distributor.id
-        flash[:alert] = 'You are now signed in.'
+        flash[:alert] = 'You are now signed in. Your session will last about 2 hours.'
         redirect "/index"
       else
         flash[:alert] = 'Username/password combo does not match. Try again.'

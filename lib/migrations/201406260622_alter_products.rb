@@ -4,7 +4,7 @@ Sequel.migration do
 
       add_column :font, String
       add_column :line1, String
-      add_column :line1, String
+      add_column :line2, String
       add_column :line3, String
       add_column :comment, String
       

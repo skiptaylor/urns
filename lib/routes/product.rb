@@ -72,8 +72,17 @@ class Routes < Urns::Base
       :photo           => params[:photo],
       :complete        => params[:complete],
       :sold_on         => params[:sold_on],
-      :volume          => params[:volume]
+      :volume          => params[:volume],
+      :font            => params[:font],
+      :line1           => params[:line1],
+      :line2           => params[:line2],
+      :line3           => params[:line3],
+      :comment         => params[:comment],
+      :price_engraving => params[:price_engraving]
     )
+    
+    params[:allow_engraving] ? product.update(allow_engraving: true) : product.update(allow_engraving: false)
+    params[:require_engraving] ? product.update(require_engraving: true) : product.update(require_engraving: false)
   
     params[:reliquary] ? product.update(reliquary: true) : product.update(reliquary: false)
     params[:niche] ? product.update(niche: true) : product.update(niche: false)
@@ -141,8 +150,17 @@ class Routes < Urns::Base
       :photo           => params[:photo],
       :complete        => params[:complete],
       :sold_on         => params[:sold_on],
-      :volume          => params[:volume]
+      :volume          => params[:volume],
+      :font            => params[:font],
+      :line1           => params[:line1],
+      :line2           => params[:line2],
+      :line3           => params[:line3],
+      :comment         => params[:comment],
+      :price_engraving => params[:price_engraving]
     )
+    
+    params[:allow_engraving] ? product.update(allow_engraving: true) : product.update(allow_engraving: false)
+    params[:require_engraving] ? product.update(require_engraving: true) : product.update(require_engraving: false)
   
     params[:reliquary] ? product.update(reliquary: true) : product.update(reliquary: false)
     params[:niche] ? product.update(niche: true) : product.update(niche: false)

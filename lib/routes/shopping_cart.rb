@@ -11,7 +11,7 @@ class Routes < Urns::Base
   
   get '/product/:id/engrave/?' do
     ShoppingCartItem.first_or_increment(session[:shopping_session], params[:id])
-    redirect '/checkout/engraving'
+    redirect '/checkout/<%= product.id %>/engrave'
   end
   
   get '/product/:id/decrement-from-cart/?' do

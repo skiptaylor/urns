@@ -25,7 +25,13 @@ class Routes < Urns::Base
     product = Product.all
     cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     item.update(
-      :quantity  => params[:quantity]
+      :quantity       => params[:quantity],
+      :font           => params[:font],
+      :line1          => params[:line1],
+      :line2          => params[:line2],
+      :line3          => params[:line3],
+      :comment        => params[:comment],
+      :plaque_style   => params[:plaque_style]
     )
     redirect '/checkout/index'
   end

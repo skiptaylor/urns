@@ -28,7 +28,7 @@ class ShoppingCartItem < Sequel::Model
   end
   
   def price
-    (self.product.price * self.quantity).to_f
+    ((self.product.price + self.product.price_engraving) * self.quantity).to_f
   end
   
   def self.total(shopping_session)

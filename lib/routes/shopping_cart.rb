@@ -35,6 +35,28 @@ class Routes < Urns::Base
     )
     redirect '/checkout/index'
   end
+  
+  get '/checkout/engraving/?' do
+    @product = Product[params[:product_id]]
+    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    @total = ShoppingCartItem.total(session[:shopping_session])
+    erb :'/checkout/engraving'
+  end
+    
+  post '/checkout/engraving/?' do
+    product = Product[params[:product_id]]
+    cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    item.create(
+      :quantity       => params[:quantity],
+      :font           => params[:font],
+      :line1          => params[:line1],
+      :line2          => params[:line2],
+      :line3          => params[:line3],
+      :comment        => params[:comment],
+      :plaque_style   => params[:plaque_style]
+    )
+    redirect '/checkout/index'
+  end
 
   get '/checkout/index/remove-all/?' do
     ShoppingCartItem.destroy

@@ -9,6 +9,11 @@ class Routes < Urns::Base
     redirect request.referrer
   end
   
+  get '/product/:id/engrave/?' do
+    ShoppingCartItem.first_or_increment(session[:shopping_session], params[:id])
+    redirect '/checkout/engraving'
+  end
+  
   get '/product/:id/decrement-from-cart/?' do
     ShoppingCartItem.decrement_or_remove(session[:shopping_session], params[:id])
     redirect request.referrer
@@ -47,7 +52,6 @@ class Routes < Urns::Base
     product = Product[params[:product_id]]
     cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     item.create(
-      :quantity       => params[:quantity],
       :font           => params[:font],
       :line1          => params[:line1],
       :line2          => params[:line2],

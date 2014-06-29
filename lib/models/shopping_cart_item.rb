@@ -4,7 +4,7 @@ class ShoppingCartItem < Sequel::Model
   many_to_one :product
   
   def self.first_or_increment(shopping_session, product_id)
-    shopping_cart_item == nil
+    shopping_cart_item = nil
     if item = ShoppingCartItem.first(shopping_session: shopping_session, product_id: product_id)
       item.update(quantity: item.quantity + 1)
       shopping_cart_item = item
@@ -37,10 +37,6 @@ class ShoppingCartItem < Sequel::Model
       total += item.price
     end
     (total*100).round / 100.0 # Round and truncate for dollar value
-  end
-  
-  def self.clear_session(shopping_session, product_id)
-    shopping_cart_item == nil
   end
   
 end

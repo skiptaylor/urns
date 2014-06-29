@@ -39,4 +39,8 @@ class ShoppingCartItem < Sequel::Model
     (total*100).round / 100.0 # Round and truncate for dollar value
   end
   
+  def self.clear_session(shopping_session, product_id)
+    shopping_cart_item == nil
+  end
+  
 end

@@ -73,10 +73,6 @@ class Product < Sequel::Model
     def accessories
       where accessories: 't'
     end
-    
-    def by_wood_color
-      where(wood_color1_id: Wood_color1.where(wood_color2_id: Wood_color2.where(woodcolor2: woodcolor2).select(:id)).select(:id))
-    end
 
   end
 

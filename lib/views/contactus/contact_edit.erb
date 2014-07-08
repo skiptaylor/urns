@@ -1,0 +1,53 @@
+<div class="white">
+	<div class="container">
+		 <div class="row">
+				<div class="span6" style="padding-top: 50px;">
+					<div class="well" style="padding-left: 8%;">
+						<h4>Contact Us</h4>
+						<form method="post" role="form"  action='/contact/new'>
+						  <div class="form-group">
+						    <label for="name">Name</label>
+						    <div class="controls">
+						      <input type="text" class="form-control span5" id="name" name="name" placeholder="Name" value="<%= @contact.name %>">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="company">Company</label>
+						    <div class="controls">
+						      <input type="text" class="form-control span5" id="company" name="company" placeholder="Company (optional)" value="<%= @contact.company %>">
+						    </div>
+						  </div>
+						  <div class="form-group">
+							  <label for="email">Email</label>
+						      <div class="controls">
+						        <input type="text" class="form-control span5" id="email" name="email" placeholder="Email" value="<%= @contact.email %>">
+						      </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="phone">Phone</label>
+						    <div class="controls">
+						      <input type="text" class="form-control span5" id="phone" name="phone" placeholder="Phone" value="<%= @contact.phone %>">
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="Comment">Comment</label>
+						    <div class="controls">
+						      <textarea type="text" class="form-control span5" id="Comment" name="Comment" placeholder="Comment" rows="7"><%= @contact.comment %></textarea>
+						    </div>
+						  </div>
+						  <div class="form-group">
+						    <label for="contactus"> </label>
+							 <div class="controls">
+						      <input class="btn btn-small btn-success" type="submit" value="Send" />
+						    </div>
+						  </div>
+						</form>
+					</div>
+					<br />
+					
+				</div>
+			</div>
+		</div>
+	</div>   <!-- container -->
+	
+</div>  <!-- white -->

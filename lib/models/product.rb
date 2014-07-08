@@ -19,23 +19,23 @@ class Product < Sequel::Model
   dataset_module do
 
     def mini
-      where 'capacity > 0 and capacity <= 7'
+      where(pet: 't') && 'capacity > 0 and capacity <= 7'
     end
 
     def small
-      where 'capacity > 7 and capacity <= 30'
+      where(pet: 't') && 'capacity > 7 and capacity <= 30'
     end
 
     def medium
-      where 'capacity > 30 and capacity <= 60'
+      where(pet: 't') && 'capacity > 30 and capacity <= 60'
     end
 
     def large
-      where 'capacity > 60 and capacity <= 90'
+      where(pet: 't') && 'capacity > 60 and capacity <= 90'
     end
 
     def vlarge
-      where 'capacity > 90 and capacity <= 189'
+      where(pet: 't') && 'capacity > 90 and capacity <= 189'
     end
 
     def keepsake

@@ -139,24 +139,11 @@ class Routes < Urns::Base
   end
 
   post "/admin/purchase/:id/edit/?" do
-    cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-    total = ShoppingCartItem.total(session[:shopping_session])
-    state = State.all
-    item = Item.all
     purchase = Purchase[params[:id]]
     purchase.update(
-      :stripe_id          => params[:stripe_id],
-      :tax                => params[:tax],
-      :shipping           => params[:shipping],
-      :amount             => params[:amount],
-      
       :shipped_on         => params[:shipped_on],
       :received_on        => params[:received_on],
-      :tracking_number    => params[:tracking_number],
-      :billing_state_id   => params[:billing_state_id],
-      :shipping_state_id  => params[:shipping_state_id],
-      :shopping_session   => session[:shopping_session],
-      :service_id         => params[:service_id]
+      :tracking_number    => params[:tracking_number]
     )
 
     redirect "/admin/purchases"

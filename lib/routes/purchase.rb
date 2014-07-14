@@ -37,10 +37,10 @@ class Routes < Urns::Base
       :shipped_on          => params[:shipped_on],
       :received_on         => params[:received_on],
       :tracking_number     => params[:tracking_number],
-      :billing_state_id    => params[:billing_state],
-      :shipping_state_id   => params[:shipping_state],
+      :billing_state_id    => params[:billing_state_id],
+      :shipping_state_id   => params[:shipping_state_id],
       :shopping_session    => session[:shopping_session],
-      :service_id          => params[:service]
+      :service_id          => params[:service_id]
     )
 
     redirect "/purchase/#{purchase.id}/confirm"

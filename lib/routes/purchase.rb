@@ -37,7 +37,7 @@ class Routes < Urns::Base
       :shipped_on          => params[:shipped_on],
       :received_on         => params[:received_on],
       :tracking_number     => params[:tracking_number],
-      :service_id          => params[:service_id]
+      :service_id          => params[:service]
     )
 
     redirect "/purchase/#{purchase.id}/confirm"

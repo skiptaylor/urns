@@ -168,7 +168,9 @@ class Routes < Urns::Base
       :billing_state_id   => params[:billing_state_id],
       :shipping_state_id  => params[:shipping_state_id],
       :shopping_session   => session[:shopping_session],
-      :service_id         => params[:service_id]
+      :service_id         => params[:service_id],
+      :billing_state_id   => paramd[:billing_state_id],
+      :shipping_state_id  => paramd[:shipping_state_id]
     )
 
     redirect "/admin/purchases"

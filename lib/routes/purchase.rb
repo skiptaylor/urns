@@ -149,28 +149,14 @@ class Routes < Urns::Base
       :tax                => params[:tax],
       :shipping           => params[:shipping],
       :amount             => params[:amount],
-      :name               => params[:name],
-      :email              => params[:email],
-      :phone              => params[:phone],
-      :address1           => params[:address1],
-      :address2           => params[:address2],
-      :city               => params[:city],
-      :zip                => params[:zip],
-      :ship_name          => params[:ship_name],
-      :ship_address1      => params[:ship_address1],
-      :ship_address2      => params[:ship_address2],
-      :ship_city          => params[:ship_city],
-      :ship_zip           => params[:ship_zip],
-      :referral_code      => params[:referral_code],
+      
       :shipped_on         => params[:shipped_on],
       :received_on        => params[:received_on],
       :tracking_number    => params[:tracking_number],
       :billing_state_id   => params[:billing_state_id],
       :shipping_state_id  => params[:shipping_state_id],
       :shopping_session   => session[:shopping_session],
-      :service_id         => params[:service_id],
-      :billing_state_id   => params[:billing_state_id],
-      :shipping_state_id  => params[:shipping_state_id]
+      :service_id         => params[:service_id]
     )
 
     redirect "/admin/purchases"

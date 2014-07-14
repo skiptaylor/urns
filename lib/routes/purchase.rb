@@ -95,8 +95,6 @@ class Routes < Urns::Base
         product.save
       end
 
-      purchase.total    = ShoppingCartItem.total
-      
       purchase.shipping = purchase.shipping_cost
       purchase.amount   = purchase.grand_total
       purchase.tax      = purchase.tax_rate
@@ -141,7 +139,10 @@ class Routes < Urns::Base
   end
 
   post "/admin/purchase/:id/edit/?" do
-    @total = ShoppingCartItem.total(session[:shopping_session])
+    cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    total = ShoppingCartItem.total(session[:shopping_session])
+    state = State.all
+    item = Item.all
     purchase = Purchase[params[:id]]
     purchase.update(
       :stripe_id          => params[:stripe_id],

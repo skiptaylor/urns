@@ -92,7 +92,6 @@ class Routes < Urns::Base
         product.save
       end
 
-      purchase.stripe_id  = purchase.charge
       purchase.total      = ShoppingCartItem.total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total

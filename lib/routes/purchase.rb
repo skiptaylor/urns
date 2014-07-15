@@ -71,14 +71,13 @@ class Routes < Urns::Base
 			Stripe.api_key = "sk_test_MU5HRrdbS4avG42f6nYl2Xiv"
 			token = params[:stripeToken]
   		charge = Stripe::Charge.create(
-        :stripe_id => stripe.id,
   			# Amount should be the total cost in cents.
     		:amount => amount,
 		    :currency => "usd",
 		    :card => token,
 		    :description => 'aui wood purchase'
 		  )
-
+      
 			# Do whatever needs to be done to mark the Purchase as completed and the
 			# ShoppingCartItems as purchased and unavailable.
       purchase.cart_items.each do |item|
@@ -93,8 +92,8 @@ class Routes < Urns::Base
         product.save
       end
 
-      purchase.stripe_id  = charge.id
-      purchase.total      = purchase.total
+      purchase.stripe_id  = purchase.charge
+      purchase.total      = ShoppingCartItem.total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate 
@@ -104,7 +103,7 @@ class Routes < Urns::Base
       
 		  erb :"/checkout/paid"
 		rescue Stripe::CardError => e
-		  # This needs to be created.
+      # The card has been declined
 			erb :"/checkout/error"
 		end
   end

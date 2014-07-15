@@ -71,6 +71,7 @@ class Routes < Urns::Base
 			Stripe.api_key = "sk_test_MU5HRrdbS4avG42f6nYl2Xiv"
 			token = params[:stripeToken]
   		charge = Stripe::Charge.create(
+        :stripe_id => stripe.id,
   			# Amount should be the total cost in cents.
     		:amount => amount,
 		    :currency => "usd",
@@ -92,9 +93,9 @@ class Routes < Urns::Base
         product.save
       end
 
-      purchase.shipping = purchase.shipping_cost
-      purchase.amount   = purchase.grand_total
-      purchase.tax      = purchase.tax_rate
+      purchase.shipping   = purchase.shipping_cost
+      purchase.amount     = purchase.grand_total
+      purchase.tax        = purchase.tax_rate 
       purchase.save
 
       session[:shopping_session] = nil

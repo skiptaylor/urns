@@ -93,6 +93,8 @@ class Routes < Urns::Base
         product.save
       end
 
+      purchase.stripe_id  = charge.id
+      purchase.total      = purchase.total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate 

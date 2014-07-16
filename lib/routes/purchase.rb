@@ -95,7 +95,7 @@ class Routes < Urns::Base
       purchase.stripe_id  = charge.id
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
-      purchase.tax        = purchase.tax_rate 
+      purchase.tax        = purchase.tax_rate * total
       purchase.save
 
       session[:shopping_session] = nil

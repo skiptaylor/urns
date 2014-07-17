@@ -11,7 +11,7 @@ class Routes < Urns::Base
   
   get '/product/:id/engrave/?' do
     item = ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
-    redirect "/checkout/<%= product.id %>/engraving"
+    redirect request.referrer
   end
   
   post '/product/:id/engrave/?' do

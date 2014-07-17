@@ -10,12 +10,12 @@ class Routes < Urns::Base
   end
   
   get '/product/:id/engrave/?' do
-    item = ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
+    ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
     redirect "/checkout/<%= product.id %>/engraving"
   end
   
   post '/product/:id/engrave/?' do
-    item = ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
+    ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
     item.update(
       :quantity       => params[:quantity],
     )

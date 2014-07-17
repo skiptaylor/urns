@@ -5,10 +5,10 @@ class ShoppingCartItem < Sequel::Model
   
   def self.first_or_increment(shopping_session, product_id)
     shopping_cart_item = nil
-    if item = ShoppingCartItem.first(shopping_session: shopping_session, product_id: product_id, product.accessories == "f")
+    if item = ShoppingCartItem.first(shopping_session: shopping_session, product_id: product_id, product.accessories => "false")
       item.update(quantity: item.quantity + 0)
       shopping_cart_item = item
-    else item = ShoppingCartItem.first(shopping_session: shopping_session, product_id: product_id, product.accessories == "t")
+    else item = ShoppingCartItem.first(shopping_session: shopping_session, product_id: product_id, product.accessories => "true")
       shopping_cart_item = item
     elsif
       shopping_cart_item = ShoppingCartItem.create(shopping_session: shopping_session, product_id: product_id)

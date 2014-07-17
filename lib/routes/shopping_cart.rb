@@ -9,15 +9,15 @@ class Routes < Urns::Base
     redirect request.referrer
   end
   
-  get '/product/:id/engrave/?' do
-    ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
-    redirect "/checkout/<%= product.id %>/engraving"
+  get '/shopping_cart_item/:id/engrave/?' do
+    item = ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
+    redirect "/checkout/<%= item.id %>/engraving"
   end
   
-  post '/product/:id/engrave/?' do
-    ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
+  post '/shopping_cart_item/:id/engrave/?' do
+    item = ShoppingCartItem.first_or_engrave(session[:shopping_session], params[:id])
     item.update(
-      :quantity       => params[:quantity],
+      :quantity       => params[:quantity]
     )
     
     redirect '/checkout/index'

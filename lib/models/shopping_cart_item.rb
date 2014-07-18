@@ -14,8 +14,8 @@ class ShoppingCartItem < Sequel::Model
     shopping_cart_item
   end
   
-  def self.first_or_engrave(shopping_session, product_id)
-    
+  def self.first_or_accessories(shopping_session, product_id)
+    shopping_cart_item = nil
     shopping_cart_item = ShoppingCartItem.create(shopping_session: shopping_session, product_id: product_id)
     shopping_cart_item
   end

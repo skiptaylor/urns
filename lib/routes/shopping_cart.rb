@@ -20,7 +20,7 @@ class Routes < Urns::Base
   end
   
   post '/shopping_cart_item/:id/engrave/?' do
-    item = ShoppingCartItem.first_or_accessories(session[:shopping_session], params[:id])
+    ShoppingCartItem.first_or_accessories(session[:shopping_session], params[:id])
     item.update(
       :font           => params[:font],
       :line1          => params[:line1],

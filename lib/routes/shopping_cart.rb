@@ -15,12 +15,12 @@ class Routes < Urns::Base
   end
   
   get '/shopping_cart_item/:id/engrave/?' do
-    ShoppingCartItem.first_or_accessories(session[:shopping_session], params[:id])
+    @shoppimg_cart_item = ShoppingCartItem.where[params[:id]]
     redirect '/checkout/<%= @shopping_cart_item.id %>/engrave'
   end
   
   post '/shopping_cart_item/:id/engrave/?' do
-    ShoppingCartItem.first_or_accessories(session[:shopping_session], params[:id])
+    shoppimg_cart_item = ShoppingCartItem.where[params[:id]]
     item.update(
       :font           => params[:font],
       :line1          => params[:line1],

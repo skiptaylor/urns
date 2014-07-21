@@ -15,12 +15,12 @@ class Routes < Urns::Base
   end
   
   get '/shopping_cart_item/:id/engrave/?' do
-    @shoppimg_cart_item = ShoppingCartItem.where(session[:shopping_session], params[:id])
-    redirect '/checkout/<%= @shopping_cart_item.id %>/engrave'
+    @shoppimg_cart_item = ShoppingCartItem.where[params[:id]]
+    erb :"/checkout/engrave"
   end
   
   post '/shopping_cart_item/:id/engrave/?' do
-    shoppimg_cart_item = ShoppingCartItem.where(session[:shopping_session], params[:id])
+    shoppimg_cart_item = ShoppingCartItem.where[params[:id]]
     item.update(
       :font           => params[:font],
       :line1          => params[:line1],
@@ -30,7 +30,7 @@ class Routes < Urns::Base
       :plaque_style   => params[:plaque_style]
     )
 
-    redirect '/checkout/<%= @shopping_cart_item.id %>/index'
+    redirect '/checkout/index'
   end
     
   get '/product/:id/decrement-from-cart/?' do

@@ -30,7 +30,7 @@ class Routes < Urns::Base
       :plaque_style   => params[:plaque_style]
     )
 
-    redirect '/checkout/index'
+    redirect '/checkout/<%= @shopping_cart_item.id %>/index'
   end
     
   get '/product/:id/decrement-from-cart/?' do

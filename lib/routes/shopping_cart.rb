@@ -41,15 +41,13 @@ class Routes < Urns::Base
     redirect '/checkout/index'
   end
   
-  get '/checkout/:cart.id/engrave/?' do
-    @product = Product[params[:product_id]]
-    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+  get '/shopping_cart_item/:id/edit/?' do
+    @item = ShoppingCartItem[params[:id]]
     erb :"/checkout/engrave"
   end
   
-  post '/checkout/:cart.id/engrave/?' do
-    product = Product[params[:product_id]]
-    cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+  post '/shopping_cart_item/:id/edit/?' do
+    item = ShoppingCartItem[params[:id]]
     item.update(
       :font           => params[:font],
       :line1          => params[:line1],

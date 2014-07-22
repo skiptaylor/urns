@@ -43,7 +43,7 @@ class Routes < Urns::Base
   
   get '/checkout/:id/engrave/?' do
     @product = Product[params[:product_id]]
-    @cart = ShoppingCartItem.remove_from_cart(session[:shopping_session], params[:id])
+    @cart = ShoppingCartItem.where(session[:shopping_session], params[:id])
     @total = ShoppingCartItem.total(session[:shopping_session])
     erb :"/checkout/engrave"
   end
@@ -51,7 +51,7 @@ class Routes < Urns::Base
   post '/checkout/:id/engrave/?' do
     product = Product[params[:product_id]]
     cart = ShoppingCartItem.where(session[:shopping_session], params[:id])
-    shopping_cart_item.update(
+    item.update(
       :font           => params[:font],
       :line1          => params[:line1],
       :line2          => params[:line2],

@@ -14,13 +14,13 @@ class Routes < Urns::Base
     redirect request.referrer
   end
   
-  get '/shopping_cart_item/:id/engrave/?' do
-    ShoppingCartItem.where(session[:shopping_session], params[:id])
+  get '/checkout/:id/engrave/?' do
+    @cart = ShoppingCartItem.where(session[:shopping_session], params[:id])
     erb :"/checkout/engrave"
   end
   
-  post '/shopping_cart_item/:id/engrave/?' do
-    ShoppingCartItem.where(session[:shopping_session], params[:id])
+  post '/checkout/:id/engrave/?' do
+    @cart = ShoppingCartItem.where(session[:shopping_session], params[:id])
     shopping_cart_item.update(
       :font           => params[:font],
       :line1          => params[:line1],

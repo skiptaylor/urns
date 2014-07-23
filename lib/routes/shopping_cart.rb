@@ -76,7 +76,7 @@ class Routes < Urns::Base
       :plaque_style   => params[:plaque_style]
     )
 
-    redirect request.referrer
+    redirect '/admin/purchase/#{purchase.id}/edit'
   end
   
 

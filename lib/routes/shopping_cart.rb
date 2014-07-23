@@ -60,6 +60,26 @@ class Routes < Urns::Base
     redirect '/checkout/index'
   end
   
+  get '/shopping_cart_item/:id/engrave_edit/?' do
+    @item = ShoppingCartItem[params[:id]]
+    erb :"/admin/engrave"
+  end
+  
+  post '/shopping_cart_item/:id/engrave_edit/?' do
+    item = ShoppingCartItem[params[:id]]
+    item.update(
+      :font           => params[:font],
+      :line1          => params[:line1],
+      :line2          => params[:line2],
+      :line3          => params[:line3],
+      :comment        => params[:comment],
+      :plaque_style   => params[:plaque_style]
+    )
+
+    redirect request.referrer
+  end
+  
+
   
   # get '/checkout/engraving/?' do
   #   @product = Product[params[:product_id]]

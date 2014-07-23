@@ -62,7 +62,7 @@ class Routes < Urns::Base
   
   get '/shopping_cart_item/:id/engrave_edit/?' do
     @item = ShoppingCartItem[params[:id]]
-    erb :"/admin/engrave"
+    erb :"/admin/engrave_edit"
   end
   
   post '/shopping_cart_item/:id/engrave_edit/?' do

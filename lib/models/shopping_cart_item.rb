@@ -40,7 +40,11 @@ class ShoppingCartItem < Sequel::Model
   def self.total(shopping_session)
     total = 0
     ShoppingCartItem.where(shopping_session: shopping_session).each do |item|
-      total += item.price
+      unless item.line1 == nil || item.line2 == nil || item.line3 == nil
+        total += (item.price + item.price_engraving)
+      else
+        total += item.price
+      end
     end
     (total*100).round / 100.0 # Round and truncate for dollar value
   end

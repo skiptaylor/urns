@@ -34,7 +34,7 @@ class ShoppingCartItem < Sequel::Model
   end
   
   def price
-    if item.line1 != nil || item.line2 != nil || item.line3 != nil
+    if shopping_cart_item.line1 != nil || shopping_cart_item.line2 != nil || shopping_cart_item.line3 != nil
       ((self.product.price + self.product.price_engraving) * self.quantity).to_f
     else
       (self.product.price * self.quantity).to_f

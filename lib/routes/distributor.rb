@@ -129,24 +129,6 @@ class Routes < Urns::Base
   
   end
   
-  # get "/distributor/:id/purchase_order/new/?" do
-#     @distributor = Distributor[params[:id]]
-#     @purchase_order = PurchaseOrder.new
-#     erb :"/distributor/purchase_order_edit"
-#   end
-#
-#   post "/distributor/:id/purchase_order/new/?" do
-#     distributor = Distributor[params[:id]]
-#     PurchaseOrder.create(
-#       :po_number      => params[:po_number],
-#       :po_date        => params[:po_date],
-#       :method         => params[:method],
-#       :distributor_id => params[:distributor_id]
-#     )
-#
-#     redirect "/distributor/#{params[:id]}/purchase_order"
-#   end
-  
   get "/distributor/:id/profile/?" do
     @distributor = Distributor[params[:id]]
     erb :"/distributor/profile"

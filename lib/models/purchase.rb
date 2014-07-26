@@ -29,6 +29,22 @@ class Purchase < Sequel::Model
     end
   end
   
+  def disrtributor_state
+    if self.disrtributor_state_id
+      State[self.disrtributor_state_id]
+    else
+      nil
+    end
+  end
+  
+  def shipto_state
+    if self.shipto_state_id
+      State[shipto_state_id]
+    else
+      nil
+    end
+  end
+  
   def tax_rate
     if self.ship_zip != ''
       zip = self.ship_zip
@@ -56,6 +72,10 @@ class Purchase < Sequel::Model
     	  self.shipping_state.zone_id
     	elsif self.billing_state
     	  self.billing_state.zone_id
+    	elsif self.distributor_state
+    	  self.distributor_state.zone_id
+    	elsif self.shipto_state
+    	  self.shipto_state.zone_id
     	else
     		nil
     	end

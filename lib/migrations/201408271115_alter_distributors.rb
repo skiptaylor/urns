@@ -2,7 +2,7 @@ Sequel.migration do
   change do
     alter_table(:distributors) do
       
-      Integer :state_id
+      add_column :state_id, Integer
       
     end
   end

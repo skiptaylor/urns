@@ -1,11 +1,13 @@
 class Routes < Urns::Base
 
   get '/distributor/distributors/new/?' do
+    @state = State.all
     @distributor = Distributor.new
     erb :"/distributor/distributor_edit"
   end
 
   post '/distributor/distributors/new/?' do
+    state = State.all
     distributor = Distributor.create(
       :name           => params[:name],
       :type           => params[:type],
@@ -39,6 +41,7 @@ class Routes < Urns::Base
   end
 
   get '/distributor/distributors/?' do
+    @state = State.all
     @distributor = Distributor
   
     if params[:search] && !params[:search].nil?
@@ -53,12 +56,14 @@ class Routes < Urns::Base
   end
 
   get '/distributor/:id/distributor/?' do
+    @state = State.all
     @distributor = Distributor[params[:id]]
     @logo = Logo[params[:logo_id]]
     erb :"/distributor/distributor"
   end
 
   get '/distributor/:id/edit/?' do
+    @state = State.all
     @distributor = Distributor[params[:id]]
     erb :"/distributor/distributor_edit"
   end
@@ -130,6 +135,7 @@ class Routes < Urns::Base
   end
   
   get "/distributor/:id/profile/?" do
+    @state = State.all
     @distributor = Distributor[params[:id]]
     erb :"/distributor/profile"
   end

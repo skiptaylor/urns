@@ -37,6 +37,7 @@ class Routes < Urns::Base
       :shipped_on          => params[:shipped_on],
       :received_on         => params[:received_on],
       :tracking_number     => params[:tracking_number],
+      :total               => params[:total],
       :service_id          => params[:service]
     )
 
@@ -59,6 +60,7 @@ class Routes < Urns::Base
     purchase.update(
       :tax                => params[:tax],
       :shipping           => params[:shipping],
+      :total              => params[:total],
       :amount             => params[:amount],
       :shipped_on         => params[:shipped_on],
       :received_on        => params[:received_on],
@@ -168,6 +170,7 @@ class Routes < Urns::Base
       end
       
       purchase.billing_state = distributor.state
+      purchase.total      = total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate

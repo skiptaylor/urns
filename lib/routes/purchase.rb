@@ -169,7 +169,7 @@ class Routes < Urns::Base
       purchase.billing_state = distributor.state
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
-      purchase.tax        = purchase.tax_rate
+      purchase.tax        = purchase.tax_rate * @total
       purchase.save
 
       session[:shopping_session] = nil

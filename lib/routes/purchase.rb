@@ -131,7 +131,6 @@ class Routes < Urns::Base
       end
       
       purchase.stripe_id  = charge.id
-      purchase.total      = @total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate
@@ -170,7 +169,6 @@ class Routes < Urns::Base
       end
       
       purchase.billing_state = distributor.state
-      purchase.total      = @total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate

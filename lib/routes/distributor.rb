@@ -82,6 +82,7 @@ class Routes < Urns::Base
       :addr2          => params[:addr2],
       :city           => params[:city],
       :state          => params[:state],
+      :state_id       => params[:state_id],
       :zip            => params[:zip],
       :country        => params[:country],
       :notes          => params[:notes],

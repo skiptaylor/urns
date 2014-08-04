@@ -10,7 +10,18 @@ class Routes < Urns::Base
     @service = Service.all
     unless @purchase = Purchase.where(shopping_session: session[:shopping_session]).first
       @purchase = Purchase.create(shopping_session: session[:shopping_session])
+      if session[:distributor]
+        @distributor = Distributor[session[:distributor]]
+        @purchase.name = @distributor.name
+        @purchase.address1 = @distributor.addr1
+        @purchase.address2 = @distributor.addr2
+        @purchase.city = @distributor.city
+        @purchase.zip = @distributor.zip
+        @purchase.state_id = @distributor.state_id
+        @purchase.email = @distributor.email
+      end
     end
+    
     erb :"/checkout/checkout"
   end
 
@@ -38,7 +49,17 @@ class Routes < Urns::Base
       :received_on         => params[:received_on],
       :tracking_number     => params[:tracking_number],
       :total               => params[:total],
-      :service_id          => params[:service]
+      :service_id          => params[:service],
+      :po_number          => params[:po_number],
+      :po_date            => params[:po_date],
+      :po_phone           => params[:po_phone],
+      :po_contact         => params[:po_contact],
+      :po_email           => params[:po_email],
+      :po_contract_number => params[:po_contract_number],
+      :ship_requirements  => params[:ship_requirements],
+      :po_rep             => params[:po_rep],
+      :po_notes           => params[:po_notes],
+      :distributor_id     => params[:distributor_id]
     )
 
     redirect "/purchase/#{purchase.id}/confirm"

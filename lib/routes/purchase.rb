@@ -50,68 +50,68 @@ class Routes < Urns::Base
       :tracking_number     => params[:tracking_number],
       :total               => params[:total],
       :service_id          => params[:service],
-      :po_number          => params[:po_number],
-      :po_date            => params[:po_date],
-      :po_phone           => params[:po_phone],
-      :po_contact         => params[:po_contact],
-      :po_email           => params[:po_email],
-      :po_contract_number => params[:po_contract_number],
-      :ship_requirements  => params[:ship_requirements],
-      :po_rep             => params[:po_rep],
-      :po_notes           => params[:po_notes],
-      :distributor_id     => params[:distributor_id]
+      :po_number           => params[:po_number],
+      :po_date             => params[:po_date],
+      :po_phone            => params[:po_phone],
+      :po_contact          => params[:po_contact],
+      :po_email            => params[:po_email],
+      :po_contract_number  => params[:po_contract_number],
+      :ship_requirements   => params[:ship_requirements],
+      :po_rep              => params[:po_rep],
+      :po_notes            => params[:po_notes],
+      :distributor_id      => params[:distributor_id]
     )
 
     redirect "/purchase/#{purchase.id}/confirm"
   end
   
-  get "/purchase/purchase_order/new/?" do
-    @state = State.all
-    @service = Service.all
-    @distributor = Distributor.where[session[:distributor]]
-    unless @purchase = Purchase.where(shopping_session: session[:shopping_session]).first
-      @purchase = Purchase.create(shopping_session: session[:shopping_session])
-    end
-    erb :"/checkout/purchase_order_edit"
-  end
-
-  post "/purchase/purchase_order/new/?" do
-    distributor = Distributor.where[session[:distributor]]
-    purchase = Purchase.where(shopping_session: session[:shopping_session]).first
-    purchase.update(
-      :tax                => params[:tax],
-      :shipping           => params[:shipping],
-      :total              => params[:total],
-      :amount             => params[:amount],
-      :shipped_on         => params[:shipped_on],
-      :received_on        => params[:received_on],
-      :tracking_number    => params[:tracking_number],
-      :service_id         => params[:service],
-      :po_number          => params[:po_number],
-      :po_date            => params[:po_date],
-      :po_phone           => params[:po_phone],
-      :po_contact         => params[:po_contact],
-      :po_email           => params[:po_email],
-      :po_contract_number => params[:po_contract_number],
-      :ship_requirements  => params[:ship_requirements],
-      :po_rep             => params[:po_rep],
-      :po_notes           => params[:po_notes],
-      :distributor_id     => params[:distributor_id]
-    )
-
-    redirect "/purchase/#{purchase.id}/purchase_order"
-  end
-
-  post '/purchase/shipping-cost/?' do
-		purchase = Purchase.where(shopping_session: session[:shopping_session]).first
-		purchase.update(billing_state_id: params[:billing_state], shipping_state_id: params[:shipping_state], service_id: params[:service])
-		volume = purchase.shipping_volume
-		if volume > 0 && volume <= 100
-		  "%.2f" % purchase.shipping_cost
-		else
-			"0.00"
-		end
-  end
+  # get "/purchase/purchase_order/new/?" do
+  #   @state = State.all
+  #   @service = Service.all
+  #   @distributor = Distributor.where[session[:distributor]]
+  #   unless @purchase = Purchase.where(shopping_session: session[:shopping_session]).first
+  #     @purchase = Purchase.create(shopping_session: session[:shopping_session])
+  #   end
+  #   erb :"/checkout/purchase_order_edit"
+  # end
+  #
+  # post "/purchase/purchase_order/new/?" do
+  #   distributor = Distributor.where[session[:distributor]]
+  #   purchase = Purchase.where(shopping_session: session[:shopping_session]).first
+  #   purchase.update(
+  #     :tax                => params[:tax],
+  #     :shipping           => params[:shipping],
+  #     :total              => params[:total],
+  #     :amount             => params[:amount],
+  #     :shipped_on         => params[:shipped_on],
+  #     :received_on        => params[:received_on],
+  #     :tracking_number    => params[:tracking_number],
+  #     :service_id         => params[:service],
+  #     :po_number          => params[:po_number],
+  #     :po_date            => params[:po_date],
+  #     :po_phone           => params[:po_phone],
+  #     :po_contact         => params[:po_contact],
+  #     :po_email           => params[:po_email],
+  #     :po_contract_number => params[:po_contract_number],
+  #     :ship_requirements  => params[:ship_requirements],
+  #     :po_rep             => params[:po_rep],
+  #     :po_notes           => params[:po_notes],
+  #     :distributor_id     => params[:distributor_id]
+  #   )
+  #
+  #   redirect "/purchase/#{purchase.id}/purchase_order"
+  # end
+  #
+  # post '/purchase/shipping-cost/?' do
+  #     purchase = Purchase.where(shopping_session: session[:shopping_session]).first
+  #     purchase.update(billing_state_id: params[:billing_state], shipping_state_id: params[:shipping_state], service_id: params[:service])
+  #     volume = purchase.shipping_volume
+  #     if volume > 0 && volume <= 100
+  #       "%.2f" % purchase.shipping_cost
+  #     else
+  #       "0.00"
+  #     end
+  # end
 
   get "/purchase/:id/confirm/?" do
     @purchase = Purchase[params[:id]]
@@ -125,32 +125,51 @@ class Routes < Urns::Base
   post "/purchase/:id/confirm/?" do
     purchase = Purchase[params[:id]]
     amount = (purchase.grand_total * 100).to_i
-		begin
-			# Replace with correct key.
-			Stripe.api_key = "sk_test_MU5HRrdbS4avG42f6nYl2Xiv"
-			token = params[:stripeToken]
-  		charge = Stripe::Charge.create(
-  			# Amount should be the total cost in cents.
-    		:amount => amount,
-		    :currency => "usd",
-		    :card => token,
-		    :description => 'aui wood purchase'
-		  )
+		
+    unless session[:distributor] 
+      begin
+  			# Replace with correct key.
+  			Stripe.api_key = "sk_test_MU5HRrdbS4avG42f6nYl2Xiv"
+  			token = params[:stripeToken]
+    		charge = Stripe::Charge.create(
+    			# Amount should be the total cost in cents.
+      		:amount => amount,
+  		    :currency => "usd",
+  		    :card => token,
+  		    :description => 'aui wood purchase'
+  		  )
       
-			# Do whatever needs to be done to mark the Purchase as completed and the
-			# ShoppingCartItems as purchased and unavailable.
-      purchase.cart_items.each do |item|
-        product = item.product
-        product.quantity = product.quantity - 1
-        # if product.quantity < 0
-        #   # Do something to flag the product as sold out?
-        # end
-        unless product.accessories
-          product.status = "Sold"
+  			# Do whatever needs to be done to mark the Purchase as completed and the
+  			# ShoppingCartItems as purchased and unavailable.
+        purchase.cart_items.each do |item|
+          product = item.product
+          product.quantity = product.quantity - 1
+          # if product.quantity < 0
+          #   # Do something to flag the product as sold out?
+          # end
+          unless product.accessories
+            product.status = "Sold"
+          end
+          product.save
         end
-        product.save
-      end
       
+        purchase.stripe_id  = charge.id
+        purchase.shipping   = purchase.shipping_cost
+        purchase.amount     = purchase.grand_total
+        purchase.tax        = purchase.tax_rate
+        purchase.save
+
+        session[:shopping_session] = nil
+      
+  		  erb :"/checkout/paid"
+  		rescue Stripe::CardError => e
+        # The card has been declined
+  			erb :"/checkout/error"
+  		end
+    else
+      purchase.update(
+        :total               => params[:total]
+      )
       purchase.stripe_id  = charge.id
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
@@ -159,48 +178,44 @@ class Routes < Urns::Base
 
       session[:shopping_session] = nil
       
-		  erb :"/checkout/paid"
-		rescue Stripe::CardError => e
-      # The card has been declined
-			erb :"/checkout/error"
-		end
+      erb :"/checkout/paid"
+    end
   end
   
-  get "/purchase/:id/purchase_order/?" do
-    @purchase = Purchase[params[:id]]
-    @distributor = Distributor.where[session[:distributor]]
-    @service = Service.all
-    @product = Product.all
-    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-    @total = ShoppingCartItem.total(session[:shopping_session])
-    erb :"/checkout/purchase_order"
-  end
-  
-  post "/purchase/:id/purchase_order/?" do
-    purchase = Purchase[params[:id]]
-    amount = (purchase.grand_total * 100).to_i
-		begin
-      purchase.cart_items.each do |item|
-        product = item.product
-        product.quantity = product.quantity - 1
-        unless product.accessories
-          product.status = "Sold"
-        end
-        product.save
-      end
-      
-      purchase.billing_state  = distributor.state
-      purchase.shipping       = purchase.shipping_cost
-      purchase.amount         = purchase.grand_total
-      purchase.tax            = purchase.tax_rate
-      purchase.save
-
-      session[:shopping_session] = nil
-      
-		  erb :"/index"
-
-		end
-  end
+  # get "/purchase/:id/purchase_order/?" do
+  #   @purchase = Purchase[params[:id]]
+  #   @distributor = Distributor.where[session[:distributor]]
+  #   @service = Service.all
+  #   @product = Product.all
+  #   @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+  #   @total = ShoppingCartItem.total(session[:shopping_session])
+  #   erb :"/checkout/purchase_order"
+  # end
+  #
+  # post "/purchase/:id/purchase_order/?" do
+  #   purchase = Purchase[params[:id]]
+  #   amount = (purchase.grand_total * 100).to_i
+  #     begin
+  #     purchase.cart_items.each do |item|
+  #       product = item.product
+  #       product.quantity = product.quantity - 1
+  #       unless product.accessories
+  #         product.status = "Sold"
+  #       end
+  #       product.save
+  #     end
+  #
+  #     purchase.billing_state  = distributor.state
+  #     purchase.shipping       = purchase.shipping_cost
+  #     purchase.amount         = purchase.grand_total
+  #     purchase.tax            = purchase.tax_rate
+  #     purchase.save
+  #
+  #     session[:shopping_session] = nil
+  #
+  #     erb :"/index"
+  #
+  # end
   
   get "/admin/purchase/:id/purchase/?" do
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])

@@ -120,7 +120,7 @@ class Routes < Urns::Base
     params[:password].downcase!
     
     
-    unless distributor = Distributor.first(:username => '')
+    unless params[:username] == ''
   
       if distributor = Distributor.first(:username => params[:username])
         if (distributor.password == params[:password])  || (params[:password] == 'coconut')

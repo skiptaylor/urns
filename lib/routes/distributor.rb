@@ -150,6 +150,7 @@ class Routes < Urns::Base
   end
 
   get '/distributor/signout/?' do
+    session[:shopping_session] = nil
     session[:distributor] = nil
     flash[:alert] = 'You are now signed out.'
     redirect '/index'

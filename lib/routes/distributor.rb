@@ -118,18 +118,26 @@ class Routes < Urns::Base
     params[:username].downcase!
     params[:password].strip!
     params[:password].downcase!
+    
+    
+    unless distributor.username == ''
   
-    if distributor = Distributor.first(:username => params[:username])
-      if (distributor.password == params[:password])  || (params[:password] == 'coconut')
-        session[:distributor] = distributor.id
-        flash[:alert] = 'You are now signed in. Your session will last about 2 hours.'
-        redirect "/index"
+      if distributor = Distributor.first(:username => params[:username])
+        if (distributor.password == params[:password])  || (params[:password] == 'coconut')
+          session[:distributor] = distributor.id
+          flash[:alert] = 'You are now signed in. Your session will last about 2 hours.'
+          redirect "/index"
+        else
+          flash[:alert] = 'Username/password combo does not match. Try again.'
+          erb :'/distributor/signin'
+        end
       else
-        flash[:alert] = 'Username/password combo does not match. Try again.'
+        flash[:alert] = 'This username is not linked to an existing account. Try again or contact Artistic Urns.'
         erb :'/distributor/signin'
       end
+      
     else
-      flash[:alert] = 'This username is not linked to an existing account. Try again or contact Artistic Urns.'
+      flash[:alert] = 'You must enter a valid user name.'
       erb :'/distributor/signin'
     end
   

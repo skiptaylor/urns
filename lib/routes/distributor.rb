@@ -114,6 +114,7 @@ class Routes < Urns::Base
   end
 
   post '/distributor/signin/?' do
+    session[:shopping_session] = nil
     params[:username].strip!
     params[:username].downcase!
     params[:password].strip!

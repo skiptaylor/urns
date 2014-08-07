@@ -168,9 +168,19 @@ class Routes < Urns::Base
   			erb :"/checkout/error"
   		end
     else
-      purchase.update(
-        :total               => params[:total]
-      )
+      
+      purchase.cart_items.each do |item|
+        product = item.product
+        product.quantity = product.quantity - 1
+        # if product.quantity < 0
+        #   # Do something to flag the product as sold out?
+        # end
+        unless product.accessories
+          product.status = "Sold"
+        end
+        product.save
+      end
+      
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate

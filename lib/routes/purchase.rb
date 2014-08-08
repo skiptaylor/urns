@@ -59,6 +59,7 @@ class Routes < Urns::Base
       :ship_requirements   => params[:ship_requirements],
       :po_rep              => params[:po_rep],
       :po_notes            => params[:po_notes],
+      :shopping_session    => session[:shopping_session],
       :distributor_id      => params[:distributor_id]
     )
 
@@ -102,16 +103,16 @@ class Routes < Urns::Base
   #   redirect "/purchase/#{purchase.id}/purchase_order"
   # end
   #
-  # post '/purchase/shipping-cost/?' do
-  #     purchase = Purchase.where(shopping_session: session[:shopping_session]).first
-  #     purchase.update(billing_state_id: params[:billing_state], shipping_state_id: params[:shipping_state], service_id: params[:service])
-  #     volume = purchase.shipping_volume
-  #     if volume > 0 && volume <= 100
-  #       "%.2f" % purchase.shipping_cost
-  #     else
-  #       "0.00"
-  #     end
-  # end
+  post '/purchase/shipping-cost/?' do
+      purchase = Purchase.where(shopping_session: session[:shopping_session]).first
+      purchase.update(billing_state_id: params[:billing_state], shipping_state_id: params[:shipping_state], service_id: params[:service])
+      volume = purchase.shipping_volume
+      if volume > 0 && volume <= 100
+        "%.2f" % purchase.shipping_cost
+      else
+        "0.00"
+      end
+  end
 
   get "/purchase/:id/confirm/?" do
     @purchase = Purchase[params[:id]]

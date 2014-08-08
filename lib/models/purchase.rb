@@ -29,22 +29,6 @@ class Purchase < Sequel::Model
     end
   end
   
-  def distributor_state
-    if self.distributor.state_id
-      State[self.distributor.state_id]
-    else
-      nil
-    end
-  end
-
-  def shipto_state
-    if self.shipto.state_id
-      State[self.shipto.state_id]
-    else
-      nil
-    end
-  end
-  
   def tax_rate
     if self.ship_zip != ''
       zip = self.ship_zip

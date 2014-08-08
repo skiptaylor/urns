@@ -17,7 +17,7 @@ class Routes < Urns::Base
         @purchase.address2 = @distributor.addr2
         @purchase.city = @distributor.city
         @purchase.zip = @distributor.zip
-        # @purchase.billing_state_id = @distributor.state_id
+        @purchase.billing_state_id = @distributor.state_id
         @purchase.email = @distributor.email
       end
     end

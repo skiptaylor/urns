@@ -156,10 +156,10 @@ class Routes < Urns::Base
         end
       
         purchase.stripe_id  = charge.id
+        purchase.total      = total
         purchase.shipping   = purchase.shipping_cost
         purchase.amount     = purchase.grand_total
         purchase.tax        = purchase.tax_rate
-        @total              = purchase.total
         purchase.save
 
         session[:shopping_session] = nil
@@ -183,10 +183,10 @@ class Routes < Urns::Base
         product.save
       end
       
+      purchase.total      = total
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate
-      @total              = purchase.total
       purchase.save
 
       session[:shopping_session] = nil

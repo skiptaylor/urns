@@ -120,6 +120,7 @@ class Routes < Urns::Base
     @product = Product.all
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
+    @purchase.total = @total
     erb :"/checkout/confirm"
   end
 

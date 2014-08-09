@@ -66,43 +66,15 @@ class Routes < Urns::Base
     redirect "/purchase/#{purchase.id}/confirm"
   end
   
-  # get "/purchase/purchase_order/new/?" do
-  #   @state = State.all
-  #   @service = Service.all
-  #   @distributor = Distributor.where[session[:distributor]]
-  #   unless @purchase = Purchase.where(shopping_session: session[:shopping_session]).first
-  #     @purchase = Purchase.create(shopping_session: session[:shopping_session])
-  #   end
-  #   erb :"/checkout/purchase_order_edit"
-  # end
-  #
-  # post "/purchase/purchase_order/new/?" do
-  #   distributor = Distributor.where[session[:distributor]]
-  #   purchase = Purchase.where(shopping_session: session[:shopping_session]).first
-  #   purchase.update(
-  #     :tax                => params[:tax],
-  #     :shipping           => params[:shipping],
-  #     :total              => params[:total],
-  #     :amount             => params[:amount],
-  #     :shipped_on         => params[:shipped_on],
-  #     :received_on        => params[:received_on],
-  #     :tracking_number    => params[:tracking_number],
-  #     :service_id         => params[:service],
-  #     :po_number          => params[:po_number],
-  #     :po_date            => params[:po_date],
-  #     :po_phone           => params[:po_phone],
-  #     :po_contact         => params[:po_contact],
-  #     :po_email           => params[:po_email],
-  #     :po_contract_number => params[:po_contract_number],
-  #     :ship_requirements  => params[:ship_requirements],
-  #     :po_rep             => params[:po_rep],
-  #     :po_notes           => params[:po_notes],
-  #     :distributor_id     => params[:distributor_id]
-  #   )
-  #
-  #   redirect "/purchase/#{purchase.id}/purchase_order"
-  # end
-  #
+  get "/distributor/:id/purchases/?" do
+    @state = State.all
+    @service = Service.all
+    @distributor = Distributor.where[session[:distributor]]
+    @purchase = Purchase.where(shopping_session: session[:shopping_session])
+    erb :"/distributor/purchase_orders"
+    # redirect "/distributor/#{distributor.id}/purchase_orders"
+  end
+
   post '/purchase/shipping-cost/?' do
       purchase = Purchase.where(shopping_session: session[:shopping_session]).first
       purchase.update(billing_state_id: params[:billing_state], shipping_state_id: params[:shipping_state], service_id: params[:service])

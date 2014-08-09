@@ -21,6 +21,7 @@ class Routes < Urns::Base
 
   get '/checkout/index/?' do
     @product = Product.all
+    @distributor = Distributor.all
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
     erb :'/checkout/index'

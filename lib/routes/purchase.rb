@@ -63,12 +63,7 @@ class Routes < Urns::Base
       :distributor_id      => params[:distributor_id]
     )
     
-    if @purchase.shipping_state == nil
-      flash[:alert] = 'You must enter a shipping state.'
-      erb :"/checkout/checkout"
-    else
-      redirect "/purchase/#{purchase.id}/confirm"
-    end
+    redirect "/purchase/#{purchase.id}/confirm"
   end
   
   get "/distributor/:id/purchases/?" do

@@ -62,8 +62,12 @@ class Routes < Urns::Base
       :shopping_session    => session[:shopping_session],
       :distributor_id      => params[:distributor_id]
     )
-
-    redirect "/purchase/#{purchase.id}/confirm"
+    
+    if @purchase.shipping_state == nil
+      flash[:alert] = 'You must enter a shipping state.'
+    else
+      redirect "/purchase/#{purchase.id}/confirm"
+    end
   end
   
   get "/distributor/:id/purchases/?" do

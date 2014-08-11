@@ -65,15 +65,6 @@ class Routes < Urns::Base
     
     redirect "/purchase/#{purchase.id}/confirm"
   end
-  
-  get "/distributor/:id/purchases/?" do
-    @state = State.all
-    @service = Service.all
-    @distributor = Distributor.where[session[:distributor]]
-    @purchase = Purchase.where(shopping_session: session[:shopping_session])
-    erb :"/distributor/purchase_orders"
-    # redirect "/distributor/#{distributor.id}/purchase_orders"
-  end
 
   post '/purchase/shipping-cost/?' do
       purchase = Purchase.where(shopping_session: session[:shopping_session]).first
@@ -163,6 +154,15 @@ class Routes < Urns::Base
       
       erb :"/checkout/paid"
     end
+  end
+  
+  get "/distributor/:id/purchases/?" do
+    @state = State.all
+    @service = Service.all
+    @distributor = Distributor.where[session[:distributor]]
+    @purchase = Purchase.where(shopping_session: session[:shopping_session])
+    erb :"/checkout/purchases"
+    # redirect "/distributor/#{distributor.id}/purchase_orders"
   end
   
   # get "/purchase/:id/purchase_order/?" do

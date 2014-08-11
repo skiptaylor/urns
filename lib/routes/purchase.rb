@@ -156,53 +156,6 @@ class Routes < Urns::Base
     end
   end
   
-  get "/distributor/:id/purchases/?" do
-    @purchase = Purchase[params[:id]]
-    @service = Service.all
-    @product = Product.all
-    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-    @total = ShoppingCartItem.total(session[:shopping_session])
-    @purchase = Purchase.all
-    @distributor = Distributor.where[session[:distributor]]
-    erb :"/checkout/purchases"
-    # redirect "/distributor/#{distributor.id}/purchase_orders"
-  end
-  
-  # get "/purchase/:id/purchase_order/?" do
-  #   @purchase = Purchase[params[:id]]
-  #   @distributor = Distributor.where[session[:distributor]]
-  #   @service = Service.all
-  #   @product = Product.all
-  #   @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-  #   @total = ShoppingCartItem.total(session[:shopping_session])
-  #   erb :"/checkout/purchase_order"
-  # end
-  #
-  # post "/purchase/:id/purchase_order/?" do
-  #   purchase = Purchase[params[:id]]
-  #   amount = (purchase.grand_total * 100).to_i
-  #     begin
-  #     purchase.cart_items.each do |item|
-  #       product = item.product
-  #       product.quantity = product.quantity - 1
-  #       unless product.accessories
-  #         product.status = "Sold"
-  #       end
-  #       product.save
-  #     end
-  #
-  #     purchase.billing_state  = distributor.state
-  #     purchase.shipping       = purchase.shipping_cost
-  #     purchase.amount         = purchase.grand_total
-  #     purchase.tax            = purchase.tax_rate
-  #     purchase.save
-  #
-  #     session[:shopping_session] = nil
-  #
-  #     erb :"/index"
-  #
-  # end
-  
   get "/admin/purchase/:id/purchase/?" do
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])

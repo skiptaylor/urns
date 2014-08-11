@@ -157,10 +157,13 @@ class Routes < Urns::Base
   end
   
   get "/distributor/:id/purchases/?" do
-    @state = State.all
+    @purchase = Purchase[params[:id]]
     @service = Service.all
+    @product = Product.all
+    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    @total = ShoppingCartItem.total(session[:shopping_session])
+    @purchase = Purchase.all
     @distributor = Distributor.where[session[:distributor]]
-    @purchase = Purchase.where(shopping_session: session[:shopping_session])
     erb :"/checkout/purchases"
     # redirect "/distributor/#{distributor.id}/purchase_orders"
   end

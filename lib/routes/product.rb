@@ -204,5 +204,10 @@ class Routes < Urns::Base
     @product = Product[params[:id]]
     erb :"/product/show_product"
   end
+  
+  get '/product/:id/sold/?' do
+    @product = Product[params[:id]]
+    erb :"/product/show_sold"
+  end
 
 end

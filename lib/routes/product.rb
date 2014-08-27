@@ -186,11 +186,14 @@ class Routes < Urns::Base
     else
       @product = @product.send(params[:range])
       woodtype      = params[:wood_type]   || 'All'
-      wood_color1   = params[:wood_color1] || 'All'
+      wood_color    = params[:wood_color]  || 'All'
       shape         = params[:shape]       || 'All'
      
       @product = @product.by_wood_type(woodtype) unless woodtype == 'All'
-      @product = @product.where(wood_color1: wood_color1) unless wood_color1 == 'All'
+      # @product = @product.where(wood_color1: wood_color1) unless wood_color1 == 'All'
+      @product = @product.where(wood_color1: 'light') if wood_color == 'light'
+      @product = @product.where(wood_color2: 'dark') if wood_color == 'dark'
+      @product = @product.where(wood_color3: 'mixed') if wood_color == 'mixed'
       @product = @product.where(shape: shape) unless shape == 'All'
     end
     

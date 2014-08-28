@@ -150,6 +150,16 @@ class Routes < Urns::Base
     @distributor = Distributor[params[:id]]
     erb :"/distributor/profile"
   end
+  
+  get "/distributor/:id/purchases/?" do
+    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+    @total = ShoppingCartItem.total(session[:shopping_session])
+    @state = State.all
+    @item = Item.all
+    @distributor = Distributor[params[:id]]
+    @purchase = Purchase[params[:id]]
+    erb :"/distributor/purchases"
+  end
 
   get '/distributor/signout/?' do
     session[:shopping_session] = nil

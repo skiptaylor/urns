@@ -151,11 +151,7 @@ class Routes < Urns::Base
     erb :"/distributor/profile"
   end
   
-  get "/distributor/:id/purchases/?" do
-    @distributor = Distributor[params[:id]]
-    @purchase = Purchase[params[:purchase_id]]
-    erb :"/distributor/purchases"
-  end
+
 
   get '/distributor/signout/?' do
     session[:shopping_session] = nil

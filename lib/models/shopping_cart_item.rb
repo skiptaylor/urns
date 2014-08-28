@@ -46,7 +46,7 @@ class ShoppingCartItem < Sequel::Model
     ShoppingCartItem.where(shopping_session: shopping_session).each do |item|
       total += item.price
     end
-    (total*100).round / 100.0 # Round and truncate for dollar value
+    (total*100).round / 100 # Round and truncate for dollar value
   end
   
 end

@@ -152,12 +152,8 @@ class Routes < Urns::Base
   end
   
   get "/distributor/:id/purchases/?" do
-    @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-    @total = ShoppingCartItem.total(session[:shopping_session])
-    @state = State.all
-    @item = Item.all
     @distributor = Distributor[params[:id]]
-    @purchase = Purchase[params[:id]]
+    @purchase = Purchase[params[:purchase_id]]
     erb :"/distributor/purchases"
   end
 

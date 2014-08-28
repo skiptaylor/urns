@@ -12,7 +12,7 @@ class Routes < Urns::Base
       @purchase = Purchase.create(shopping_session: session[:shopping_session])
       if session[:distributor]
         @distributor = Distributor[session[:distributor]]
-        @purchase.distributor_id = Distributor[session[:distributor]]
+        @distributor_id = @distributor_id
         @purchase.name = @distributor.name
         @purchase.address1 = @distributor.addr1
         @purchase.address2 = @distributor.addr2

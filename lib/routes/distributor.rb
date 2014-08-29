@@ -145,7 +145,7 @@ class Routes < Urns::Base
   
   end
   
-  get "/distributor/:id/profile/?" do
+  get "/distributor/profile/?" do
     @state = State.all
     @distributor = Distributor[params[:id]]
     erb :"/distributor/profile"

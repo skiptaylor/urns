@@ -145,6 +145,12 @@ class Routes < Urns::Base
   
   end
   
+  get "/distributor/profile/?" do
+    @state = State.all
+    @distributor = Distributor[session[:distributor]]
+    erb :"/distributor/profile"
+  end
+  
   get '/distributor/signout/?' do
     session[:shopping_session] = nil
     session[:distributor] = nil

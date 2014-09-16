@@ -1,6 +1,7 @@
 class Routes < Urns::Base
 
   get "/fader/faders/?" do
+    auth_admin
     @fader = Fader.all
     erb :"/fader/faders"
   end
@@ -34,6 +35,7 @@ class Routes < Urns::Base
   end
 
   get "/fader/:id/fader/?" do
+    auth_admin
     @fader = Fader[params[:id]]
     erb :"/fader/fader"
   end

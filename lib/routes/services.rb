@@ -16,6 +16,7 @@ class Routes < Urns::Base
   end
 
   get "/shipping/services/services/?" do
+    auth_admin
     @service = Service
     erb :"/shipping/services/services"
   end

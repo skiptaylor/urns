@@ -22,6 +22,13 @@ class Routes < Urns::Base
       end
     end
 
+    def auth_admin
+      unless session[:admin] == true
+        flash[:alert] = 'You must be an admin to see that page.'
+        redirect '/admin/signin'
+      end
+    end
+  
     def truncate x, options = {}
       options[:word_count]     ||= 100
       options[:end_string]     ||= '...'

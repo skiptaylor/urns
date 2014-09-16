@@ -2,12 +2,14 @@ class Routes < Urns::Base
 
   get '/distributor/distributors/new/?' do
     auth_admin
+    auth_admin
     @state = State.all
     @distributor = Distributor.new
     erb :"/distributor/distributor_edit"
   end
 
   post '/distributor/distributors/new/?' do
+    auth_admin
     auth_admin
     state = State.all
     distributor = Distributor.create(
@@ -60,6 +62,7 @@ class Routes < Urns::Base
 
   get '/distributor/:id/distributor/?' do
     auth_admin
+    auth_admin
     @state = State.all
     @distributor = Distributor[params[:id]]
     @logo = Logo[params[:logo_id]]
@@ -68,12 +71,14 @@ class Routes < Urns::Base
 
   get '/distributor/:id/edit/?' do
     auth_admin
+    auth_admin
     @state = State.all
     @distributor = Distributor[params[:id]]
     erb :"/distributor/distributor_edit"
   end
 
   post '/distributor/:id/edit/?' do
+    auth_admin
     auth_admin
     distributor = Distributor[params[:id]]
     distributor.update(
@@ -110,6 +115,7 @@ class Routes < Urns::Base
   end
 
   get '/distributor/:id/delete/?' do
+    auth_admin
     auth_admin
     distributor = Distributor[params[:id]]
     distributor.destroy

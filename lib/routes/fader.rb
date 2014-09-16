@@ -6,11 +6,13 @@ class Routes < Urns::Base
   end
 
   get "/fader/faders/new/?" do
+    auth_admin
     @fader = Fader.new
     erb :"/fader/fader_edit"
   end
 
   post "/fader/faders/new/?" do
+    auth_admin
     fader = Fader.create(
       :header         => params[:header],
       :description    => params[:description],
@@ -37,11 +39,13 @@ class Routes < Urns::Base
   end
 
   get "/fader/:id/edit/?" do
+    auth_admin
     @fader = Fader[params[:id]]
     erb :"/fader/fader_edit"
   end
 
   post "/fader/:id/edit/?" do
+    auth_admin
     fader = Fader[params[:id]]
     fader.update(
       :header         => params[:header],
@@ -65,6 +69,7 @@ class Routes < Urns::Base
   end
 
   get "/fader/:id/delete/?" do
+    auth_admin
     fader = Fader[params[:id]]
     fader.destroy
     redirect "/fader/faders"

@@ -160,6 +160,7 @@ class Routes < Urns::Base
   end
   
   get "/admin/purchase/:id/purchase/?" do
+    auth_admin
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
     @state = State.all
@@ -169,6 +170,7 @@ class Routes < Urns::Base
   end
 
   get "/admin/purchases/?" do
+    auth_admin
     @purchase = Purchase[params[:id]]
     @service = Service.all
     @product = Product.all
@@ -179,6 +181,7 @@ class Routes < Urns::Base
   end
   
   get "/admin/purchase/:id/edit/?" do
+    auth_admin
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
     @state = State.all
@@ -188,6 +191,7 @@ class Routes < Urns::Base
   end
 
   post "/admin/purchase/:id/edit/?" do
+    auth_admin
     total = ShoppingCartItem.total(session[:shopping_session])
     purchase = Purchase[params[:id]]
     purchase.update(
@@ -200,6 +204,7 @@ class Routes < Urns::Base
   end
 
   get "/admin/purchase/:id/delete/?" do
+    auth_admin
     purchase = Purchase[params[:id]]
     purchase.destroy
     redirect "/admin/purchases"

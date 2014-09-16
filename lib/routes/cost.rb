@@ -1,6 +1,7 @@
 class Routes < Urns::Base
   
   get "/shipping/costs/new/?" do
+    auth_admin
     @service = Service.all
     @zone = Zone.all
     @size = Size.all
@@ -9,6 +10,7 @@ class Routes < Urns::Base
   end
 
   post "/shipping/costs/new/?" do
+    auth_admin
     Cost.create(
       :amount       => params[:amount],
       :service_id   => params[:service],
@@ -20,11 +22,13 @@ class Routes < Urns::Base
   end
 
   get "/shipping/costs/costs/?" do
+    auth_admin
     @cost = Cost.order(:amount)
     erb :"/shipping/costs/costs"
   end
 
   get "/shipping/costs/:id/edit/?" do
+    auth_admin
     @service = Service.all
     @zone = Zone.all
     @size = Size.all
@@ -33,6 +37,7 @@ class Routes < Urns::Base
   end
 
   post "/shipping/costs/:id/edit/?" do
+    auth_admin
     cost = Cost[params[:id]]
     cost.update(
     :amount       => params[:amount],
@@ -45,6 +50,7 @@ class Routes < Urns::Base
   end
 
   get "/shipping/costs/:id/delete/?" do
+    auth_admin
     cost = Cost[params[:id]]
     cost.destroy
     redirect "/shipping/costs/costs"

@@ -19,11 +19,13 @@ class Routes < Urns::Base
   end
   
   get "/contact/:id/edit/?" do
+    auth_admin
     @contact = Contact[params[:id]]
     erb :"/contact/contact_edit"
   end
 
   post "/contact/:id/edit/?" do
+    auth_admin
     contact = Contact[params[:id]]
     contact.update(
       :name       => params[:name],
@@ -38,11 +40,13 @@ class Routes < Urns::Base
   end
 
   get "/contact/:id/contact/?" do
+    auth_admin
     @contact = Contact[params[:id]]
     erb :"/contact/contact"
   end
 
   get "/contact/:id/delete/?" do
+    auth_admin
     contact = Contact[params[:id]]
     contact.destroy
     redirect "/admin/dashboard"

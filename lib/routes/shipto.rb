@@ -1,12 +1,14 @@
 class Routes < Urns::Base
 
   get "/distributor/:distributor_id/shiptos/new/?" do
+    auth_distributor
     @distributor = Distributor[params[:distributor_id]]
     @shipto = Shipto.new
     erb :"/distributor/shipto_edit" 
   end
 
   post "/distributor/:distributor_id/shiptos/new/?" do
+    auth_distributor
     distributor = Distributor[params[:distributor_id]]
     Shipto.create(
       :addr1          => params[:addr1],
@@ -26,18 +28,21 @@ class Routes < Urns::Base
   end
 
   get "/distributor/:distributor_id/shiptos/?" do
+    auth_distributor
     @distributor = Distributor[params[:distributor_id]]
     shipto = Shipto
     erb :"/distributor/shiptos"
   end
 
   get "/distributor/:distributor_id/shiptos/:id/edit/?" do
+    auth_distributor
     @distributor = Distributor[params[:distributor_id]]
     @shipto = Shipto[params[:id]]
     erb :"/distributor/shipto_edit" 
   end
 
   post "/distributor/:distributor_id/shiptos/:id/edit/?" do
+    auth_distributor
     distributor = Distributor[params[:distributor_id]]
     shipto = Shipto[params[:id]]
     shipto.update(
@@ -58,6 +63,7 @@ class Routes < Urns::Base
   end
 
   get "/distributor/:distributor_id/shiptos/:id/delete/?" do
+    auth_distributor
     distributor = Distributor[params[:distributor_id]]
     shipto = Shipto[params[:id]]
     shipto.destroy

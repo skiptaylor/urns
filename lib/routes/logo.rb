@@ -1,12 +1,14 @@
 class Routes < Urns::Base
 
   get "/distributor/:distributor_id/logo/new/?" do
+    auth_admin
     @distributor = Distributor[params[:distributor_id]]
     @logo = Logo.new
     erb :"/distributor/logo/logo_edit"
   end
 
   post "/distributor/:distributor_id/logo/new/?" do
+    auth_admin
     distributor = Distributor[params[:distributor_id]]
     logo = Logo.create(
       :distributor_id   => params[:distributor_id],
@@ -28,6 +30,7 @@ class Routes < Urns::Base
   end
   
   get "/distributor/:distributor_id/logos/?" do
+    auth_admin
     @distributor = Distributor[params[:distributor_id]]
     @logo = Logo
     erb :"distributor/logo/logos"
@@ -66,6 +69,7 @@ class Routes < Urns::Base
  #  end
   
   get "/distributor/:distributor_id/logo/:id/delete/?" do
+    auth_admin
     distributor = Distributor[params[:distributor_id]]
     logo = Logo[params[:id]]
     logo.destroy

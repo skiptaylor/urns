@@ -3,6 +3,7 @@ class Routes < Urns::Base
   get "/distributor/:distributor_id/shiptos/new/?" do
     auth_distributor
     @distributor = Distributor[params[:distributor_id]]
+    @state = State.all
     @shipto = Shipto.new
     erb :"/distributor/shipto_edit" 
   end
@@ -10,6 +11,7 @@ class Routes < Urns::Base
   post "/distributor/:distributor_id/shiptos/new/?" do
     auth_distributor
     distributor = Distributor[params[:distributor_id]]
+    state = State.all
     Shipto.create(
       :addr1          => params[:addr1],
       :addr2          => params[:addr2],

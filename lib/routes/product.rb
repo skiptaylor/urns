@@ -179,7 +179,7 @@ class Routes < Urns::Base
   end
   
   get "/product/gallery/:range/?" do
-    @product = Product.active.filter(wood: 't')
+    @product = Product.active
   
     if params[:search] && !params[:search].nil?
       @product = @product.where(Sequel.like(:serial_number, "%#{params[:search]}%"))

@@ -137,9 +137,6 @@ class Routes < Urns::Base
       purchase.cart_items.each do |item|
         product = item.product
         product.quantity = product.quantity - 1
-        # if product.quantity < 0
-        #   # Do something to flag the product as sold out?
-        # end
         unless product.accessories
           product.status = "Sold"
         end

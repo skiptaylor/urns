@@ -79,6 +79,7 @@ class Routes < Urns::Base
   end
 
   get "/purchase/:id/confirm/?" do
+    expires 1, :public, :must_revalidate
     redirect '/' if ShoppingCartItem.item_count(session[:shopping_session]) < 1
     
     @purchase = Purchase[params[:id]]
@@ -91,6 +92,7 @@ class Routes < Urns::Base
   end
 
   post "/purchase/:id/confirm/?" do
+    expires 1, :public, :must_revalidate
     redirect '/' if ShoppingCartItem.item_count(session[:shopping_session]) < 1
     
     purchase = Purchase[params[:id]]

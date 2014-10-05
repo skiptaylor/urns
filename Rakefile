@@ -12,6 +12,7 @@ namespace :update do
   desc "update heroku app"
   task :heroku, [:app] do |t, args|
     system "heroku run bundle -a #{args[:app]}"
+    system "heroku restart -a #{args[:app]}"
   end
   
   desc "update github then heroku app"

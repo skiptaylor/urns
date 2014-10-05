@@ -49,4 +49,8 @@ class ShoppingCartItem < Sequel::Model
     (total*100).round / 100.0 # Round and truncate for dollar value
   end
   
+  def self.item_count(shopping_session)
+    ShoppingCartItem.where(shopping_session: shopping_session).count
+  end
+  
 end

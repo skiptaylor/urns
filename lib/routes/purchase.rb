@@ -63,7 +63,7 @@ class Routes < Urns::Base
       :shopping_session    => session[:shopping_session],
       :distributor_id      => params[:distributor_id]
     )
-    
+        
     redirect "/purchase/#{purchase.id}/confirm"
   end
 
@@ -79,6 +79,8 @@ class Routes < Urns::Base
   end
 
   get "/purchase/:id/confirm/?" do
+    redirect '/' if session[:shopping_session] == nil
+    
     @purchase = Purchase[params[:id]]
     @service = Service.all
     @product = Product.all
@@ -89,6 +91,8 @@ class Routes < Urns::Base
   end
 
   post "/purchase/:id/confirm/?" do
+    redirect '/' if session[:shopping_session] == nil
+    
     purchase = Purchase[params[:id]]
     amount = (purchase.grand_total * 100).to_i
 		

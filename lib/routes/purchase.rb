@@ -127,10 +127,10 @@ class Routes < Urns::Base
 
         session[:shopping_session] = nil
       
-  		  erb :"/checkout/paid"
+  		  redirect '/checkout/paid'
   		rescue Stripe::CardError => e
         # The card has been declined
-  			erb :"/checkout/error"
+  			redirect '/checkout/error'
   		end
     else
       
@@ -150,8 +150,17 @@ class Routes < Urns::Base
 
       session[:shopping_session] = nil
       
-      erb :"/checkout/paid"
+      # erb :"/checkout/paid"
+      redirect '/checkout/paid'
     end
+  end
+  
+  get '/checkout/paid/?' do
+    erb :"/checkout/paid"
+  end
+
+  get '/checkout/error/?' do
+    erb :"/checkout/error"
   end
   
   get "/admin/purchase/:id/purchase/?" do

@@ -79,7 +79,7 @@ class Routes < Urns::Base
   end
 
   get "/purchase/:id/confirm/?" do
-    redirect '/' if session[:shopping_session] == nil
+    redirect '/' if ShoppingCartItem.item_count(session[:shopping_session]) < 1
     
     @purchase = Purchase[params[:id]]
     @service = Service.all
@@ -91,7 +91,7 @@ class Routes < Urns::Base
   end
 
   post "/purchase/:id/confirm/?" do
-    redirect '/' if session[:shopping_session] == nil
+    redirect '/' if ShoppingCartItem.item_count(session[:shopping_session]) < 1
     
     purchase = Purchase[params[:id]]
     amount = (purchase.grand_total * 100).to_i

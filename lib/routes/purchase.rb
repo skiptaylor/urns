@@ -108,7 +108,7 @@ class Routes < Urns::Base
       		:amount => amount,
   		    :currency => "usd",
   		    :card => token,
-  		    :description => 'aui wood purchase'
+  		    :description => 'aui purchase'
   		  )
       
   			# Do whatever needs to be done to mark the Purchase as completed and the
@@ -171,11 +171,19 @@ class Routes < Urns::Base
   
   get "/admin/purchase/:id/purchase/?" do
     auth_admin
+    
+    @purchase = Purchase[params[:id]]
+    @service = Service.all
+    @product = Product.all
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
-    @state = State.all
-    @item = Item.all
-    @purchase = Purchase[params[:id]]
+    @purchase.total = @total
+    
+    # @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+#     @total = ShoppingCartItem.total(session[:shopping_session])
+#     @state = State.all
+#     @item = Item.all
+#     @purchase = Purchase[params[:id]]
     erb :"/admin/purchase"
   end
 
@@ -192,11 +200,19 @@ class Routes < Urns::Base
   
   get "/admin/purchase/:id/edit/?" do
     auth_admin
+    # @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
+#     @total = ShoppingCartItem.total(session[:shopping_session])
+#     @state = State.all
+#     @item = Item.all
+#     @purchase = Purchase[params[:id]]
+    
+    @purchase = Purchase[params[:id]]
+    @service = Service.all
+    @product = Product.all
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
-    @state = State.all
-    @item = Item.all
-    @purchase = Purchase[params[:id]]
+    @purchase.total = @total
+    
     erb :"/admin/purchase_edit"
   end
 

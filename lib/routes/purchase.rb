@@ -175,6 +175,7 @@ class Routes < Urns::Base
     @purchase = Purchase[params[:id]]
     @service = Service.all
     @product = Product.all
+    @item = Item.all
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
     @purchase.total = @total
@@ -209,6 +210,7 @@ class Routes < Urns::Base
     @purchase = Purchase[params[:id]]
     @service = Service.all
     @product = Product.all
+    @item = Item.all
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
     @purchase.total = @total

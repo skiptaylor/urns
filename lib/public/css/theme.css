@@ -223,6 +223,11 @@ hr	{
 	text-align: center;
 }
 
+.visible-tablet .size-selector a.img	{
+	width: 80%;
+	height: 80%;
+}
+
 .size-selector p	{
 	font-size: .9em;
 	line-height: 2em;

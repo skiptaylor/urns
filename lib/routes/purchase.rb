@@ -207,7 +207,7 @@ class Routes < Urns::Base
 #     @item = Item.all
 #     @purchase = Purchase[params[:id]]
     
-    @purchase = Purchase[params[:id]]
+    @purchase = Purchase.where(shopping_session: session[:shopping_session])
     @service = Service.all
     @product = Product.all
     @item = Item.all
@@ -221,7 +221,7 @@ class Routes < Urns::Base
   post "/admin/purchase/:id/edit/?" do
     auth_admin
     total = ShoppingCartItem.total(session[:shopping_session])
-    purchase = Purchase[params[:id]]
+    purchase = Purchase.where(shopping_session: session[:shopping_session])
     purchase.update(
       :shipped_on         => params[:shipped_on],
       :received_on        => params[:received_on],

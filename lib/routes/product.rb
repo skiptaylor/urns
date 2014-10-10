@@ -178,30 +178,30 @@ class Routes < Urns::Base
     redirect "/product/products"
   end
   
-  get "/product/gallery/:range/?" do
-    @product = Product.active
-
-    if params[:search] && !params[:search].nil?
-      @product = @product.where(Sequel.like(:serial_number, "%#{params[:search]}%"))
-    else
-      @product = @product.send(params[:range])
-      woodtype      = params[:wood_type]   || 'All'
-      wood_color    = params[:wood_color]  || 'All'
-      shape         = params[:shape]       || 'All'
-
-      @product = @product.by_wood_type(woodtype) unless woodtype == 'All'
-      # @product = @product.where(wood_color1: wood_color1) unless wood_color1 == 'All'
-      @product = @product.where(wood_color1: 'light') if wood_color == 'light'
-      @product = @product.where(wood_color2: 'dark') if wood_color == 'dark'
-      @product = @product.where(wood_color3: 'mixed') if wood_color == 'mixed'
-      @product = @product.where(shape: shape) unless shape == 'All'
-    end
-
-    @range_title       = range_title(params[:range])
-    @range_description = range_desc(params[:range])
-
-    erb :"/product/gallery"
-  end
+  # get "/product/gallery/:range/?" do
+#     @product = Product.active
+#
+#     if params[:search] && !params[:search].nil?
+#       @product = @product.where(Sequel.like(:serial_number, "%#{params[:search]}%"))
+#     else
+#       @product = @product.send(params[:range])
+#       woodtype      = params[:wood_type]   || 'All'
+#       wood_color    = params[:wood_color]  || 'All'
+#       shape         = params[:shape]       || 'All'
+#
+#       @product = @product.by_wood_type(woodtype) unless woodtype == 'All'
+#       # @product = @product.where(wood_color1: wood_color1) unless wood_color1 == 'All'
+#       @product = @product.where(wood_color1: 'light') if wood_color == 'light'
+#       @product = @product.where(wood_color2: 'dark') if wood_color == 'dark'
+#       @product = @product.where(wood_color3: 'mixed') if wood_color == 'mixed'
+#       @product = @product.where(shape: shape) unless shape == 'All'
+#     end
+#
+#     @range_title       = range_title(params[:range])
+#     @range_description = range_desc(params[:range])
+#
+#     erb :"/product/gallery"
+#   end
 
   get '/product/:id/show/?' do
     @product = Product[params[:id]]

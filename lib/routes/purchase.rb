@@ -131,7 +131,7 @@ class Routes < Urns::Base
         purchase.tax        = purchase.tax_rate
         purchase.save
         
-        if settings.environment == 'production'
+        if settings.environment == 'development'
           Email.receipt(user.email, user.name, params[:amount])
           # Email.shipped(user.email, user.name, user.email, email)
         end
@@ -159,7 +159,7 @@ class Routes < Urns::Base
       purchase.tax        = purchase.tax_rate
       purchase.save
       
-      if settings.environment == 'production'
+      if settings.environment == 'development'
         Email.receipt(user.email, user.name, params[:amount])
         # Email.shipped(user.email, user.name, user.email, email)
       end

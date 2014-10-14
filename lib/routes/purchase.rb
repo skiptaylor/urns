@@ -158,6 +158,11 @@ class Routes < Urns::Base
       purchase.amount     = purchase.grand_total
       purchase.tax        = purchase.tax_rate
       purchase.save
+      
+      if settings.environment == 'production'
+        Email.receipt(user.email, user.name, params[:amount])
+        # Email.shipped(user.email, user.name, user.email, email)
+      end
 
       session[:shopping_session] = nil
       

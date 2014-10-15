@@ -131,7 +131,7 @@ class Routes < Urns::Base
         purchase.tax        = purchase.tax_rate
         purchase.save
         
-        Email.receipt(purchase.email, purchase.name)
+        Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.referral_code)
 
         session[:shopping_session] = nil
       
@@ -156,7 +156,7 @@ class Routes < Urns::Base
       purchase.tax        = purchase.tax_rate
       purchase.save
       
-      Email.receipt(purchase.email, purchase.name)
+      Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.referral_code)
 
       session[:shopping_session] = nil
       

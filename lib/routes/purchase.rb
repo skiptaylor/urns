@@ -132,7 +132,6 @@ class Routes < Urns::Base
         purchase.save
         
         Email.receipt(purchase.email, purchase.name)
-        puts 'Home Base'
 
         session[:shopping_session] = nil
       

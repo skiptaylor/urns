@@ -132,7 +132,8 @@ class Routes < Urns::Base
         purchase.save
         
         if settings.environment == 'development'
-          Email.receipt(purchase.email, purchase.name, params[:amount])
+          Email.receipt(purchase.email, purchase.name, params[:grand_total])
+          puts 'Home Base'
         end
 
         session[:shopping_session] = nil

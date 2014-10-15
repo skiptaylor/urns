@@ -131,10 +131,8 @@ class Routes < Urns::Base
         purchase.tax        = purchase.tax_rate
         purchase.save
         
-        if settings.environment == 'development'
-          Email.receipt(purchase.email, purchase.name, params[:grand_total])
-          puts 'Home Base'
-        end
+        Email.receipt(purchase.email, purchase.name)
+        puts 'Home Base'
 
         session[:shopping_session] = nil
       
@@ -159,9 +157,7 @@ class Routes < Urns::Base
       purchase.tax        = purchase.tax_rate
       purchase.save
       
-      if settings.environment == 'development'
-        Email.receipt(purchase.email, purchase.name, params[:amount])
-      end
+      Email.receipt(purchase.email, purchase.name)
 
       session[:shopping_session] = nil
       
@@ -180,7 +176,6 @@ class Routes < Urns::Base
   
   get "/admin/purchase/:id/purchase/?" do
     auth_admin
-    
     @purchase = Purchase[params[:id]]
     @service = Service.all
     @product = Product.all
@@ -188,12 +183,7 @@ class Routes < Urns::Base
     @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
     @total = ShoppingCartItem.total(session[:shopping_session])
     @purchase.total = @total
-    
-    # @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-#     @total = ShoppingCartItem.total(session[:shopping_session])
-#     @state = State.all
-#     @item = Item.all
-#     @purchase = Purchase[params[:id]]
+
     erb :"/admin/purchase"
   end
 
@@ -210,12 +200,6 @@ class Routes < Urns::Base
   
   get "/admin/purchase/:id/edit/?" do
     auth_admin
-    # @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-#     @total = ShoppingCartItem.total(session[:shopping_session])
-#     @state = State.all
-#     @item = Item.all
-#     @purchase = Purchase[params[:id]]
-    
     @purchase = Purchase[params[:id]]
     @service = Service.all
     @product = Product.all

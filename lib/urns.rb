@@ -22,7 +22,7 @@ module Urns
       config.fog_directory  = ENV.fetch('FOG_DIRECTORY')
     end
 
-    require_rel 'models', 'helpers', 'settings', 'libraries''
+    require_rel 'models', 'helpers', 'settings', 'libraries'
     helpers Urns::Helpers
   end
 

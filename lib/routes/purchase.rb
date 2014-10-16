@@ -214,7 +214,6 @@ class Routes < Urns::Base
 
   post "/admin/purchase/:id/edit/?" do
     auth_admin
-    total = ShoppingCartItem.total(session[:shopping_session])
     purchase = Purchase[params[:id]]
     purchase.update(
       :shipped_on         => params[:shipped_on],

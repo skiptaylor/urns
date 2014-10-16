@@ -132,7 +132,7 @@ class Routes < Urns::Base
         purchase.save
         
         @product = Product.where(:id => session[:shopping_session])
-        Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.referral_code)
+        Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.referral_code, purchase.product.serial_number)
 
         session[:shopping_session] = nil
       

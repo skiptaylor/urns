@@ -179,9 +179,9 @@ class Routes < Urns::Base
   end
   
   get "/product/gallery/:range/?" do
-    if id == 'woodurns'
+    if request.host.include? 'wood'
       @product = Product.active.filter(wood: 't')
-    else
+    elsif request.host.include? 'pet'
       @product = Product.active.filter(pet: 't')
     end
   

@@ -179,8 +179,12 @@ class Routes < Urns::Base
   end
   
   get "/product/gallery/:range/?" do
-    @product = Product.active
-
+    if id == 'woodurns'
+      @product = Product.active.filter(wood: 't')
+    else
+      @product = Product.active.filter(pet: 't')
+    end
+  
     if params[:search] && !params[:search].nil?
       @product = @product.where(Sequel.like(:serial_number, "%#{params[:search]}%"))
     else

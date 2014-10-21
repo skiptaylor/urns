@@ -183,6 +183,8 @@ class Routes < Urns::Base
       @product = Product.active.filter(wood: 't')
     elsif request.host.include? 'pet'
       @product = Product.active.filter(pet: 't')
+    else request.host.include? 'localhost'
+      @product = Product.active
     end
   
     if params[:search] && !params[:search].nil?

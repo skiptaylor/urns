@@ -135,7 +135,7 @@ class Routes < Urns::Base
         def self.receipt to, name, amount, shopping_session
         Email.receipt(purchase.email, purchase.name, purchase.amount, session[:shopping_session])
 
-        session[:shopping_session] = nil
+        # session[:shopping_session] = nil
       
   		  redirect '/checkout/paid'
   		rescue Stripe::CardError => e
@@ -162,7 +162,7 @@ class Routes < Urns::Base
       def self.receipt to, name, amount, shopping_session
       Email.receipt(purchase.email, purchase.name, purchase.amount, session[:shopping_session])
 
-      session[:shopping_session] = nil
+      # session[:shopping_session] = nil
       
       # erb :"/checkout/paid"
       redirect '/checkout/paid'

@@ -132,7 +132,7 @@ class Routes < Urns::Base
         purchase.save
         
         @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
-        Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.tax, purchase.shipping, cart.total, session[:shopping_session])
+        Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.tax, purchase.shipping, session[:shopping_session])
 
         session[:shopping_session] = nil
       
@@ -158,7 +158,7 @@ class Routes < Urns::Base
       purchase.save
       
 
-      Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.shipping, cart.total, session[:shopping_session])
+      Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.shipping, session[:shopping_session])
 
       session[:shopping_session] = nil
       

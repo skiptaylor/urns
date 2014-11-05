@@ -218,10 +218,11 @@ class Routes < Urns::Base
     purchase.update(
       :shipped_on         => params[:shipped_on],
       :received_on        => params[:received_on],
-      :tracking_number    => params[:tracking_number]
+      :tracking_number    => params[:tracking_number],
+      :approved           => params[:approved]
     )
 
-    redirect "/admin/purchases"
+    erb :"/admin/purchase_edit"
   end
 
   get "/admin/purchase/:id/delete/?" do

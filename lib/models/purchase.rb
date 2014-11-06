@@ -12,6 +12,12 @@ class Purchase < Sequel::Model
     total += shipping_cost
     total
   end
+  
+  
+  def tax
+    total * self.tax_rate
+  end
+
 
   def billing_state
     if self.billing_state_id

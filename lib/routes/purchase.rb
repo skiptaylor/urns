@@ -128,7 +128,8 @@ class Routes < Urns::Base
         purchase.stripe_id  = charge.id
         purchase.shipping   = purchase.shipping_cost
         purchase.amount     = purchase.grand_total
-        purchase.tax        = purchase.tax_rate
+        purchase.tax        = (purchase.tax_rate * total)
+        
         purchase.save
         
         @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
@@ -157,12 +158,10 @@ class Routes < Urns::Base
       purchase.tax        = purchase.tax_rate
       purchase.save
       
-
       Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.shipping_cost, session[:shopping_session])
 
       session[:shopping_session] = nil
       
-      # erb :"/checkout/paid"
       redirect '/checkout/paid'
     end
   end

@@ -128,8 +128,6 @@ class Routes < Urns::Base
         purchase.stripe_id  = charge.id
         purchase.shipping   = purchase.shipping_cost
         purchase.amount     = purchase.grand_total
-        purchase.tax        = purchase.tax_rate
-        purchase.total      = purchase.total
         purchase.save
         
         @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
@@ -155,7 +153,6 @@ class Routes < Urns::Base
       
       purchase.shipping   = purchase.shipping_cost
       purchase.amount     = purchase.grand_total
-      purchase.tax        = purchase.tax_rate
       purchase.save
       
       Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.shipping_cost, session[:shopping_session])

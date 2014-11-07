@@ -133,7 +133,8 @@ class Routes < Urns::Base
         
         @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
         Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.tax, purchase.shipping_cost, purchase.total, purchase.shopping_session, purchase.id)
-
+        Email.sale(purchase.name, purchase.amount, purchase.shipping_cost, purchase.service.name, purchase.shopping_session, purchase.id)
+        
         session[:shopping_session] = nil
       
   		  redirect '/checkout/paid'
@@ -157,7 +158,7 @@ class Routes < Urns::Base
       purchase.tax        = purchase.tax_rate
       purchase.save
       
-      Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.tax, purchase.shipping_cost, purchase.total, purchase.shopping_session, purchase.id)
+      # Email.receipt(purchase.email, purchase.name, purchase.amount, purchase.tax, purchase.shipping_cost, purchase.total, purchase.shopping_session, purchase.id)
 
       session[:shopping_session] = nil
       

@@ -9,7 +9,7 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-@media (min-width: 768px) and (max-width: 979px)	{
+/*@media (min-width: 768px) and (max-width: 979px)	{
 	body	{
 		background-color: #505050;
 	}
@@ -38,7 +38,7 @@ html {
 		background-color: #505050;
 	}
 }
-
+*/
 
 /* NAVBAR
 ---------------------------------------------------------------------------------------------------- */

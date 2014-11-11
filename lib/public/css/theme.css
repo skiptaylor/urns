@@ -9,37 +9,6 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*@media (min-width: 768px) and (max-width: 979px)	{
-	body	{
-		background-color: #505050;
-	}
-}
-
-@media (max-width: 767px)		{
-	body	{
-		background-color: #505050;
-	}
-}
-
-@media (max-width: 480px)		{
-	body	{
-		background-color: #ffffff;
-	}
-}
-
-@media (max-width: 979px)		{
-	body	{
-		background-color: #505050;
-	}
-}
-
-@media (min-width: 980px)		{
-	body	{
-		background-color: #505050;
-	}
-}
-*/
-
 /* NAVBAR
 ---------------------------------------------------------------------------------------------------- */
 
@@ -609,7 +578,8 @@ div#preload { display: none; }
 form	{ font-family: 'Open Sans', sans-serif; }
 
 .icon-stack	{
-	padding: 6px;
+	padding: 2px;
+	font-size:.7em;
 }
 
 a.under-link 	{

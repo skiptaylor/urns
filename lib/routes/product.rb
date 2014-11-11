@@ -189,7 +189,7 @@ class Routes < Urns::Base
   
     if params[:search] && !params[:search].nil?
       @product = @product.where(Sequel.like(:serial_number, "%#{params[:search]}%"))
-    else
+    elsif
       @product = @product.send(params[:range])
       woodtype      = params[:wood_type]   || 'All'
       wood_color    = params[:wood_color]  || 'All'
@@ -201,6 +201,8 @@ class Routes < Urns::Base
       @product = @product.where(wood_color2: 'dark') if wood_color == 'dark'
       @product = @product.where(wood_color3: 'mixed') if wood_color == 'mixed'
       @product = @product.where(shape: shape) unless shape == 'All'
+    else 
+      'There are no matches. You might expand your sort.'
     end
 
     @range_title       = range_title(params[:range])

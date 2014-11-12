@@ -116,12 +116,11 @@ class Routes < Urns::Base
         purchase.cart_items.each do |item|
           product = item.product
           product.quantity = product.quantity - 1
-          # if product.quantity < 0
-          #   # Do something to flag the product as sold out?
-          # end
-          unless product.accessories
+          if product.quantity < 1
             product.status = "Sold"
-            product.sold_on = purchase.created_at
+            unless product.accessories
+              product.sold_on = purchase.created_at
+            end
           end
           product.save
         end
@@ -130,7 +129,6 @@ class Routes < Urns::Base
         purchase.shipping   = purchase.shipping_cost
         purchase.amount     = purchase.grand_total
         purchase.tax        = purchase.tax_rate
-        
         purchase.save
         
         @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
@@ -149,9 +147,11 @@ class Routes < Urns::Base
       purchase.cart_items.each do |item|
         product = item.product
         product.quantity = product.quantity - 1
-        unless product.accessories
+        if product.quantity < 1
           product.status = "Sold"
-          product.sold_on = purchase.created_at
+          unless product.accessories
+            product.sold_on = purchase.created_at
+          end
         end
         product.save
       end

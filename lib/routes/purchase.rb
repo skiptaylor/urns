@@ -121,6 +121,7 @@ class Routes < Urns::Base
           # end
           unless product.accessories
             product.status = "Sold"
+            product.sold_on = purchase.created_at
           end
           product.save
         end
@@ -129,6 +130,7 @@ class Routes < Urns::Base
         purchase.shipping   = purchase.shipping_cost
         purchase.amount     = purchase.grand_total
         purchase.tax        = purchase.tax_rate
+        
         purchase.save
         
         @cart = ShoppingCartItem.where(shopping_session: session[:shopping_session])
@@ -149,6 +151,7 @@ class Routes < Urns::Base
         product.quantity = product.quantity - 1
         unless product.accessories
           product.status = "Sold"
+          product.sold_on = purchase.created_at
         end
         product.save
       end

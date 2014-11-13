@@ -1,6 +1,7 @@
 class Routes < Urns::Base
 
   get '/product/products/?' do
+    auth_admin
     @product = Product
 
     if params[:search] && !params[:search].nil?
@@ -34,11 +35,13 @@ class Routes < Urns::Base
   end
  
   get '/product/new/?' do
+    auth_admin
     @product = Product.new
     erb :"/product/product_edit"
   end
 
   post '/product/new/?' do
+    auth_admin
     product = Product.create(
       :serial_number      => params[:serial_number],
       :status             => params[:status],
@@ -100,17 +103,20 @@ class Routes < Urns::Base
   end
 
   get '/product/:id/product/?' do
+    auth_admin
     @product = Product[params[:id]]
     @photo = @product.photos
     erb :"/product/product"
   end
 
   get '/product/:id/edit/?' do
+    auth_admin
     @product = Product[params[:id]]
     erb :"/product/product_edit"
   end
 
   post '/product/:id/edit/?' do
+    auth_admin
     product = Product[params[:id]]
     product.update(
       :serial_number      => params[:serial_number],
@@ -173,6 +179,7 @@ class Routes < Urns::Base
   end
 
   get '/product/:id/delete/?' do
+    auth_admin
     product = Product[params[:id]]
     product.destroy
     redirect "/product/products"

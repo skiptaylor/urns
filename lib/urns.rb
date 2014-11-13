@@ -6,7 +6,8 @@ module Urns
   class Base < Sinatra::Application
     configure do
       use Rack::Session::Cookie, :key => 'rack.session',
-                                 :secret => 'secret123'
+                                 :secret => 'secret123',
+                                 :expire_after => ENV.fetch('EXPIRE')
       set :database,       ENV.fetch('DATABASE_URL')
       set :session_secret, ENV.fetch('SESSION_SECRET')
       set :views,          ['./views', "#{File.dirname(__FILE__)}/views"]

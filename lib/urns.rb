@@ -7,7 +7,6 @@ module Urns
     configure do
       use Rack::Session::Cookie, :key => 'rack.session',
                                  :secret => 'secret123',
-                                 :domain => 'http://aui-admin.herokuapp.com'
                                  :expire_after => 120
       set :database,       ENV.fetch('DATABASE_URL')
       set :session_secret, ENV.fetch('SESSION_SECRET')

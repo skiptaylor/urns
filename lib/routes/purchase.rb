@@ -20,6 +20,7 @@ class Routes < Urns::Base
         @purchase.zip = @distributor.zip
         @purchase.billing_state_id = @distributor.state_id
         @purchase.email = @distributor.email
+        @purchase.phone = @distributor.phone
       end
     end
     

@@ -44,6 +44,7 @@ class Routes < Urns::Base
   end
 
   get '/distributor/distributors/?' do
+    auth_admin
     @state = State.all
     @distributor = Distributor
   

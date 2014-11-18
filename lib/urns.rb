@@ -5,12 +5,6 @@ Dotenv.load
 module Urns
   
   class Base < Sinatra::Application
-    use Rack::Protection, :except => :session_hijacking
-    enable :sessions
-    use Rack::Session::Cookie, :key => 'rack.session',
-                               :secret => 'secret123',
-                               :expire_after => 7200
-
     configure do
       set :database,       ENV.fetch('DATABASE_URL')
       set :session_secret, ENV.fetch('SESSION_SECRET')

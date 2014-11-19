@@ -6,6 +6,8 @@ module Urns
   
   class Base < Sinatra::Application
     configure do
+      use Rack::Protection, :except => :session_hijacking
+      enable :sessions
       use Rack::Session::Cookie, :key => 'rack.session',
                                  :secret => 'secret123',
                                  :expire_after => ENV.fetch("EXPIRE").to_i

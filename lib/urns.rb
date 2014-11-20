@@ -9,7 +9,7 @@ module Urns
     	before do
         unless request.request_method == 'POST'
       		unless request.url.include? "https://www."
-      			redirect "https://www.#{host}#{request.path}"
+      			redirect "https://www.#{request.url}#{request.path}"
       		end
         end
     	end

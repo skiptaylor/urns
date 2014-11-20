@@ -1,15 +1,20 @@
 require 'sinatra/base'
-require 'rack'
-require 'rack/request'
 
 Dotenv.load
 
 module Urns
   
   class Base < Sinatra::Application
-    
-    configure do
-      
+    configure :production do
+    	before do
+        unless request.request_method == 'POST'
+      		unless request.url.include? "https://www."
+      			redirect "https://www.#{host}#{request.path}"
+      		end
+        end
+    	end
+    end
+    configure do  
       use Rack::Protection, :except => :session_hijacking
       enable :sessions
       use Rack::Session::Cookie, :key => 'rack.session',

@@ -8,7 +8,6 @@ module Urns
   
   class Base < Sinatra::Application
     
-    use Rack::SSL
     configure do
       
       use Rack::Protection, :except => :session_hijacking

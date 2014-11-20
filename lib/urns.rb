@@ -6,6 +6,13 @@ module Urns
   
   class Base < Sinatra::Application
     configure do
+      before do
+        unless request.request_method == 'POST'
+          unless request.url.include? "https://www."
+            redirect "https://www.*#{request.path}"
+          end
+        end
+      end
       use Rack::Protection, :except => :session_hijacking
       enable :sessions
       use Rack::Session::Cookie, :key => 'rack.session',

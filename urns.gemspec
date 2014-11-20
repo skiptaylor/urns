@@ -26,6 +26,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'fog',                 '~> 1.21', '>= 1.21.0'
   gem.add_runtime_dependency 'foreman',             '~> 0.63', '>= 0.63.0'
   gem.add_runtime_dependency 'rack',                '~> 1.5',  '>= 1.5.2'
+  gem.add_runtime_dependency 'rack/ssl',            '~> 1.4',  '>= 1.4.1'
   gem.add_runtime_dependency 'pg',                  '~> 0.17', '>= 0.17.1'
   gem.add_runtime_dependency 'puma',                '~> 2.7',  '>= 2.7.1'
   gem.add_runtime_dependency 'rake',                '~> 10.1', '>= 10.1.1'

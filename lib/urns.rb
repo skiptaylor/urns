@@ -6,8 +6,9 @@ module Urns
   
   class Base < Sinatra::Application
     configure do
-    	before do
-        unless request.url.include? "aui-admin.herokuapp.com"
+      unless request.url.include? "aui-admin.herokuapp.com"
+      
+    	  before do
           unless request.request_method == 'POST'
             unless request.url.include? "https://www."
               redirect ENV.fetch('DOMAIN')

@@ -6,17 +6,17 @@ module Urns
   
   class Base < Sinatra::Application
     configure do
-      # unless request.url.include? "aui-admin.herokuapp.com"
-#
-#         before do
-#           unless request.request_method == 'POST'
-#             unless request.url.include? "https://www."
-#               redirect ENV.fetch('DOMAIN')
-#             end
-#           end
-#         end
-#
-#       end
+      
+      # This must be enabled for public apps. Comment out for admin.
+      unless request.url.include? "aui-admin."
+        before do
+          unless request.request_method == 'POST'
+            unless request.url.include? "https://www."
+              redirect ENV.fetch('DOMAIN')
+            end
+          end
+        end
+      end
 
     
       use Rack::Protection, :except => :session_hijacking

@@ -9,7 +9,7 @@ module Urns
     	before do
         unless request.request_method == 'POST'
           unless request.url.include? "https://www."
-            redirect "ENV.fetch('DOMAIN')"
+            redirect => ENV.fetch('DOMAIN')
           end
         end
       end

@@ -102,7 +102,7 @@ class Routes < Urns::Base
     unless session[:distributor] 
       begin
   			# Replace with correct key.
-  			Stripe.api_key = "sk_test_MU5HRrdbS4avG42f6nYl2Xiv"
+  			Stripe.api_key = "sk_live_Cih3asweGA76032l8XSNUEsl"
   			token = params[:stripeToken]
     		charge = Stripe::Charge.create(
     			# Amount should be the total cost in cents.

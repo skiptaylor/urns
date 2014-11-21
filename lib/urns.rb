@@ -6,9 +6,7 @@ module Urns
   
   class Base < Sinatra::Application
     configure do
-      
-      # This must be enabled for public apps. Comment out for admin.
-      # unless request.url.include? "aui-admin."
+
        before do
          unless request.request_method == 'POST'
            unless request.url.include? "aui-admin."
@@ -18,8 +16,6 @@ module Urns
            end
          end
        end
-#       end
-
     
       use Rack::Protection, :except => :session_hijacking
       enable :sessions

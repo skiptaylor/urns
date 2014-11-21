@@ -8,7 +8,7 @@ module Urns
     configure do
     	before do
         unless request.request_method == 'POST'
-          unless request.url.include? "https://www." || "aui-admin"
+          unless request.url.include? "https://www." || request.url.include? "aui-admin"
             redirect ENV.fetch('DOMAIN')
           end
         end

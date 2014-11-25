@@ -63,11 +63,11 @@ class Product < Sequel::Model
     end
 
     def fineart
-      where(productstyle_id: [Productstyle.where(product_style: 'Fine Art').select(:id), Productstyle.where(product_style: 'Fine Art Keepsake').select(:id)])
+      where(productstyle_id: [Productstyle.where(product_style: 'Fine Art').select(:id), Productstyle.where(product_style: 'Fine Art.').select(:id)])
     end
     
     def fineart_pet
-      where(productstyle_id: [Productstyle.where(product_style: 'Fine Art', pet: 't').select(:id), Productstyle.where(product_style: 'Fine Art Keepsake', pet: 't').select(:id)])
+      where(productstyle_id: [Productstyle.where(product_style: 'Fine Art', pet: 't').select(:id), Productstyle.where(product_style: 'Fine Art.', pet: 't').select(:id)])
     end
 
     def niche

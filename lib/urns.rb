@@ -5,7 +5,7 @@ Dotenv.load
 module Urns
   
   class Base < Sinatra::Application
-    configure do
+    configure :production do
 
        before do
          unless request.request_method == 'POST'
@@ -16,6 +16,10 @@ module Urns
            end
          end
        end
+       
+    end
+       
+    configure do
     
       use Rack::Protection, :except => :session_hijacking
       enable :sessions

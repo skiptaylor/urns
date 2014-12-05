@@ -21,6 +21,7 @@ class Routes < Urns::Base
         @purchase.billing_state_id = @distributor.state_id
         @purchase.email = @distributor.email
         @purchase.phone = @distributor.phone
+        purchase.save
       end
     end
     

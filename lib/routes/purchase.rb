@@ -140,7 +140,6 @@ class Routes < Urns::Base
       
   		  redirect '/checkout/paid'
   		rescue Stripe::CardError => e
-        # The card has been declined
   			redirect '/checkout/error'
   		end
     else

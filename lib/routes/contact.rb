@@ -14,6 +14,7 @@ class Routes < Urns::Base
       :comment    => params[:comment],
       :read       => params[:read]
     )
+    Email.contact(contact.name, contact.company, contact.email, contact.phone, contact.comment)
   
     redirect "/contactus/thank-you"
   end

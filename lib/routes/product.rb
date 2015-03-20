@@ -218,7 +218,11 @@ class Routes < Urns::Base
 
   get '/product/:id/show/?' do
     @product = Product[params[:id]]
-    erb :"/product/show_product"
+    unless status == 'Sold'
+      erb :"/product/show_product"
+    else
+      erb :"/product/show_sold"
+    end
   end
   
   get '/product/:id/sold/?' do

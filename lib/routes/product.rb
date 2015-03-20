@@ -218,10 +218,10 @@ class Routes < Urns::Base
 
   get '/product/:id/show/?' do
     @product = Product[params[:id]]
-    unless status == 'Sold'
-      erb :"/product/show_product"
+    if status == 'Sold'
+      redirect '/product/:id/sold'
     else
-      erb :"/product/show_sold"
+      erb :"/product/show_product"
     end
   end
   

@@ -33,7 +33,7 @@ class Product < Sequel::Model
     def large
       where 'capacity > 60 and capacity <= 90'
     end
-
+ 
     def vlarge
       where 'capacity > 90 and capacity <= 189'
     end
@@ -60,6 +60,10 @@ class Product < Sequel::Model
 
     def active
       where status: 'Active'
+    end
+    
+    def sold
+      where status: 'Sold'
     end
 
     def fineart

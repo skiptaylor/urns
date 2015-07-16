@@ -73,7 +73,7 @@ class Routes < Urns::Base
       purchase = Purchase.where(shopping_session: session[:shopping_session]).first
       purchase.update(billing_state_id: params[:billing_state], shipping_state_id: params[:shipping_state], service_id: params[:service])
       volume = purchase.shipping_volume
-      if volume > 0 && volume <= 100
+      if volume > 0 && volume <= 200
         "%.2f" % purchase.shipping_cost
       else
         "0.00"

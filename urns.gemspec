@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.platform = Gem::Platform::RUBY
 
   gem.name        = 'urns'
-  gem.version     = '1.0.0'
+  gem.version     = '1.0.2'
   gem.author      = ''
   gem.email       = ''
   gem.homepage    = ''

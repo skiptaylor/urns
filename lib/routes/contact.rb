@@ -19,6 +19,10 @@ class Routes < Urns::Base
     redirect "/contactus/thank-you"
   end
   
+  get "/contactus/thank-you/?" do
+    erb :"/contactus/thank-you"
+  end
+  
   get "/contact/:id/edit/?" do
     auth_admin
     @contact = Contact[params[:id]]

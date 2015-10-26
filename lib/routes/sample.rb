@@ -4,7 +4,7 @@ module Urns
     get '/contact-us/?' do
       erb :"contact-us"
     end
-    
+        
     get '/terms/?' do
       erb :terms
     end

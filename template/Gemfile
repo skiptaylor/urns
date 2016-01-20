@@ -19,5 +19,5 @@ gem 'sinatra-contrib',    '~> 1.4.2', require: 'sinatra/contrib'
 gem 'sinatra-sequel',     '~> 0.9.0', require: 'sinatra/sequel'
 gem 'uglifier',           '~> 2.4.0'
 
-# gem 'urns',               '~> 1.0.0', github: 'jarrodtaylor/urns'
-gem 'urns',               '~> 1.0.0', path: '~/desktop/urns'
+gem 'urns',               '~> 1.0.2', github: 'jarrodtaylor/urns'
+# gem 'urns',               '~> 1.0.0', path: '~/desktop/urns'

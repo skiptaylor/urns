@@ -33,7 +33,7 @@
 						  <div class="form-group" style="margin-left: -1017px;">
 							  <label for="email_name">Email name</label>
 							  <div class="controls">
-								  <input type="text" class="form-control span5" id="email_name" placeholder="Email name">
+								  <input type="text" class="form-control span5" id="email_name" name="email_name" placeholder="Email name">
 							  </div>
 						  </div>
 						  
@@ -59,7 +59,7 @@
 						  <div class="form-group">
 						    <label for="contactus"> </label>
 							 <div class="controls">
-						      <input class="btn btn-small btn-success" type="submit" value="Send" />
+						      <button type="submit" id="submit" class="btn btn-default btn-success">Submit</button>
 						    </div>
 						  </div>
 						</form>
@@ -73,10 +73,3 @@
 	
 </div>  <!-- white -->
 
-<script>
-	document.ready(function() {
-		("eform").submit(function() {
-			$("#email_name").val('');
-		});
-	});
-</script>

@@ -6,7 +6,10 @@ class Routes < Urns::Base
   end
 
   post "/contact/new/?" do
-    contact = Contact.create(
+    
+    if params[:email_name] == ""
+      
+      contact = Contact.create(
       :name       => params[:name],
       :company    => params[:company],
       :email      => params[:email],
@@ -17,6 +20,9 @@ class Routes < Urns::Base
     Email.contact(contact.name, contact.company, contact.email, contact.phone, contact.comment)
   
     redirect "/contactus/thank-you"
+    
+    end
+    
   end
   
   get "/contactus/thank-you/?" do

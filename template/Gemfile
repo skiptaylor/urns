@@ -19,5 +19,5 @@ gem 'sinatra-contrib',    '~> 1.4.2', require: 'sinatra/contrib'
 gem 'sinatra-sequel',     '~> 0.9.0', require: 'sinatra/sequel'
 gem 'uglifier',           '~> 2.4.0'
 
-#  gem 'urns',               '~> 3.0.9', github: 'skiptaylor/urns'
-#  gem 'urns',               '~> 3.0.9', path: '/Users/Skip/Sites/urns'
+gem 'urns',               '~> 3.1.0', github: 'skiptaylor/urns'
+#  gem 'urns',               '~> 3.1.0', path: '/Users/Skip/Sites/urns'

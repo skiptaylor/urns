@@ -76,7 +76,9 @@ class Purchase < Sequel::Model
 
   def shipping_size
     points = self.shipping_volume
-    Size.where('min_points <= ? and max_points >= ?', points, points).first.id
+    Size.where(Sequel.lit('(min_points <= ?) and (max_points >= ?)', points, points)).first.id
+    
+    # Size.where('min_points <= ? and max_points >= ?', points, points).first.id
   end
 
 end

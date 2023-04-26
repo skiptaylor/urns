@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.5.1'
+ruby '3.1.4'
 
 gem 'carrierwave',        '~> 0.10.0'
 gem 'carrierwave-sequel', '~> 0.1.0', require: 'carrierwave/sequel'
@@ -14,10 +14,10 @@ gem 'rake',               '~> 10.1.1'
 gem 'require_all',        '~> 1.3.2'
 gem 'sass',               '~> 3.3.0'
 gem 'sequel',             '~> 4.7.0'
-gem 'sinatra',            '~> 1.4.4', require: 'sinatra/base'
-gem 'sinatra-contrib',    '~> 1.4.2', require: 'sinatra/contrib'
-gem 'sinatra-sequel',     '~> 0.9.0', require: 'sinatra/sequel'
+gem 'sinatra',            '~> 1.4.4'
+gem 'sinatra-contrib',    '~> 1.4.2'
+gem 'sinatra-sequel',     '~> 0.9.0'
 gem 'uglifier',           '~> 2.4.0'
 
-gem 'urns',               '~> 3.1.0', github: 'skiptaylor/urns'
-#  gem 'urns',               '~> 3.1.0', path: '/Users/Skip/Sites/urns'
+# gem 'urns',               '~> 4', github: 'skiptaylor/urns'
+gem 'urns',               '~> 5.0', path: '/Users/skiptaylor/Desktop/urns'

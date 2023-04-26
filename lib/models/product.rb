@@ -19,39 +19,39 @@ class Product < Sequel::Model
   dataset_module do
 
     def mini
-      where 'capacity > 0 and capacity <= 7'
+      where(capacity: 0..7)
     end
 
     def small
-      where 'capacity > 7 and capacity <= 30'
+      where(capacity: 7..30)
     end
 
     def medium
-      where 'capacity > 30 and capacity <= 60'
+      where(capacity: 30..60)
     end
 
     def large
-      where 'capacity > 60 and capacity <= 90'
+      where(capacity: 60..90)
     end
  
     def vlarge
-      where 'capacity > 90 and capacity <= 189'
+      where(capacity:90..189)
     end
 
     def keepsake
-      where 'capacity > 0 and capacity <= 185'
+      where(capacity: 0..185)
     end
 
     def individual
-      where 'capacity > 185 and capacity <= 389'
+      where(capacity: 185..389)
     end
 
     def companion
-      where 'capacity > 389 and capacity <= 799'
+      where(capacity: 389..799)
     end
 
     def equine
-      where 'capacity > 799'
+      where(capacity: 799)
     end
 
     def by_wood_type(wood_type)

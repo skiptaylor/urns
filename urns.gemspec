@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.platform = Gem::Platform::RUBY
 
   gem.name        = 'urns'
-  gem.version     = '5.0'
+  gem.version     = '5.1'
   gem.author      = ['skip taylor']
   gem.email       = ['skiptaylor101@gmail.com']
   gem.homepage    = "https://github.com/skiptaylor/urns.git"
@@ -14,12 +14,12 @@ Gem::Specification.new do |gem|
   gem.summary     = 'urns5!'
   gem.description = 'Contains all the urns pages'
 
-  gem.files         = Dir['**/{*,.gitignore,.env}']
+  gem.files         = Dir['**/{*,.gitignore,.env}'] 
   gem.bindir        = 'bin'
   gem.executables   = 'urns'
   gem.require_paths = ['lib']
 
-  gem.add_runtime_dependency 'carrierwave',         '~> 0.10.0'
+  gem.add_runtime_dependency 'carrierwave-aws',     '~> 1.5'
   gem.add_runtime_dependency 'carrierwave-sequel',  '~> 0.1.0'
   gem.add_runtime_dependency 'chronic',             '~> 0.10', '>= 0.10.2'
   gem.add_runtime_dependency 'dotenv',              '~> 2.8', '>= 2.8.1'

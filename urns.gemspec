@@ -19,8 +19,8 @@ Gem::Specification.new do |gem|
   gem.executables   = 'urns'
   gem.require_paths = ['lib']
 
-  gem.add_runtime_dependency 'carrierwave-aws',     '~> 1.5'
-  gem.add_runtime_dependency 'carrierwave-sequel',  '~> 0.1.0'
+  gem.add_runtime_dependency 'carrierwave',         '~> 1.3', '>= 1.3.3'
+  gem.add_runtime_dependency 'carrierwave-sequel',  '~> 0.1.1'
   gem.add_runtime_dependency 'chronic',             '~> 0.10', '>= 0.10.2'
   gem.add_runtime_dependency 'dotenv',              '~> 2.8', '>= 2.8.1'
   gem.add_runtime_dependency 'fog',                 '~> 1.37.0'
